@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.9">
+ <TITLE>JPilot Handbuch: Installation</TITLE>
+ <LINK HREF="jpilot-manual-de-3.html" REL=next>
+ <LINK HREF="jpilot-manual-de-1.html" REL=previous>
+ <LINK HREF="jpilot-manual-de.html#toc2" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="jpilot-manual-de-3.html">Next</A>
+<A HREF="jpilot-manual-de-1.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc2">Contents</A>
+<HR>
+<H2><A NAME="s2">2. Installation</A></H2>
+
+<P>
+<P>
+<H2><A NAME="ss2.1">2.1 Voraussetzungen</A>
+</H2>
+
+<P>
+<P>Für die  Installation und natürlich  auch für den  Betrieb von
+JPilot   ist   das   GTK+-Toolkit  und   die   glib-Bibliothek
+erforderlich.    Keine  Sorge,   beide   werden  normalerweise
+standardmäßig mit allen Distributionen installiert. 
+<P>
+<P>Weiterhin ist für die  Kommunikation des Programmes JPilot mit
+dem PalmPilot  das extra zu  installierende Programm <EM>Pilot
+Link</EM>  vonnöten.  Aber  auch  dieses wird  mit fast  allen
+Distributionen      ausgeliefert      und      dementsprechend
+installiert.    Pilot    Link    wird    zur    Zeit    wieder
+weiterentwickelt. Die Installation  einer neuen Version sollte
+sich also lohnen.
+<P>
+<P>Um  JPilot zu übersetzen  (,,compilieren``), brauchen  Sie die
+GTK+  Version 1.2 oder  neuer. Diese  muß installiert  und dem
+System bekannt  sein. Um heraus zu finden,  welche Version des
+GTK+-Toolkits auf Ihrem System  installiert ist, rufen Sie das
+Programm gtk-config mit dem folgenden Parameter auf:
+<P>
+<PRE>
+gtk-config --version
+</PRE>
+<P>GTK+ erfordert seinersteits wiederum die glib-Bibliothek.  Die
+glib-Version   sollte  normalerweise   zu  der   GTK+  Version
+korrespondieren. Um  die Versionsnummer der  glib zu erfahren,
+verfahren sich auf ähnliche Weise:
+<P>
+<PRE>
+glib-config --version
+</PRE>
+<P>Beide Datensätze bekommen sie - sofern nicht schon vorhanden -
+auf 
+<A HREF="http://www.gtk.org">www.gtk.org</A>.
+<P>
+<P>Weiterhin muß <B>Pilot Link</B> installiert und eingerichtet
+sein.   Entscheidend   ist,  daß  die   zur  Pilot  Link-Suite
+gehörenden Programme <EM>pilot-xfer</EM>, <EM>memos</EM> sowie
+einige  andere  die  Kommunikation  zwischen  JPilot  und  dem
+PalmPilot durchführen  können. Für den  Download von <EM>Pilot
+Link</EM>     schauen     Sie     doch    mal     bei     
+<A HREF="ftp://ryeham.ee.ryerson.ca/pub/PalmOS">ftp://ryeham.ee.ryerson.ca/pub/PalmOS</A> vorbei.
+<P>
+<P><B>Achtung</B>:  Wenn  Sie  <EM>Pilot Link</EM>  anhand  der
+RPM-Pakete installieren,  achten Sie darauf, daß  Sie auch das
+<B>pilot-link-dev RPM</B> installieren,  weil sich darin die
+Header-Files befinden, die JPilot braucht, um übersetzt werden
+zu können.
+<P>Als   zusätzlicher   Hinweis  sei   auf   die  ziemlich   gute
+Dokumentation zum  Thema <EM>,,Linux und  der PalmPilot``</EM>
+verwiesen,    die     sich    unter    der     Adresse    
+<A HREF="http://www.orbits.com/Palm">www.orbits.com/Palm</A>
+im Internet findet.
+<P>
+<H2><A NAME="ss2.2">2.2 Übersetzung von JPilot</A>
+</H2>
+
+<P>
+<P>Um JPilot zu übersetzen (,,compilieren``) und zu installieren,
+gehen Sie folgendermaßen vor:
+<P>
+<P>Wenn Sie  die  Sourcen von   JPilot aus dem  Internet  gezogen
+haben, müssen Sie diese zunächst in ein Verzeichnis entpacken.
+Dies kann  entweder  mit einem  GUI-Tool geschehen,   oder Sie
+entpacken   die Sourcen aus dem     TAR-Knäul von Hand.   Dazu
+benutzen Sie den Befehl:
+<P>
+<PRE>
+tar -xvfz [Dateiname]
+</PRE>
+<P>Wechseln  Sie in das Verzeichnis, in  dem sich die Sourcen von
+JPilot  dann   befinden    und  melden Sie    sich    als User
+<EM>root</EM> an. Dann geben Sie folgende Befehle ein:
+<P>
+<PRE>
+        ./configure
+        make
+        make install
+        
+</PRE>
+<P>Anschließend können Sie JPilot aufrufen mit dem Befehl:
+<P>
+<PRE>
+jpilot
+</PRE>
+<P>
+<H2><A NAME="ss2.3">2.3 Deinstallieren</A>
+</H2>
+
+<P>
+<P>Nur für  den Fall, daß  Sie JPilot deinstallieren  wollen, sei
+hier auf  den dazu  erforderlichen Befehl verwiesen.   Um eine
+<B>neue  Version</B>  zu  installieren, ist  eine  vorherige
+Deinstallation <B>nicht</B> erforderlich. Sie deinstallieren
+JPilot mit dem Befehl: 
+<P>
+<PRE>
+make uninstall
+</PRE>
+<P>
+<H2><A NAME="ss2.4">2.4 Sicherheitshinweis/Disclaimer!</A>
+</H2>
+
+<P>
+<P>JPilot   wurde   eigentlich     so  geschrieben,   daß     der
+HotSync-Vorgang besonders sicher  ist.  ABER: Es besteht immer
+die    Möglichkeit,    daß es     zu  Unregelmäßigkeiten   und
+möglicherweisen zu  Datenverlusten  kommt.  Daher sollten Sie,
+wenn   sie wichtige Daten auf Ihrem   PalmPilot haben, vor der
+Benutzung von JPilot  immer ein Backup  machen.  Dazu benutzen
+Sie am besten das Programm <EM>pilot-xfer</EM>:
+<P>
+<PRE>
+pilot-xfer -b [Zielverzeichnis]
+</PRE>
+<P>
+<H2><A NAME="ss2.5">2.5 Einrichtung der seriellen Schnittstelle</A>
+</H2>
+
+<P>
+<P>Für den   HotSync-Vorgang  benutzt JPilot  die  <EM>Port</EM>-
+(,,Schnittstellen``)  und Geschwindigkeitseinstellungen,   die
+Sie   im    <EM>Einstellungen</EM>-Fenster   (,,Preferences``)
+auswählen können.
+<P>
+<P>Wenn   Sie  hier  nichts   eintragen,  verwendet   JPilot  die
+Einstellung,         die         Sie        anhand         der
+<EM>PILOTPORT</EM>-Umgebungsvariable   (s.   dazu  die   Datei
+.profile  oder .bashrc) eingestellt  haben.  Ebenso  geht auch
+Pilot-Link vor.
+<P>
+<P>Wenn Sie  auch auf diesem Wege  keine Einstellungen vornehmen,
+versucht     JPilot    standardmäßig     auf     die    Device
+<CODE>/dev/pilot</CODE> zuzugreifen.
+<P>
+<P>Es   wird   empfohlen,   einen   Link  zu   legen,   der   von
+<CODE>/dev/pilot</CODE>  auf die  korrekte  serielle Schnittstelle
+verweist. Nötig  ist dies  nicht - aber  empfehlenswert.  Wenn
+Ihre  PalmPilot  HotSync  Schale  (,,Cradle``)  z.B.   an  die
+Schnittstelle  <EM>COM1</EM>  (Dos-Bezeichnung)  angeschlossen
+ist,  handelt  es  sich   dabei  unter  Linux  um  die  Device
+<EM>/dev/ttyS0</EM>.      Um     nun     einen    Link     von
+<CODE>/dev/pilot</CODE> auf <CODE>dev/ttyS0</CODE> zu legen, geben Sie
+als User <EM>root</EM> folgenden Befehl ein:
+<P>
+<PRE>
+ln -s /dev/ttyS0 /dev/pilot
+</PRE>
+ 
+<P>Für   eine  andere   Schnittstelle  ändern   Sie   den  Befehl
+entsprechend   ab.   COM2   wäre  beispielsweise   ttyS1  usw.
+Achtung,    benutzten    Sie     nicht    mehr    die    alten
+<EM>cua</EM>-Ports!  Diese bruhen auf einem alten Standard und
+werden nach und nach nicht mehr unterstützt.
+<P>
+<P>Weiterhin  müssen Sie das  so neu  geschaffen Device  auch für
+alle   Benutzer    freischalten.    Der   Befehl    als   User
+<EM>root</EM>, um dies zu tun, lautet (z.B.  für COM1):
+<P>
+<PRE>
+chmod 666 /dev/ttyS0
+</PRE>
+<P>
+<H2><A NAME="ss2.6">2.6 Farbeinstellungen/Color Files</A>
+</H2>
+
+<P>
+<P>Die  Installation  von JPilot  fügt  Ihrem  System auch  einge
+Farbdateien  (,,Color  Files``)   hinzu,  die  im  Verzeichnis
+<CODE>/usr/local/share/jpilot</CODE>  installiert  werden.   Diese
+Farbeinstellungen können Sie im <EM>Einstellungen</EM>-Fenster
+auswählen.
+<P>
+<P>Weiterhin   sucht   JPilot   in  ihrem   Home-Verzeichnis   im
+Unterverzeichnis   <CODE>.jpilot</CODE>  ebenfalls   nach  solchen
+Dateien.  Diese müssen mit <EM>jpilotrc</EM> anfangen, gefolgt
+von  einem Punkt  und dem  eigentlich bezeichnenden  Namen der
+Datei.  Bsp: <CODE>jpilot.blue</CODE>
+<P>
+<P>Wenn Sie neue Farbfiles erstellen wollen, kopieren Sie einfach
+ein  altes um,  benennen es  neu und  verändern es  nach Ihrem
+Geschmack.  Anschließend legen Sie es in einem der beiden oben
+genannten  Verzeichnisse  ab  und  freuen sich,  daß  es  beim
+nächsten Mal im Einstellungen-Verzeichnis auftaucht.
+<P>
+<P>Zögern Sie  nicht, ein neu  erstelltes Farb-File an  den Autor
+von JPilot zu schicken!  Sie können davon ausgehen, daß es mit
+der nächsten Version von JPilot verteilt wird.
+<P>
+<P>
+<HR>
+<A HREF="jpilot-manual-de-3.html">Next</A>
+<A HREF="jpilot-manual-de-1.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc2">Contents</A>
+</BODY>
+</HTML>

@@ -1,0 +1,343 @@
+[
+
+  
+    {
+      "title"			: "Responsive website redesign",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/redesign-2/",
+      "excerpt"		: "Responsive website redesign"
+    }
+  
+
+  
+    ,{
+      "title"			: "Redesign 2",
+      "link"			: "https://juddmon.github.io/www.jpilot//redesign-2/",
+      "excerpt"		: "Responsive website redesign"
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 1.8.2",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-1.8.2/",
+      "excerpt"		: "Released J-Pilot version 1.8.2."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 1.8.2",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-1.8.2/",
+      "excerpt"		: "Released J-Pilot version 1.8.2."
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 1.8.1",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-1.8.1/",
+      "excerpt"		: "Released J-Pilot version 1.8.1."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 1.8.1",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-1.8.1/",
+      "excerpt"		: "Released J-Pilot version 1.8.1."
+    }
+  
+
+  
+    ,{
+      "title"			: "Bought A Nexus",
+      "link"			: "https://juddmon.github.io/www.jpilot//Bought-a-nexus/",
+      "excerpt"		: "My First Android Device"
+    }
+  
+
+  
+    ,{
+      "title"			: "I bought a Nexus One",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/Bought-a-nexus/",
+      "excerpt"		: "My First Android Device"
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 1.8.0",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-1.8.0/",
+      "excerpt"		: "Released J-Pilot version 1.8.0."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 1.8.0",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-1.8.0/",
+      "excerpt"		: "Released J-Pilot version 1.8.0."
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 1.6.2",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-1.6.2/",
+      "excerpt"		: "Released J-Pilot version 1.6.2."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 1.6.2",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-1.6.2/",
+      "excerpt"		: "Released J-Pilot version 1.6.2."
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 1.6.1",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-1.6.1/",
+      "excerpt"		: "Released J-Pilot version 1.6.1."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 1.6.1",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-1.6.1/",
+      "excerpt"		: "Released J-Pilot version 1.6.1."
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 1.6.0",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-1.6.0/",
+      "excerpt"		: "Released J-Pilot version 1.6.0."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 1.6.0",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-1.6.0/",
+      "excerpt"		: "Released J-Pilot version 1.6.0."
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 0.99.9",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-0.99.0/",
+      "excerpt"		: "Released J-Pilot version 0.99.9."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 0.99.0",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-0.99.0/",
+      "excerpt"		: "Released J-Pilot version 0.99.9."
+    }
+  
+
+  
+    ,{
+      "title"			: "Website redesign",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/redesign-1/",
+      "excerpt"		: "Website redesign"
+    }
+  
+
+  
+    ,{
+      "title"			: "Redesign 1",
+      "link"			: "https://juddmon.github.io/www.jpilot//redesign-1/",
+      "excerpt"		: "Website redesign"
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 0.99.8pre11",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-0.99.8pre11/",
+      "excerpt"		: "Released J-Pilot version 0.99.8-pre11."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 0.99.8pre11",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-0.99.8pre11/",
+      "excerpt"		: "Released J-Pilot version 0.99.8-pre11."
+    }
+  
+
+  
+    ,{
+      "title"			: "Release 0.99.7",
+      "link"			: "https://juddmon.github.io/www.jpilot//release-0.99.7/",
+      "excerpt"		: "Released J-Pilot version 0.99.7."
+    }
+  
+
+  
+    ,{
+      "title"			: "Released J-Pilot 0.99.7",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/release-0.99.7/",
+      "excerpt"		: "Released J-Pilot version 0.99.7."
+    }
+  
+
+  
+    ,{
+      "title"			: "Wiki page up",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/wiki-up/",
+      "excerpt"		: "Wiki page up"
+    }
+  
+
+  
+    ,{
+      "title"			: "Wiki Up",
+      "link"			: "https://juddmon.github.io/www.jpilot//wiki-up/",
+      "excerpt"		: "Wiki page up"
+    }
+  
+
+  
+    ,{
+      "title"			: "The site is moved to gnu-designs.com",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/site-moved-to-gnu/",
+      "excerpt"		: "The site is moved to gnu-designs.com"
+    }
+  
+
+  
+    ,{
+      "title"			: "Site Moved To Gnu",
+      "link"			: "https://juddmon.github.io/www.jpilot//site-moved-to-gnu/",
+      "excerpt"		: "The site is moved to gnu-designs.com"
+    }
+  
+
+  
+    ,{
+      "title"			: "Site Up",
+      "link"			: "https://juddmon.github.io/www.jpilot//site-up/",
+      "excerpt"		: "This site went up."
+    }
+  
+
+  
+    ,{
+      "title"			: "This site goes live",
+      "link"			: "https://juddmon.github.io/www.jpilot//blog/site-up/",
+      "excerpt"		: "This site went up."
+    }
+  
+
+
+
+  
+
+  
+    ,{
+      "title"			: "Latest News",
+      "link"			: "https://juddmon.github.io/www.jpilot//",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Theme Setup",
+      "link"			: "https://juddmon.github.io/www.jpilot//theme-setup/",
+      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Requirements",
+      "link"			: "https://juddmon.github.io/www.jpilot//requirements/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Plugins",
+      "link"			: "https://juddmon.github.io/www.jpilot//plugins/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Features",
+      "link"			: "https://juddmon.github.io/www.jpilot//features/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "Documentation",
+      "link"			: "https://juddmon.github.io/www.jpilot//documentation/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "Downloads",
+      "link"			: "https://juddmon.github.io/www.jpilot//download/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Screenshots",
+      "link"			: "https://juddmon.github.io/www.jpilot//screenshots/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Useful Links",
+      "link"			: "https://juddmon.github.io/www.jpilot//links/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
+      "title"			: "Mailing List",
+      "link"			: "https://juddmon.github.io/www.jpilot//lists/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+]

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.9">
+ <TITLE>JPilot Handbuch: FAQ</TITLE>
+ <LINK HREF="jpilot-manual-de-15.html" REL=next>
+ <LINK HREF="jpilot-manual-de-13.html" REL=previous>
+ <LINK HREF="jpilot-manual-de.html#toc14" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="jpilot-manual-de-15.html">Next</A>
+<A HREF="jpilot-manual-de-13.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc14">Contents</A>
+<HR>
+<H2><A NAME="s14">14. FAQ</A></H2>
+
+<P>
+<A NAME="faq"></A> <P>Ein   FAQ   ist    eine   Sammlung   von   häufig   gestellten
+Fragen.          ,,<B>F</B>requentlys         <B>A</B>sked
+<B>Q</B>uestions``
+<P>
+<H2><A NAME="ss14.1">14.1 Warum heißt  das Programm ,,JPilot``,  obwohl es nicht  in Java</A>
+geschrieben wurde?</H2>
+
+<P>
+<P><B>Antwort</B>:  Ursprünglich  wurde  das Programm  für  den
+täglichen  Gebrauch  von  Judd  und seiner  Frau  geschrieben.
+Dabei stand das <EM>,,J``</EM>  für Judd oder Jacki, ohne sich
+darüber  allzuviele Gedanken  zu  machen.  Weil  Großzügigkeit
+eine  Tugend  ist,  wurde  JPilot  dann  aber  unter  der  GPL
+veröffentlicht. Da ein besserer  Name zu diesem Zeitpunkt aber
+nicht zur Hand war, blieb es bei ,,JPilot``.
+<P>
+<P>GTKPilot  wäre  wohl passender,  ist  aber  zu umständlich  zu
+tippen.
+<P>
+<P>
+<H2><A NAME="ss14.2">14.2 Warum ist JPilot kostenlos?</A>
+</H2>
+
+<P>
+<P><B>Antwort</B>:       1.        Weil       das       möglich
+ist. 2. Weltherrschaft.
+<P>
+<P>Ziel ist  den Vorherrschaft von  Linux auf Arbeitsplatzrechner
+im  Büro  und  daheim.   JPilot  ist  der  Beitrag,  den  Judd
+Montgomery dazu erbringt.  Je mehr Leute Linux benutzen, desto
+mehr  profitieren  wir  alle  von unterstützter  Hardware  und
+kommerziellen Programmen, die  auf Linux portiert werden.  Und
+je mehr  Linux in Büros verwendet wird,  desto angenehmer wird
+der  Büroalltag.  Wenn  man Autos  zum  Lebensunterhalt fährt,
+führe man  lieber einen Ferrari  oder einen Mercedes  als eine
+Fiat oder Skoda.
+<P>
+<P>
+<H2><A NAME="ss14.3">14.3 Bestehen Pläne für einen KDE- oder GNOME-Port?</A>
+</H2>
+
+<P>
+<P><B>Antwort</B>:  Der Autor selber  benutzt weder  GNOME noch
+KDE. Zur Zeit  ist sich Judd Montgomery nicht  mal sicher, was
+erfoderlich wäre,  eine solche Veränderung  vorzunehmen.  Wenn
+jemand diese Ports schreiben  will, wäre das gern gesehen. Für
+Judd  ist nur  wichtig, daß  weder KDE  noch GNOME  für JPilot
+installiert  sein  müssen.   Er  legt  nämlich  Wert  auf  die
+Feststellung,  daß Linux/Unix  verschiedene  Windowmanager zur
+Verfügung hat.
+<P>
+<H2><A NAME="ss14.4">14.4 Wie kann ich löschen und einfügen (drag and drop)?</A>
+</H2>
+
+<P>
+<P><B>Antwort</B>:
+<P>Löschen: Strg-C
+<P>Einfügen: Strg-V
+<P>
+<P>
+<H2><A NAME="ss14.5">14.5 Der  Backup-  oder  Syncvorgang  bricht mit  der  Fehlermeldung</A>
+,,Weird packet`` ab. Woran liegt das?</H2>
+
+<P>
+<P><B>Antwort</B>:  Dies  ist  ein  bekanntes Problem  mit  der
+seriellen  Schnittstellengeschwindigkeit. Nur  ist  noch nicht
+sicher,  ob das  mit dem  Pilot-Link Paket  zusammenhängt oder
+generell mit  der Implementierung der  seriellen Schnittstelle
+in Linux. Einige PCs haben anscheinend Schwierigkeiten, höhere
+Geschwindigkeiten    über     die    Serielle    zu    fahren.
+<B>Lösung:</B> Stellen Sie die Schnittstellengeschwindigkeit
+auf 9600, dann sollte es wieder gehen.
+<P>
+<H2><A NAME="ss14.6">14.6 Ich  habe ein Plugin  installiert, aber  es erscheint  nicht in</A>
+JPilot. Was tun?</H2>
+
+<P>
+<P><B>Antwort</B>:  Stellen  Sie  als  erstes sicher,  daß  sie
+JPilot neu gestartet haben, denn erst beim Neustart durchsucht
+JPilot                     das                     Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>.
+<P>Wenn Sie die Installationsanweisungen des Plugin-Archivs genau
+befolgt     haben,      sollte     sich     im     Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>  das neue Plugin
+finden.  Wenn dem nicht  so ist, versuchen Sie herauszufinden,
+wohin die Installation  erfolgte.  Gegebenenfalls kopieren Sie
+die  entsprechenden  Dateien   von  Hand  in  das  Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>.
+<P>Wenn die  Dateien richtig abgelegt sind und  JPilot das Plugin
+dennoch   nicht  erkennt,  ist   entweder  das   Plugin  nicht
+kompatibel oder JPilot wurde nicht korrekt installiert.  Siehe
+dazu auch oben den Punkt Plugins.
+<P>
+<H2><A NAME="ss14.7">14.7 JPilot kann nicht auf den PalmPilot zugreifen. Woran kann das liegen?</A>
+</H2>
+
+<P>
+<P>Normalerweise ist dieses  Problem keines.  Denn meist liegt es
+an  den   Einstellungen  und/oder   an  den Rechten    für die
+Device. Überprüfen  Sie     zunächst,  ob  sich     der   Link
+<CODE>/dev/pilot</CODE> findet. Wenn dieser vorhanden ist, checken
+Sie, ob die Rechte richtig gesetzt sind (vgl. oben). Wenn auch
+dies  der     Fall ist,  schauen  Sie   mal   nach  ob  Sie im
+Preferences-Fenster auch den richtigen Link angegeben haben.
+<P>Achten Sie auf jeden Slash (,,/dev/pilot``)!
+<P>
+<HR>
+<A HREF="jpilot-manual-de-15.html">Next</A>
+<A HREF="jpilot-manual-de-13.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc14">Contents</A>
+</BODY>
+</HTML>

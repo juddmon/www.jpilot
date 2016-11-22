@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.9">
+ <TITLE>J-Pilot User Manual : Misc Tips</TITLE>
+ <LINK HREF="jpilot-manual-en-13.html" REL=next>
+ <LINK HREF="jpilot-manual-en-11.html" REL=previous>
+ <LINK HREF="jpilot-manual-en.html#toc12" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="jpilot-manual-en-13.html">Next</A>
+<A HREF="jpilot-manual-en-11.html">Previous</A>
+<A HREF="jpilot-manual-en.html#toc12">Contents</A>
+<HR>
+<H2><A NAME="s12">12. Misc Tips</A></H2>
+
+<P>
+<P>
+<H2><A NAME="ss12.1">12.1 Restoring a Palm Pilot </A>
+</H2>
+
+<P>
+<P>This is not part of J-Pilot. 
+<P>J-Pilot stores its  files in $HOME/.jpilot/. To restore
+a palm pilot that has lost its data you can use the pilot-xfer
+program  that comes with  pilot-link.  The  easiest way  to do
+this  is  to  put  every  file that  you  want  installed  (or
+restored) back  on the palm  pilot in one directory.  For this
+example,  a  directory called  backup.  Then  you can  execute
+<PRE>
+pilot-xfer -r backup
+</PRE>
+<P><B>Do not</B>  install applications that are  already in ROM
+on the palm pilot, such as the Address.prc, etc.
+<P><B>Do not</B>  try to use j-pilot  to sync data  back into a
+reset  palm pilot. It  will overwrite  the data  on thedesktop
+with the  empty palm pilot files.  This may change  in a later
+release.
+<P>
+<H2><A NAME="ss12.2">12.2 Use of the HOME environment variable</A>
+</H2>
+
+<P>
+<P>Normally,  you can just  leave HOME  alone.  J-Pilot  uses the
+HOME environment  variable to make  it easy to  allow multiple
+pilots to be synced under the  same user. Just set HOME to the
+directory you want J-Pilot to use.
+<P>For example,  I have 2 palm pilots.  I can sync the  one I use
+all the time  into /home/judd.  The other one  I can sync into
+/home/judd/palm2 by using this script:
+<P>
+<PRE>
+        #! /bin/bash
+        HOME=/home/judd/palm2 
+        jpilot 
+        
+</PRE>
+<P>This  is  also  handy   for  syncing  xcopilot  into  its  own
+directory.
+<P>
+<H2><A NAME="ss12.3">12.3 Oops, Reverting</A>
+</H2>
+
+<P>
+<P>You can always make the databases revert back to the last time
+that the  pilot was  synced.  All youhave  to do  is &quot;rm
+~/.jpilot/*.pc&quot;.  Deleted  records will come back,
+modified records will be un-modified, etc.
+<P>Nothing is permanent until the sync/backup. You can do this if
+you make  a mistake, or just  to play around  with J-Pilot and
+then  delete the  changed  records without  syncing them.  For
+example if  you want  to restore the  addresses to  their last
+sync state you can remove~/.jpilot/AddressDB.pc.
+<P>Also,  from  the preferences  menu,  you  can  choose to  show
+deleted records  and then click  on thedeleted record  and use
+&quot;Add&quot; to get a copy of it back.
+<P>
+<H2><A NAME="ss12.4">12.4 Feedback/Contributions</A>
+</H2>
+
+<P>
+<P>I always like  to here feedback from users.  Sometimes I get a
+little busy with  email and my payingjob, but  I should always
+respond.
+<P>If you want to contribute some  code just email me and tell me
+what you want to do, or  have alreadydone, etc. I may like it,
+and I may not. You are always free to do what you want to with
+the source code.
+<P>If  you really  want to  give me  something for  my  effort in
+putting  together  this program.  You  can  send  me a  little
+donation. I collect coins from anywhere, anytime also.
+<P>
+<PRE>
+        Judd Montgomery 
+        P.O. Box 665 
+        Sunbury, OH 43074 
+        
+</PRE>
+<P>
+<HR>
+<A HREF="jpilot-manual-en-13.html">Next</A>
+<A HREF="jpilot-manual-en-11.html">Previous</A>
+<A HREF="jpilot-manual-en.html#toc12">Contents</A>
+</BODY>
+</HTML>

@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.9">
+ <TITLE>JPilot Handbuch: Sonstiges</TITLE>
+ <LINK HREF="jpilot-manual-de-13.html" REL=next>
+ <LINK HREF="jpilot-manual-de-11.html" REL=previous>
+ <LINK HREF="jpilot-manual-de.html#toc12" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="jpilot-manual-de-13.html">Next</A>
+<A HREF="jpilot-manual-de-11.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc12">Contents</A>
+<HR>
+<H2><A NAME="s12">12. Sonstiges</A></H2>
+
+<P>
+<P>
+<H2><A NAME="ss12.1">12.1 Datenbanken auf dem PalmPilot wiederherstellen</A>
+</H2>
+
+<P>
+<P>Diese Funktion ist nicht Teil von JPilot.
+<P> JPilot legt seine
+Dateien  im Verzeichnis  <CODE>$HOME/.jpilot/</CODE>  ab.  Um  nun
+einen PalmPilot,  der (alle/einige) Datenbanken  verloren hat,
+wieder  mit diesen zu  versorgen, benutzen  Sie am  besten das
+Programm      <EM>pilot-xfer</EM>,      das      Teil      der
+<EM>PilotLink</EM>-Suite ist.
+<P>
+<P>Der einfachste Weg, eine solche Wiederherstellung vorzunehmen,
+ist der  fogende: 1.  Kopieren  Sie alle Datenbanken,  die Sie
+wiederherstellen wollen,  in ein extra  angelegtes Verzeichnis
+(Bsp.:  <CODE>~/backup/</CODE>).    Anschließend  führen  Sie  den
+Befehl 
+<PRE>
+pilot-xfer -r ~/backup
+</PRE>
+ aus.  
+<P>
+<P><B>ACHTUNG</B>: Versuchen Sie  nie Dateien auf den PalmPilot
+zu  installieren,  die  sich  bereits  im  ROM  des  PalmPilot
+befinden.    Beispiel   hierfür   wäre   die   Anwendungsdatei
+<EM>,,Address.prc``</EM>.
+<P>
+<P><B>ACHTUNG</B>: Benutzen  Sie JPilot nicht,  um Daten zurück
+auf einen PalmPilot zurückzuspielen,  mit dem vorher ein Reset
+durchgeführt  wurde!  Das  würde dazu  führen, daß  die vollen
+Datenbanken  auf  der  Festplatte   mit  den  leeren  aus  dem
+PalmPilot überschrieben würden.  Dies wird aber möglicherweise
+in einer späteren Version von JPilot geändert.
+<P>
+<P>
+<H2><A NAME="ss12.2">12.2 Benutzung der ,,Home`` Umgebungsvariable</A>
+</H2>
+
+<P>
+<P>Unter normalen, für fast alle Benutzer zutreffenden Umständen,
+muß  man  sich   über  die  Benutzung  der  Umgebungsvariablen
+<EM>Home</EM> keine Gedanken zu machen.
+<P>
+<P>JPilot  nutzt allerdings  diese Umgebungsvariable,  um  es auf
+relativ einfache Art und Weise möglich zu machen, als Benutzer
+mehrere PalmPilots zu synchornisieren. Dazu setzen Sie einfach
+die Variable <EM>Home</EM> auf den Wert, dessen Verzeichnis zu
+nutzen gedenken.
+<P>
+<P>Ein  Beispiel: Der Autor  des JPilot,  Judd Montgomery,  hat 2
+PalmPilots.  Er synchronisiert  den einen,  den er  ständig in
+Benutzung  hat, in  des Verzeichnis  <CODE>/home/judd</CODE>.  Den
+anderen     synchornisiert    er     in     das    Verzeichnis
+<CODE>/home/judd/palm2</CODE>  und   benutzt  dazu  das  folgenden
+Skript:
+<P>
+<PRE>
+        #!/bin/bash
+        HOME=/home/judd/palm2
+        jpilot
+        
+</PRE>
+<P>Dieses     Vorgehen    ist    ebenfalls     praktikabel,    um
+<EM>xcopilot</EM> in ein eigenes Verzeichnis zu sichern.
+<P>
+<H2><A NAME="ss12.3">12.3 Hoppla, Zurücksetzen ...</A>
+</H2>
+
+<P>
+<P>Sie  können <EM>jederzeit</EM> die  Datenbank (die  Daten, die
+aus dem PalmPilot auf  der Festplatte gesichert wurden) zurück
+auf  den Stand  versetzen,  die sie  vor dem  <EM>letzten</EM>
+Hotsync Vorgang  gehabt hat.  Dazu  müssen Sie nur  den Befehl
+<PRE>
+rm   ~/.jpilot/*.pc
+</PRE>
+   ausführen.   Damit   werden
+Dateien, die auf ,,Löschen``  gesetzt sind, wieder als normale
+Dateien   gesetzt,    veränderte   Einträge   erhalten   ihren
+ursprüngliche Zustand zurück.
+<P>
+<P>Der  Grund dafür ist,  daß keine  Veränderung der  Daten durch
+JPilot  endgültig   ist,  solange  noch   kein  HotSync/Backup
+durchgeführt  wurde.  Erst dann  werden die  veränderten Daten
+auf den PalmPilot übertragen und damit dauerhauf und endgültig
+verändert.
+<P>
+<P>Auf  diese Weise können  Sie mit  den Daten  herumspielen, sie
+verändern  löschen etc.  Wenn Sie  den  ursprünglichen Zustand
+wieder   herstellen   wollen,    löschen   Sie   einfach   die
+entsprechende Datei.
+<P>
+<P>Beispiel:  Sie  habe   Adressen  verändert  und  wollen  diese
+Änderungen rückgängig  machen?  Ganz einfach,  löschen Sie die
+Datei   <CODE>~/.jpilot/AddressDB.pc</CODE>  ,  bevor   Sie  einen
+HotSync durchführen.   Dadurch werden die  Adressen erneut von
+PalmPilot  heruntergeladen  und Sie  haben  den alten  Zustand
+wieder.
+<P>
+<P>Eine andere  Variante, gelöschte Einträge  zurück zu bekommen:
+Stellen  Sie anhand  des Einstellungen-Fensters  ein,  daß die
+gelöschten  Einträge angezeigt werden  sollen (,,Preferences``
+--  ,,show  deleted  records``),  wählen  Sie  den  gelöschten
+Eintrag an und benutzen  Sie die Schaltfläche <EM>add</EM>, um
+eine Kopie des Eintrages zu erhalten.
+<P>
+<P>
+<H2><A NAME="ss12.4">12.4 Feedback/Unterstützung</A>
+</H2>
+
+<P>
+<P>Es  ist  immer erwünscht,  Rückmeldungen  von  den Nutzern  zu
+bekommen.  Manchmal  kann die Antwort  ein paar Tage  auf sich
+warten  lassen,  wenn  viele   Mails  ankommen  oder  der  Job
+stört. Aber jede Mail wird beantwortet.
+<P>
+<P>Wenn Sie Sourcecode besteuern wollen senden Sie diesen einfach
+per EMail.  Möglicherweise wird  er übernommen. Für  den Fall,
+daß Sie eine  Idee haben, was zu machen  wäre, können Sie auch
+gerne nachfragen, ob dies schon  in Arbeit ist. Auf jeden Fall
+können Sie mit dem Sourcecode machen, was sie wollen.
+<P>
+<P>Wirkliche   Zuwendung   sind   ebenfalls   erwünscht.   Kleiner   Tip:
+Judd sammelt Münzen, nimmt aber auch Bargeld. ;-)
+<P>
+<P>
+<PRE>
+        Judd Montgomery
+        P.O.Box 665
+        Sunbury, OH 43074
+        USA
+        
+</PRE>
+<P>
+<HR>
+<A HREF="jpilot-manual-de-13.html">Next</A>
+<A HREF="jpilot-manual-de-11.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc12">Contents</A>
+</BODY>
+</HTML>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.9">
+ <TITLE>J-Pilot User Manual : Plugins - New! Version 0.98 -</TITLE>
+ <LINK HREF="jpilot-manual-en-14.html" REL=next>
+ <LINK HREF="jpilot-manual-en-12.html" REL=previous>
+ <LINK HREF="jpilot-manual-en.html#toc13" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="jpilot-manual-en-14.html">Next</A>
+<A HREF="jpilot-manual-en-12.html">Previous</A>
+<A HREF="jpilot-manual-en.html#toc13">Contents</A>
+<HR>
+<H2><A NAME="s13">13. Plugins - New! Version 0.98 -</A></H2>
+
+<P>
+<P>
+<H2><A NAME="ss13.1">13.1 What are Plugins?</A>
+</H2>
+
+<P>
+<P>A plugin is code that  can extend the functionality of j-pilot
+without adding any code to  j-pilot, or recompiling it.  It is
+basically  just  a shared  library  that contains  pre-defined
+callback functions.
+<P>A callback function is a  function that is not called from the
+application  itself,  but  from  an  external  program.;  When
+J-Pilot starts up it will  scan the plugin directories for any
+shared       libraries       (<CODE>~/.jpilot/plugins/       and
+$BASE_DIR/share/jpilot/plugins)</CODE>.&nbsp;  When  it finds  a
+shared library  it will find callback functions  inside of the
+library and call  them when needed.&nbsp; So, a  plugin can be
+an integral part of the  overall program just by its existence
+and  when taken  away the  main  program will  still run  only
+missing the functionality that the plugin provided.
+<P>
+<H2><A NAME="ss13.2">13.2 Available plugins</A>
+</H2>
+
+<P>
+<P>To  find  available  plugins  check  my plugin  page  at  
+<A HREF="http://jpilot.linuxbox.com/plugins.html">jpilot.linuxbox.com/plugins.html</A> where I keep a list.
+<P>
+<H2><A NAME="ss13.3">13.3 Creating plugins</A>
+</H2>
+
+<P>
+<P>If  you  plan  on  writing  a  plugin,  check  my  pages  
+<A HREF="http://jpilot.linuxbox.com/plugin.html">http://jpilot.linuxbox.com/plugin.html</A>     for    more
+information. I have gathered infos  on how to write and how to
+implement. Good luck, users will be thankfull.
+<P>If you do  create a plugin I would appreciate  it if you would
+give me a link to the site so that I can put it on my website.
+This  will  encourage more  people  to  use  J-Pilot and  your
+plugin. Even  if you are  working on a  plugin you can  let me
+know and  I will put  it down as  in progress so  that someone
+doesn't   duplicate   your   effort.    My   email   is   
+<A HREF="mailto:judd@engineer.com">judd@engineer.com</A>. 
+<P>
+<H2><A NAME="ss13.4">13.4 Installing Plugins</A>
+</H2>
+
+<P>
+<P>To  be able to  use a  plugin it  has to  be in  the directory
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>              with
+<CODE>$BASEDIR</CODE>   being   <CODE>/usr/local</CODE>   under
+normal  circumstances. If  located there  JPilot will  find it
+checking  the directory  on the  next startup  and  provide an
+entry in the JPilot menu. 
+<P>If you are having problems  installing a plugin check the 
+<A HREF="jpilot-manual-en-14.html#faq">FAQ</A> for further information. 
+<P>To find out how to compile a given plugin check the archiv you
+downloaded  for  the INSTALL  File.  Normally the  compilation
+should work using the standard commands:
+<PRE>
+        ./configure
+        make
+        make install
+        
+</PRE>
+
+Having done that the new plugin should reside in the directory
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>. 
+<P>With that  you have done  everything necessary to  install the
+plugin. After  the next  startup of JPilot  you should  be the
+proud owner of a shiny and fresh new plugin. 
+<P>
+<H2><A NAME="ss13.5">13.5 System wide or user installation</A>
+</H2>
+
+<P>
+<P>You  can install  a  plugin system  wide  using the  procedure
+explained        above        into        the        directory
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>.  Doing that all
+the users  of the system can  make use of  the newly installed
+plugin. But - you will need to be <CODE>root</CODE> to do so. 
+<P>If you want to install the  plugin for just one user - because
+of a  reason what so  ever - you  can do so by  installing the
+plugin      files     (,,.so``)      to      the     directory
+<CODE>$HOME/.jpilot/plugins</CODE>. That  way only the user
+can use the plugin that it was installed in.
+<P>
+<HR>
+<A HREF="jpilot-manual-en-14.html">Next</A>
+<A HREF="jpilot-manual-en-12.html">Previous</A>
+<A HREF="jpilot-manual-en.html#toc13">Contents</A>
+</BODY>
+</HTML>

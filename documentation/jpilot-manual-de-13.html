@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="SGML-Tools 1.0.9">
+ <TITLE>JPilot Handbuch: Plugins - Neu! Version 0.98 -</TITLE>
+ <LINK HREF="jpilot-manual-de-14.html" REL=next>
+ <LINK HREF="jpilot-manual-de-12.html" REL=previous>
+ <LINK HREF="jpilot-manual-de.html#toc13" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="jpilot-manual-de-14.html">Next</A>
+<A HREF="jpilot-manual-de-12.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc13">Contents</A>
+<HR>
+<H2><A NAME="s13">13. Plugins - Neu! Version 0.98 -</A></H2>
+
+<P>
+<P>
+<H2><A NAME="ss13.1">13.1 Was sind Plugins?</A>
+</H2>
+
+<P>
+<P>Plugins (engl.   to plug  in) sind Erweiterung  zu Programmen,
+die   deren   Funktionalität    erweitern,   ohne   dass   das
+zugrundeliegende Programm  selber verändert oder  auch nur neu
+compiliert werden muß. Es  handelt sich eigentlich nur um sog.
+shared   libraries,  die   Funktionen   beinhalten,  die   auf
+besonderen  Aufruf  hin   bestimmte  Aufgaben  erfüllen.   Sie
+erkennen solche shared libraries an der Dateiendung ,,.so``.
+<P>Beim Start von JPilot  durchsucht das Programm das Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>.   Wenn dort ein
+Plugin  liegt,  so  wird  dieses nach  den  bereits  benannten
+Rückruffunktionen  durchsucht.  Sodann  steht  es  JPilot  zur
+Verfügung.
+<P>Auf diese  Weise kann  der Funktionsumfang eines  Programmes -
+hier  JPilot  -  erweitert   werden,  ohne  JPilot  selber  zu
+verändern.   Gleichzeitig   ermöglicht   man   Dritten,   neue
+Erweiterungen zu schreiben und diese selbständig zu verteilen.
+Nach  dem gleichen  Konzept wurden  schon The  Gimp  und Emacs
+erweitert.
+<P>
+<H2><A NAME="ss13.2">13.2 Verfügbare Plugins</A>
+</H2>
+
+<P>
+<P>Judd Montgomery selber pflegt eine aktuelle Liste der zur Zeit
+erhältlichen           Plugins.            Unter          
+<A HREF="http://jpilot.linuxbox.com/plugins.html">jpilot.linuxbox.com/plugins.html</A> ist  diese im Netz zu
+erreichen. 
+<P>
+<H2><A NAME="ss13.3">13.3 Schreiben Sie Plugins!</A>
+</H2>
+
+<P>
+<P>Wenn  Sie  selber  ein  Plugin schreiben  wollen,  können  Sie
+Informationen über das Vorgehen  und die Anforderungen auf den
+Seiten  von  Judd  Montgomery  finden.   Auf  der  Seite  
+<A HREF="http://jpilot.linuxbox.com/plugin.html">http://jpilot.linuxbox.com/plugin.html</A>   hat  er  eine
+Anleitung zusammengestellt.  Viel Erfolg, die  Benutzer werden
+es Ihnen danken. 
+<P>Wenn Sie  ein Plugin schreiben,  wäre es prima, wenn  Sie Judd
+Montgomery  kurz  Bescheid geben  würden,  damit dieser  einen
+Eintrag auf seiner Website vornehmen kann. Damit wird auch die
+Verbreitung Ihres  Plugins erleichtert. Auch wenn  noch in der
+Entwicklung sollte  das Plugin angemeldet  werden, damit nicht
+zwei Leute  die gleiche  Arbeit machen.  Außerdem  hoffen wir,
+auf  diese  Weise mehr  Leute  zum  Schreiben  von Plugins  zu
+ermuntern.         Schreiben         Sie        an        
+<A HREF="mailto:judd@engineer.com">judd@engineer.com</A>.
+<P>
+<H2><A NAME="ss13.4">13.4 Installation von Plugins</A>
+</H2>
+
+<P>
+<P>Damit  JPilot auf ein  vorhandenes Plugin  zurückgreifen kann,
+muß         dieses          in         dem         Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>  vorhanden sein.
+Dabei   entspricht   <CODE>$BASEDIR/</CODE>   normalerweise
+<CODE>/usr/local</CODE>. Wenn  das Plugin dort  abgelegt ist, wird
+JPilot  dieses   dort  beim  nächsten   Programmstart  finden,
+erkennen  und dann  in  der Menuleiste  einbinden  und so  die
+Funktion des Plugins zur Verfügung stellen.
+<P>Bei Problemen  mit der Installation sei auf  das 
+<A HREF="jpilot-manual-de-14.html#faq">FAQ</A> verwiesen.
+<P>Wie  das jeweilige  Plugin zu  erstellen  (sprich compilieren)
+ist,  entnehmen  Sie  am  besten  dem INSTALL  File,  das  dem
+entsprechenden  Archiv beiliegt.   Im  Normalfalle sollte  die
+Compilierung mit dem üblichen
+<P>
+<PRE>
+        ./configure 
+        make 
+        make install
+        
+</PRE>
+
+erfolgen.    Anschließend  sollte   sich   das  Ergebnis   der
+Installation    (das    fertige    Plugin)   im    Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE> befinden.
+<P>Damit  habe Sie  eigentlich  schon alles  getan,  um das  neue
+Plugin zu  installieren.  Beim nächten Start  von JPilot steht
+Ihnen ein funkelnagelneues Plugin zur Verfügung. 
+<P>
+<H2><A NAME="ss13.5">13.5 Systemweite oder Userinstallation</A>
+</H2>
+
+<P>
+<P>Sie haben  die Möglichkeit,  ein Plugin für  JPilot systemweit
+oder nur für einen User zu installieren.  Das oben beschrieben
+Vorgehen  der  Installation  von  JPilot  in  das  Verzeichnis
+<CODE>$BASEDIR/share/jpilot/plugins</CODE>  installiert das
+Plugin systemweit.  D.h. alle Benutzer des  Systems können das
+Plugin   benutzen  und   damit  arbeiten.   Voraussetzung  ist
+allerdings, daß  sie die Rechte haben,  auf dieses Verzeichnis
+zuzugreifen.   Im   Normalfalle    brauchen   Sie   dazu   die
+Verwalterrechte, d.h. sie müssen <CODE>root</CODE> sein.
+<P>Wenn  Sie das  Plugin aber  nur für  sich  selber installieren
+wollen  - sei  es,  daß Ihnen  danach  ist oder  daß sie  kein
+<CODE>root</CODE>  sind  -  können  Sie die  Dateien  des  Plugins
+(,,.so``)        auch         in        dem        Verzeichnis
+<CODE>$HOME/.jpilot/plugins</CODE>  ablegen. Dann  kann nur
+der Benutzer,  in dessen Homeverzeichnis  die Dateien abgelegt
+wurden, damit arbeiten.
+<P>
+<HR>
+<A HREF="jpilot-manual-de-14.html">Next</A>
+<A HREF="jpilot-manual-de-12.html">Previous</A>
+<A HREF="jpilot-manual-de.html#toc13">Contents</A>
+</BODY>
+</HTML>
