@@ -3,7 +3,7 @@
   
     {
       "title"			: "Responsive website redesign",
-      "link"			: "https://www.jpilot.org/blog/redesign-2/",
+      "link"			: "http://www.jpilot.org/blog/redesign-2/",
       "excerpt"		: "Responsive website redesign"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "Redesign 2",
-      "link"			: "https://www.jpilot.org/redesign-2/",
+      "link"			: "http://www.jpilot.org/redesign-2/",
       "excerpt"		: "Responsive website redesign"
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Released J-Pilot 1.8.2",
-      "link"			: "https://www.jpilot.org/blog/release-1.8.2/",
+      "link"			: "http://www.jpilot.org/blog/release-1.8.2/",
       "excerpt"		: "Released J-Pilot version 1.8.2."
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "Release 1.8.2",
-      "link"			: "https://www.jpilot.org/release-1.8.2/",
+      "link"			: "http://www.jpilot.org/release-1.8.2/",
       "excerpt"		: "Released J-Pilot version 1.8.2."
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "Released J-Pilot 1.8.1",
-      "link"			: "https://www.jpilot.org/blog/release-1.8.1/",
+      "link"			: "http://www.jpilot.org/blog/release-1.8.1/",
       "excerpt"		: "Released J-Pilot version 1.8.1."
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "Release 1.8.1",
-      "link"			: "https://www.jpilot.org/release-1.8.1/",
+      "link"			: "http://www.jpilot.org/release-1.8.1/",
       "excerpt"		: "Released J-Pilot version 1.8.1."
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "Bought A Nexus",
-      "link"			: "https://www.jpilot.org/Bought-a-nexus/",
+      "link"			: "http://www.jpilot.org/Bought-a-nexus/",
       "excerpt"		: "My First Android Device"
     }
   
@@ -59,7 +59,7 @@
   
     ,{
       "title"			: "I bought a Nexus One",
-      "link"			: "https://www.jpilot.org/blog/Bought-a-nexus/",
+      "link"			: "http://www.jpilot.org/blog/Bought-a-nexus/",
       "excerpt"		: "My First Android Device"
     }
   
@@ -67,7 +67,7 @@
   
     ,{
       "title"			: "Released J-Pilot 1.8.0",
-      "link"			: "https://www.jpilot.org/blog/release-1.8.0/",
+      "link"			: "http://www.jpilot.org/blog/release-1.8.0/",
       "excerpt"		: "Released J-Pilot version 1.8.0."
     }
   
@@ -75,7 +75,7 @@
   
     ,{
       "title"			: "Release 1.8.0",
-      "link"			: "https://www.jpilot.org/release-1.8.0/",
+      "link"			: "http://www.jpilot.org/release-1.8.0/",
       "excerpt"		: "Released J-Pilot version 1.8.0."
     }
   
@@ -83,7 +83,7 @@
   
     ,{
       "title"			: "Released J-Pilot 1.6.2",
-      "link"			: "https://www.jpilot.org/blog/release-1.6.2/",
+      "link"			: "http://www.jpilot.org/blog/release-1.6.2/",
       "excerpt"		: "Released J-Pilot version 1.6.2."
     }
   
@@ -91,7 +91,7 @@
   
     ,{
       "title"			: "Release 1.6.2",
-      "link"			: "https://www.jpilot.org/release-1.6.2/",
+      "link"			: "http://www.jpilot.org/release-1.6.2/",
       "excerpt"		: "Released J-Pilot version 1.6.2."
     }
   
@@ -99,7 +99,7 @@
   
     ,{
       "title"			: "Released J-Pilot 1.6.1",
-      "link"			: "https://www.jpilot.org/blog/release-1.6.1/",
+      "link"			: "http://www.jpilot.org/blog/release-1.6.1/",
       "excerpt"		: "Released J-Pilot version 1.6.1."
     }
   
@@ -107,7 +107,7 @@
   
     ,{
       "title"			: "Release 1.6.1",
-      "link"			: "https://www.jpilot.org/release-1.6.1/",
+      "link"			: "http://www.jpilot.org/release-1.6.1/",
       "excerpt"		: "Released J-Pilot version 1.6.1."
     }
   
@@ -115,7 +115,7 @@
   
     ,{
       "title"			: "Released J-Pilot 1.6.0",
-      "link"			: "https://www.jpilot.org/blog/release-1.6.0/",
+      "link"			: "http://www.jpilot.org/blog/release-1.6.0/",
       "excerpt"		: "Released J-Pilot version 1.6.0."
     }
   
@@ -123,7 +123,7 @@
   
     ,{
       "title"			: "Release 1.6.0",
-      "link"			: "https://www.jpilot.org/release-1.6.0/",
+      "link"			: "http://www.jpilot.org/release-1.6.0/",
       "excerpt"		: "Released J-Pilot version 1.6.0."
     }
   
@@ -131,7 +131,7 @@
   
     ,{
       "title"			: "Released J-Pilot 0.99.9",
-      "link"			: "https://www.jpilot.org/blog/release-0.99.0/",
+      "link"			: "http://www.jpilot.org/blog/release-0.99.0/",
       "excerpt"		: "Released J-Pilot version 0.99.9."
     }
   
@@ -139,7 +139,7 @@
   
     ,{
       "title"			: "Release 0.99.0",
-      "link"			: "https://www.jpilot.org/release-0.99.0/",
+      "link"			: "http://www.jpilot.org/release-0.99.0/",
       "excerpt"		: "Released J-Pilot version 0.99.9."
     }
   
@@ -147,7 +147,7 @@
   
     ,{
       "title"			: "Website redesign",
-      "link"			: "https://www.jpilot.org/blog/redesign-1/",
+      "link"			: "http://www.jpilot.org/blog/redesign-1/",
       "excerpt"		: "Website redesign"
     }
   
@@ -155,7 +155,7 @@
   
     ,{
       "title"			: "Redesign 1",
-      "link"			: "https://www.jpilot.org/redesign-1/",
+      "link"			: "http://www.jpilot.org/redesign-1/",
       "excerpt"		: "Website redesign"
     }
   
@@ -163,7 +163,7 @@
   
     ,{
       "title"			: "Released J-Pilot 0.99.8pre11",
-      "link"			: "https://www.jpilot.org/blog/release-0.99.8pre11/",
+      "link"			: "http://www.jpilot.org/blog/release-0.99.8pre11/",
       "excerpt"		: "Released J-Pilot version 0.99.8-pre11."
     }
   
@@ -171,7 +171,7 @@
   
     ,{
       "title"			: "Release 0.99.8pre11",
-      "link"			: "https://www.jpilot.org/release-0.99.8pre11/",
+      "link"			: "http://www.jpilot.org/release-0.99.8pre11/",
       "excerpt"		: "Released J-Pilot version 0.99.8-pre11."
     }
   
@@ -179,7 +179,7 @@
   
     ,{
       "title"			: "Release 0.99.7",
-      "link"			: "https://www.jpilot.org/release-0.99.7/",
+      "link"			: "http://www.jpilot.org/release-0.99.7/",
       "excerpt"		: "Released J-Pilot version 0.99.7."
     }
   
@@ -187,7 +187,7 @@
   
     ,{
       "title"			: "Released J-Pilot 0.99.7",
-      "link"			: "https://www.jpilot.org/blog/release-0.99.7/",
+      "link"			: "http://www.jpilot.org/blog/release-0.99.7/",
       "excerpt"		: "Released J-Pilot version 0.99.7."
     }
   
@@ -195,7 +195,7 @@
   
     ,{
       "title"			: "Wiki page up",
-      "link"			: "https://www.jpilot.org/blog/wiki-up/",
+      "link"			: "http://www.jpilot.org/blog/wiki-up/",
       "excerpt"		: "Wiki page up"
     }
   
@@ -203,7 +203,7 @@
   
     ,{
       "title"			: "Wiki Up",
-      "link"			: "https://www.jpilot.org/wiki-up/",
+      "link"			: "http://www.jpilot.org/wiki-up/",
       "excerpt"		: "Wiki page up"
     }
   
@@ -211,7 +211,7 @@
   
     ,{
       "title"			: "The site is moved to gnu-designs.com",
-      "link"			: "https://www.jpilot.org/blog/site-moved-to-gnu/",
+      "link"			: "http://www.jpilot.org/blog/site-moved-to-gnu/",
       "excerpt"		: "The site is moved to gnu-designs.com"
     }
   
@@ -219,7 +219,7 @@
   
     ,{
       "title"			: "Site Moved To Gnu",
-      "link"			: "https://www.jpilot.org/site-moved-to-gnu/",
+      "link"			: "http://www.jpilot.org/site-moved-to-gnu/",
       "excerpt"		: "The site is moved to gnu-designs.com"
     }
   
@@ -227,7 +227,7 @@
   
     ,{
       "title"			: "Site Up",
-      "link"			: "https://www.jpilot.org/site-up/",
+      "link"			: "http://www.jpilot.org/site-up/",
       "excerpt"		: "This site went up."
     }
   
@@ -235,7 +235,7 @@
   
     ,{
       "title"			: "This site goes live",
-      "link"			: "https://www.jpilot.org/blog/site-up/",
+      "link"			: "http://www.jpilot.org/blog/site-up/",
       "excerpt"		: "This site went up."
     }
   
@@ -247,7 +247,7 @@
   
     ,{
       "title"			: "Latest News",
-      "link"			: "https://www.jpilot.org/",
+      "link"			: "http://www.jpilot.org/",
       "excerpt"		: ""
     }
   
@@ -255,7 +255,7 @@
   
     ,{
       "title"			: "Theme Setup",
-      "link"			: "https://www.jpilot.org/theme-setup/",
+      "link"			: "http://www.jpilot.org/theme-setup/",
       "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
     }
   
@@ -267,7 +267,7 @@
   
     ,{
       "title"			: "Requirements",
-      "link"			: "https://www.jpilot.org/requirements/",
+      "link"			: "http://www.jpilot.org/requirements/",
       "excerpt"		: ""
     }
   
@@ -275,7 +275,7 @@
   
     ,{
       "title"			: "Plugins",
-      "link"			: "https://www.jpilot.org/plugins/",
+      "link"			: "http://www.jpilot.org/plugins/",
       "excerpt"		: ""
     }
   
@@ -283,7 +283,7 @@
   
     ,{
       "title"			: "Features",
-      "link"			: "https://www.jpilot.org/features/",
+      "link"			: "http://www.jpilot.org/features/",
       "excerpt"		: ""
     }
   
@@ -293,7 +293,7 @@
   
     ,{
       "title"			: "Documentation",
-      "link"			: "https://www.jpilot.org/documentation/",
+      "link"			: "http://www.jpilot.org/documentation/",
       "excerpt"		: ""
     }
   
@@ -303,7 +303,7 @@
   
     ,{
       "title"			: "Downloads",
-      "link"			: "https://www.jpilot.org/download/",
+      "link"			: "http://www.jpilot.org/download/",
       "excerpt"		: ""
     }
   
@@ -311,7 +311,7 @@
   
     ,{
       "title"			: "Screenshots",
-      "link"			: "https://www.jpilot.org/screenshots/",
+      "link"			: "http://www.jpilot.org/screenshots/",
       "excerpt"		: ""
     }
   
@@ -319,7 +319,7 @@
   
     ,{
       "title"			: "Useful Links",
-      "link"			: "https://www.jpilot.org/links/",
+      "link"			: "http://www.jpilot.org/links/",
       "excerpt"		: ""
     }
   
@@ -327,7 +327,7 @@
   
     ,{
       "title"			: "Mailing List",
-      "link"			: "https://www.jpilot.org/lists/",
+      "link"			: "http://www.jpilot.org/lists/",
       "excerpt"		: ""
     }
   
