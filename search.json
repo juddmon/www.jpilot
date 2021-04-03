@@ -310,6 +310,14 @@
 
   
     ,{
+      "title"			: "Ubuntu-20.04",
+      "link"			: "http://www.jpilot.org/ubuntu-20.04/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Screenshots",
       "link"			: "http://www.jpilot.org/screenshots/",
       "excerpt"		: ""
