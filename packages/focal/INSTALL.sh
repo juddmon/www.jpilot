@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Enter 1) Install jpilot 1.8.2"
-echo "Enter 2) Install jpilot 2.0.1"
+echo "Enter 2) Install jpilot 2.0.2"
 read ANS
 #
 sudo apt install libusb-0.1-4
@@ -11,7 +11,7 @@ case $ANS in
     sudo dpkg -i ./jpilot_1.8.2-2_amd64.deb ./jpilot-plugins_1.8.2-2_amd64.deb
     ;;
   "2")
-    sudo dpkg -i ./jpilot_2.0.1-1_amd64.deb ./jpilot-plugins_2.0.1-1_amd64.deb
+    sudo dpkg -i ./jpilot_2.0.2-1_amd64.deb ./jpilot-plugins_2.0.2-1_amd64.deb
     ;;
   *)
   echo "$ANS: Unknown option."
