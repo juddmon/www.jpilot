@@ -1,0 +1,158 @@
+<!--
+title: Download
+nav: Download
+description: Download J-Pilot 2.1.0 for Debian and Ubuntu from the apt repository, get the source from GitHub, or build it yourself. Includes build requirements and older packages.
+-->
+<div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Get it</p>
+    <h1>Download J-Pilot {{version}}</h1>
+    <p class="lede">Released {{released}}. Install from the apt repository on Debian and Ubuntu, or build it from source anywhere else.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Debian and Ubuntu</h2>
+      <p>There is an apt repository on packagecloud covering Ubuntu 22.04, 24.04, and 26.04, and the matching Linux Mint releases. The first command adds the repository and its signing key; after that J-Pilot updates with everything else on the system.</p>
+    </div>
+    <div class="dl">
+      <div>
+        <div class="callout">
+          <b>Heads up:</b> {{version}} needs <b>pilot-link&nbsp;{{pilot_link}}</b> or newer, because of a change to the Contact blob API. Building needs <b>libpisock-dev&nbsp;&ge;&nbsp;{{pilot_link}}</b>; running it needs <b>libpisock9</b>.
+        </div>
+        <p style="margin:0;color:var(--muted);font-size:14.5px">
+          Ubuntu 20.04 is still in the repository, but {{version}} has not been backported to it &mdash;
+          <a href="/lists/">ask on the mailing list</a> if you need it.
+          Browse the repository at <a href="{{packagecloud}}">packagecloud.io/judd/jpilot</a>.
+        </p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># Add the apt repository</span>
+curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
+
+<span class="cm"># Install J-Pilot and the bundled plugins</span>
+sudo apt install jpilot jpilot-plugins</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="source">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Source</h2>
+      <p>The source lives on GitHub. Release tarballs and their signatures are attached to the GitHub releases.</p>
+    </div>
+    <div class="dl">
+      <div class="prose">
+        <p>
+          <a href="{{github}}">github.com/juddmon/jpilot</a> &mdash; the current source tree.<br>
+          <a href="{{releases}}">Releases</a> &mdash; tarballs, packages, and signatures for each version.
+        </p>
+        <p>To build from a git checkout, run <code>./autogen.sh</code> first; it generates the
+        <code>configure</code> script that a release tarball already ships with.</p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># From a git checkout</span>
+git clone https://github.com/juddmon/jpilot.git
+cd jpilot
+./autogen.sh
+./configure
+make
+sudo make install</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="requirements">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Build requirements</h2>
+      <p>On Debian and Ubuntu, these packages are enough to build J-Pilot from source. Other distributions ship the same libraries under their own names.</p>
+    </div>
+    <div class="dl">
+      <div class="prose">
+        <p><b>pilot-link {{pilot_link}} or newer is required.</b> Earlier versions will not build against
+        J-Pilot {{version}}, because the Contact blob API changed. If your distribution only carries an
+        older pilot-link, build that from source first.</p>
+        <p>The GUI is GTK. Encryption support &mdash; used by the KeyRing plugin &mdash; comes from libgcrypt.</p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># Debian / Ubuntu build dependencies</span>
+sudo apt install build-essential autoconf automake libtool \
+                 autopoint intltool \
+                 libpisock-dev libpisock9 \
+                 libgcrypt20-dev libgcrypt20 \
+                 libgtk-3-dev</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="archive">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Older packages</h2>
+      <p>Kept for anyone still running an older system. Current releases are in the apt repository and on <a href="{{releases}}">GitHub</a>.</p>
+    </div>
+
+    <h3 style="font-size:15px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin:0 0 14px">Packages</h3>
+    <div class="table-scroll">
+      <table class="files">
+        <thead>
+          <tr><th>File</th><th>For</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="f"><a href="/packages/jammy/jpilot_2.0.2-1_amd64.deb">jpilot_2.0.2-1_amd64.deb</a></td><td>Ubuntu 22.04+</td><td class="when">2024-10-22</td></tr>
+          <tr><td class="f"><a href="/packages/jammy/jpilot-plugins_2.0.2-1_amd64.deb">jpilot-plugins_2.0.2-1_amd64.deb</a></td><td>Ubuntu 22.04+</td><td class="when">2024-10-22</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot_2.0.1-1_amd64.deb">jpilot_2.0.1-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-04-02</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot-plugins_2.0.1-1_amd64.deb">jpilot-plugins_2.0.1-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-04-02</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot_2.0.0-1_amd64.deb">jpilot_2.0.0-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot-plugins_2.0.0-1_amd64.deb">jpilot-plugins_2.0.0-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot_1.8.2-2_amd64.deb">jpilot_1.8.2-2_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot-plugins_1.8.2-2_amd64.deb">jpilot-plugins_1.8.2-2_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;color:var(--muted);font-size:14px">
+      The <a href="/packages/focal/">focal directory</a> also holds pilot-link, libpisock, and libpisync
+      packages for Ubuntu 20.04, along with <code>DOWNLOAD.sh</code>, <code>INSTALL.sh</code>, and
+      <code>REMOVE.sh</code> helper scripts. Packages for
+      <a href="/packages/precise/">precise</a> and <a href="/packages/trusty/">trusty</a> are still there too.
+    </p>
+
+    <h3 style="font-size:15px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--accent);margin:36px 0 14px">Source tarballs</h3>
+    <div class="table-scroll">
+      <table class="files">
+        <thead>
+          <tr><th>File</th><th>Signature</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="f"><a href="/tarballs/jpilot-1.8.2.tar.gz">jpilot-1.8.2.tar.gz</a></td>
+            <td class="sig"><a href="/tarballs/jpilot-1.8.2.tar.gz.asc">gpg</a> &middot; <a href="/tarballs/jpilot-1.8.2.tar.gz.md5sum">md5</a></td>
+            <td class="when">2014-05-25</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="/tarballs/jpilot-1.8.1.tar.gz">jpilot-1.8.1.tar.gz</a></td>
+            <td class="sig"><a href="/tarballs/jpilot-1.8.1.tar.gz.asc">gpg</a> &middot; <a href="/tarballs/jpilot-1.8.1.tar.gz.md5sum">md5</a></td>
+            <td class="when">2011-04-05</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="/tarballs/jpilot-1.8.0.tar.gz">jpilot-1.8.0.tar.gz</a></td>
+            <td class="sig"><a href="/tarballs/jpilot-1.8.0.tar.gz.asc">gpg</a> &middot; <a href="/tarballs/jpilot-1.8.0.tar.gz.md5sum">md5</a></td>
+            <td class="when">2010-02-28</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;color:var(--muted);font-size:14px">Signed with key 1024D/1E5DF2D6.</p>
+
+    <p style="margin-top:26px">
+      Debian's own <a href="https://packages.debian.org/jpilot">jpilot package page</a> is a good resource for Debian users.
+    </p>
+  </div>
+</section>

@@ -1,0 +1,190 @@
+<!--
+title: J-Pilot &mdash; Palm OS desktop organizer for Linux and Unix
+nav: Home
+description: J-Pilot is a desktop organizer for Palm OS handhelds, and an alternative to the Palm Desktop for people who run Linux and Unix. Free software under the GPL.
+class: home
+-->
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Palm OS desktop &middot; Linux &middot; Unix</p>
+      <h1>Your Palm handheld, at home on your desktop.</h1>
+      <p class="lede">J-Pilot syncs your Palm OS device's datebook, addresses, to-dos, and memos &mdash; and keeps them where you actually work.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/download/">Download {{version}}</a>
+        <a class="btn btn-ghost" href="{{github}}">View source</a>
+      </div>
+      <p class="req">Requires <b>pilot-link {{pilot_link}}</b> or newer &middot; Free software (GPL)</p>
+    </div>
+
+    <figure class="device">
+      <div class="device-shot">
+        <img src="/static/img/palmpilot5000.png" width="342" height="497"
+             alt="A PalmPilot 5000 handheld, its screen showing a day's appointments and a to-do list of the kind J-Pilot syncs.">
+        <div class="screen" aria-hidden="true">
+          <div class="screen-top"><span>Tue 4 Aug</span><span>J-Pilot</span></div>
+          <div class="row"><span class="t">09:00</span><span>Sync J-Pilot</span></div>
+          <div class="row"><span class="t">11:30</span><span>Dentist</span></div>
+          <div class="row"><span class="t">14:00</span><span>Review patches</span></div>
+          <div class="gap"></div>
+          <div class="todo"><span class="box done"></span><span class="done-txt">Meet foreman</span></div>
+          <div class="todo"><span class="box"></span><span>Sign contracts</span></div>
+          <div class="todo"><span class="box"></span><span>Solder cradle</span></div>
+        </div>
+      </div>
+      <figcaption>
+        PalmPilot 5000 photo by
+        <a href="https://commons.wikimedia.org/wiki/File:Palmpilot5000_eu.png">Channel R</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a>
+      </figcaption>
+    </figure>
+  </section>
+</div>
+
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What it does</p>
+      <h2>Everything on your Palm, mirrored on the desktop.</h2>
+      <p>Two-way sync with the four core Palm applications and the newer Contacts and Memos databases, plus plugins, imports, exports, and printing.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Palm apps</h3>
+        <ul>
+          <li>Datebook, Address, To Do, Memo</li>
+          <li>Newer Contacts &amp; Memos</li>
+          <li>Monthly &amp; weekly views</li>
+          <li>Repeating events &amp; exceptions</li>
+          <li>Uses your Palm's own preferences</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Plugins</h3>
+        <ul>
+          <li>Expense (bundled)</li>
+          <li>KeyRing encryption</li>
+          <li>SyncTime &mdash; set the device clock</li>
+          <li>jpilot-backup &mdash; multiple backups</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Import / export</h3>
+        <ul>
+          <li>iCalendar from Datebook &amp; To Do</li>
+          <li>vCard from the address book</li>
+          <li>LDIF and CSV</li>
+          <li>Many other formats</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sync &amp; more</h3>
+        <ul>
+          <li>Two-way fast and slow syncs</li>
+          <li>Full backup and restore</li>
+          <li>USB and Palm OS 4 passwords</li>
+          <li>PostScript printing &middot; dialer</li>
+          <li>Global search across apps</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:26px"><a href="/features/">See the full feature list &rarr;</a></p>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Get it</p>
+      <h2>Install J-Pilot {{version}}</h2>
+      <p>There is an apt repository for Debian and Ubuntu. Everything else &mdash; packages, source, and older releases &mdash; is on the download page.</p>
+    </div>
+    <div class="dl">
+      <div>
+        <div class="callout">
+          <b>Heads up:</b> {{version}} needs <b>pilot-link&nbsp;{{pilot_link}}</b> or newer, because of a change to the Contact blob API. Building needs <b>libpisock-dev&nbsp;&ge;&nbsp;{{pilot_link}}</b>; running it needs <b>libpisock9</b>.
+        </div>
+        <p style="margin:0;color:var(--muted);font-size:14.5px">
+          The repository covers Ubuntu 22.04, 24.04, and 26.04, and the matching Linux Mint releases.
+          Source tarballs and signatures are on <a href="{{releases}}">GitHub releases</a>.
+        </p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># Add the apt repository</span>
+curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
+
+<span class="cm"># Install J-Pilot and the bundled plugins</span>
+sudo apt install jpilot jpilot-plugins</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screenshots">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">A look inside</p>
+      <h2>Small, fast, and out of your way.</h2>
+      <p>Designed to take up very little screen space while still showing everything at once.</p>
+    </div>
+    <div class="shots">
+      <a class="shot" href="/documentation/jpilot-datebook.png">
+        <span class="frame"><img src="/documentation/jpilot-datebook.png" alt="J-Pilot's Datebook window, showing a day's appointments beside a monthly calendar." loading="lazy"></span>
+        <span class="cap">Datebook</span>
+      </a>
+      <a class="shot" href="/documentation/jpilot-address.png">
+        <span class="frame"><img src="/documentation/jpilot-address.png" alt="J-Pilot's Address window, showing a contact list and the details of one contact." loading="lazy"></span>
+        <span class="cap">Address</span>
+      </a>
+      <a class="shot" href="/documentation/jpilot-todo.png">
+        <span class="frame"><img src="/documentation/jpilot-todo.png" alt="J-Pilot's To Do window, showing a checklist with priorities and due dates." loading="lazy"></span>
+        <span class="cap">To Do</span>
+      </a>
+      <a class="shot" href="/documentation/jpilot-memo.png">
+        <span class="frame"><img src="/documentation/jpilot-memo.png" alt="J-Pilot's Memo window, showing a list of memos and the text of one of them." loading="lazy"></span>
+        <span class="cap">Memo</span>
+      </a>
+    </div>
+    <p style="margin-top:26px"><a href="/screenshots/">All screenshots &rarr;</a></p>
+  </div>
+</section>
+
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Latest news</p>
+      <h2>Releases</h2>
+    </div>
+    <ul class="entries">
+      <li>
+        <span class="when">Aug 8, 2026</span>
+        <div>
+          <h3>J-Pilot 2.1.0 released</h3>
+          <p>Requires pilot-link {{pilot_link}} or newer. The apt repository now covers Ubuntu 22.04, 24.04, and 26.04, and the equivalent Linux Mint releases.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Oct 22, 2024</span>
+        <div>
+          <h3>J-Pilot 2.0.2 released</h3>
+          <p>Bug fixes, with packages built for Ubuntu 22.04, 24.04, and 26.04.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">May 31, 2022</span>
+        <div>
+          <h3>An apt repository for Debian and Ubuntu</h3>
+          <p>J-Pilot packages moved to packagecloud, so you can install and update with apt like anything else.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Feb 24, 2021</span>
+        <div>
+          <h3>J-Pilot 2.0.0 &mdash; ported to GTK3</h3>
+          <p>The interface was rebuilt on GTK3, which is what every release since has been based on.</p>
+        </div>
+      </li>
+    </ul>
+    <p style="margin-top:26px"><a href="/ChangeLog">Full ChangeLog</a> &middot; <a href="{{releases}}">All releases on GitHub</a></p>
+  </div>
+</section>

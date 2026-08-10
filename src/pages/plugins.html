@@ -1,0 +1,97 @@
+<!--
+title: Plugins
+nav: Plugins
+description: The plugins that ship with J-Pilot - Expense, KeyRing, and SyncTime - plus third-party plugins written over the years.
+-->
+<div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Extending it</p>
+    <h1>Plugins</h1>
+    <p class="lede">J-Pilot loads plugins as shared libraries, so a plugin can add a whole application of its own. Three ship with J-Pilot; the rest were written by other people over the years.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Bundled with J-Pilot</h2>
+      <p>Installed by the <code>jpilot-plugins</code> package, or built from the source tree.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Expense</h3>
+        <p>Syncs the Palm Expense application &mdash; entries, categories, currencies, and payment types.</p>
+        <p><a href="{{github}}/tree/master/Expense">Source &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>KeyRing</h3>
+        <p>An interface to the GNU Keyring Palm encryption application, so your encrypted records are readable on the desktop.</p>
+        <p><a href="{{github}}/tree/master/KeyRing">Source &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>SyncTime</h3>
+        <p>Sets the clock on the Palm device to the desktop's time during a sync. Not the same thing as the SyncTime Palm application.</p>
+        <p><a href="{{github}}/tree/master/SyncTime">Source &rarr;</a></p>
+      </div>
+    </div>
+    <p style="margin-top:26px">Writing your own is documented in the <a href="/documentation/">plugin manual</a>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Third-party plugins</h2>
+      <p>Written by other people, and listed here as they were announced. Most are old and unmaintained &mdash; expect to do some work to build them against a current J-Pilot.</p>
+    </div>
+    <ul class="entries">
+      <li>
+        <span class="when">2009-02-15</span>
+        <div>
+          <h3><a href="https://jp-icalendar.sourceforge.net/">jpilot-icalendar</a></h3>
+          <p>A standalone program that imports RFC 2445 (iCalendar) events into J-Pilot.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2008-05-27</span>
+        <div>
+          <h3><a href="https://github.com/danbodoh/picsnvideos-jpilot">Pics &amp; Videos</a></h3>
+          <p>Downloads pictures, photos, and videos from the newer Palm Treo and Palm Centro phones. Reads both internal flash and the SD card.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2002-02-06</span>
+        <div>
+          <h3><a href="http://www.jlogday.com/code/">Backup and SyncMal</a></h3>
+          <p>From Jason Day. Backup is an enhanced backup plugin; SyncMal is a MalSync client that pulls down web pages for reading later.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2000-10-30</span>
+        <div>
+          <h3>pilot-mailsync</h3>
+          <p>Syncs mail with your Palm. The page it lived on at the University of Bonn no longer resolves.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2000-03-10</span>
+        <div>
+          <h3><a href="http://ludovic.rousseau.free.fr/softwares/jpilot-Mail/index.html">jpilot-Mail</a></h3>
+          <p>Another way to sync mail with your Palm.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2000-02-15</span>
+        <div>
+          <h3><a href="http://www.klawitter.de/palm/">JustInTime</a></h3>
+          <p>A work-around for the SyncTime plugin crashing Palm OS 3.3. The plugin is not broken &mdash; Palm OS 3.3 is. You need the Palm application installed as well.</p>
+        </div>
+      </li>
+    </ul>
+    <p style="margin-top:26px;color:var(--muted);font-size:14.5px">
+      Several of these plugins have outlived the pages they were hosted on. If you have a working copy of
+      one, or a link that still resolves, please say so on the <a href="/lists/">mailing list</a> and it
+      can go back on this page.
+    </p>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{page_title}}</title>
+<meta name="description" content="{{description}}">
+<link rel="canonical" href="{{canonical}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{name}}">
+<meta property="og:title" content="{{page_title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="/static/site.css">
+<!-- Apply the saved theme before first paint so the page never flashes. -->
+<script>try{var t=localStorage.getItem("jp-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body class="{{body_class}}">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><span class="dot"></span>J-Pilot <span class="ver">v{{version}}</span></a>
+    <nav class="links" aria-label="Main">
+{{nav}}
+    </nav>
+    <div class="nav-end">
+      <a class="nav-gh" href="{{github}}">GitHub &#8599;</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+        <span aria-hidden="true">&#9686;</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{{content}}
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span class="brand"><span class="dot"></span> J-Pilot {{version}}</span>
+    <span>Free software under the GPL</span>
+    <a href="{{github}}">Source on GitHub</a>
+    <a href="/lists/">Mailing list</a>
+    <span class="foot-spacer">&copy; {{years}} Judd Montgomery</span>
+  </div>
+</footer>
+
+<script src="/static/site.js" defer></script>
+</body>
+</html>
