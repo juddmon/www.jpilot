@@ -95,3 +95,152 @@
     }
   });
 })();
+
+/* ---- Screenshot viewer -------------------------------------------------
+   Opens a screenshot over the page with previous and next controls, so you
+   can walk every picture on the page without going back and forth.
+
+   The links still point at the real image, so with scripting off, or if this
+   fails, clicking one just opens the file as it always did.
+
+   Everything on a page forms one gallery, in the order it appears in the
+   markup -- the sections a screenshot is filed under are a way of laying the
+   page out, not a reason to stop stepping through. */
+(function () {
+  "use strict";
+
+  var gallery = [], seen = {};
+
+  var links = document.querySelectorAll(
+    'a.shot, [data-gallery] a[href$=".png"], [data-gallery] a[href$=".jpg"], [data-gallery] a[href$=".gif"]'
+  );
+
+  Array.prototype.forEach.call(links, function (a) {
+    var href = a.getAttribute("href");
+    // The same picture can be linked twice -- the Preferences card and its
+    // own tab, say. Point both at one entry rather than showing it twice.
+    if (href in seen) {
+      a.dataset.jpIndex = seen[href];
+      return;
+    }
+    var img = a.querySelector("img");
+    var cap = a.querySelector(".cap");
+    var alt = (img && img.getAttribute("alt")) || "";
+    gallery.push({
+      href: href,
+      // An explicit data-title wins, then a card's caption, then the alt text.
+      label: a.dataset.title
+        || (cap && cap.childNodes[0].textContent.trim())
+        || alt
+        || a.textContent.trim(),
+      detail: (cap && cap.querySelector("span")
+        ? cap.querySelector("span").textContent.trim()
+        : alt),
+    });
+    seen[href] = gallery.length - 1;
+    a.dataset.jpIndex = gallery.length - 1;
+  });
+
+  if (gallery.length < 1) return;
+  var group = gallery;
+
+  /* Build the overlay once, and only if there is something to show in it. */
+  var box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-modal", "true");
+  box.hidden = true;
+  box.innerHTML =
+    '<button class="lb-close" type="button" aria-label="Close">&#10005;</button>' +
+    '<button class="lb-nav lb-prev" type="button" aria-label="Previous screenshot">&#8249;</button>' +
+    '<figure class="lb-figure"><img alt=""><figcaption></figcaption></figure>' +
+    '<button class="lb-nav lb-next" type="button" aria-label="Next screenshot">&#8250;</button>';
+  document.body.appendChild(box);
+
+  var image = box.querySelector("img"),
+      caption = box.querySelector("figcaption"),
+      prev = box.querySelector(".lb-prev"),
+      next = box.querySelector(".lb-next"),
+      close = box.querySelector(".lb-close");
+
+  var at = 0, opener = null;
+
+  function show(i) {
+    at = (i + group.length) % group.length;
+    var item = group[at];
+    image.src = item.href;
+    image.alt = item.detail || item.label;
+    caption.textContent = group.length > 1
+      ? item.label + "  —  " + (at + 1) + " of " + group.length
+      : item.label;
+    box.setAttribute("aria-label", item.label);
+    // Only offer navigation when there is somewhere to go.
+    prev.hidden = next.hidden = group.length < 2;
+    // Fetch the neighbours so stepping through does not flash.
+    if (group.length > 1) {
+      [at + 1, at - 1].forEach(function (n) {
+        new Image().src = group[(n + group.length) % group.length].href;
+      });
+    }
+  }
+
+  function open(i, from) {
+    opener = from;
+    box.hidden = false;
+    document.body.classList.add("lb-open");
+    show(i);
+    close.focus();
+  }
+
+  function shut() {
+    box.hidden = true;
+    document.body.classList.remove("lb-open");
+    image.removeAttribute("src");
+    // Put focus back where it came from, or the page loses its place.
+    if (opener) { opener.focus(); opener = null; }
+  }
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a[data-jp-index]") : null;
+    if (!a) return;
+    // Leave modified clicks alone: they mean "open this somewhere else".
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    e.preventDefault();
+    open(+a.dataset.jpIndex, a);
+  });
+
+  prev.addEventListener("click", function () { show(at - 1); });
+  next.addEventListener("click", function () { show(at + 1); });
+  close.addEventListener("click", shut);
+  box.addEventListener("click", function (e) {
+    // A click on the backdrop, rather than on the picture or a button.
+    if (e.target === box || e.target.classList.contains("lb-figure")) shut();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape") { shut(); return; }
+    if (group.length < 2) return;
+    if (e.key === "ArrowLeft") { e.preventDefault(); show(at - 1); }
+    if (e.key === "ArrowRight") { e.preventDefault(); show(at + 1); }
+  });
+
+  /* Keep tabbing inside the overlay while it is open. */
+  box.addEventListener("keydown", function (e) {
+    if (e.key !== "Tab") return;
+    var stops = [close, prev, next].filter(function (b) { return !b.hidden; });
+    var i = stops.indexOf(document.activeElement);
+    e.preventDefault();
+    stops[(i + (e.shiftKey ? -1 : 1) + stops.length) % stops.length].focus();
+  });
+
+  /* Swipe, for touch screens. */
+  var x0 = null;
+  box.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener("touchend", function (e) {
+    if (x0 === null || group.length < 2) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 45) show(at + (dx < 0 ? 1 : -1));
+    x0 = null;
+  }, { passive: true });
+})();

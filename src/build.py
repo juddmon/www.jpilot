@@ -54,6 +54,13 @@ PAGES = [
     ("links.html", "links"),
 ]
 
+# Pages that use the template but are not part of the nav, and are written to
+# an exact path rather than a pretty URL. GitHub Pages serves /404.html for
+# any address it cannot find, so the name has to be exactly that.
+STANDALONE = [
+    ("404.html", "404.html"),
+]
+
 # Old URLs that no longer have a page of their own.
 REDIRECTS = {
     "requirements": "/download/#requirements",
@@ -254,6 +261,7 @@ def build(out):
                 "canonical": SITE["url"] + url,
                 "nav": nav_html(nav_source, slug),
                 "body_class": meta.get("class", "page"),
+                "head_extra": "",
                 "content": render(body, dict(SITE)),
             }
         )
@@ -263,6 +271,28 @@ def build(out):
         target = out / "index.html" if slug == "" else out / slug / "index.html"
         write(target, page)
         print("  %-40s %6.1f KB" % (url, len(page.encode()) / 1024))
+
+    print("standalone")
+    for filename, path in STANDALONE:
+        meta, body = parse_page(SRC / "pages" / filename)
+        values = dict(SITE)
+        values.update(
+            {
+                "title": meta["title"],
+                "page_title": "%s &mdash; %s" % (meta["title"], SITE["name"]),
+                "description": meta.get("description", ""),
+                "canonical": "%s/%s" % (SITE["url"], path),
+                "nav": nav_html(nav_source, None),
+                "body_class": meta.get("class", "page"),
+                # This one page stands in for every address that does not
+                # exist, so it should never be the result of a search.
+                "head_extra": '<meta name="robots" content="noindex">',
+                "content": render(body, dict(SITE)),
+            }
+        )
+        page = render(render(base, values), dict(SITE))
+        write(out / path, page)
+        print("  %-40s %6.1f KB" % ("/" + path, len(page.encode()) / 1024))
 
     print("redirects")
     for slug, target in REDIRECTS.items():

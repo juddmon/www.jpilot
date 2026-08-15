@@ -427,3 +427,64 @@ footer a { color: var(--muted); }
 footer a:hover { color: var(--ink); }
 .foot-spacer { margin-left: auto; }
 @media (max-width: 720px) { .foot-spacer { margin-left: 0; } }
+
+/* --------------------------------------------------------------------------
+   Screenshot viewer
+   Built and opened by site.js. Without scripting the thumbnails stay plain
+   links to the image files, and none of this is ever used.
+   -------------------------------------------------------------------------- */
+.lightbox {
+  position: fixed; inset: 0; z-index: 60;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center; gap: 8px;
+  padding: 20px;
+  background: rgba(8, 12, 10, .88);
+  backdrop-filter: blur(3px);
+}
+.lightbox[hidden] { display: none; }
+
+/* Hold the page still while the viewer is over it. */
+body.lb-open { overflow: hidden; }
+
+.lb-figure {
+  margin: 0; min-width: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+.lb-figure img {
+  max-width: 100%; max-height: calc(100vh - 130px);
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, .7);
+}
+.lb-figure figcaption {
+  font-family: var(--mono); font-size: 13px; color: #dfe7e1;
+  text-align: center; text-wrap: balance;
+}
+
+.lightbox button {
+  border: 1px solid rgba(255, 255, 255, .22);
+  background: rgba(255, 255, 255, .10);
+  color: #eef3ef;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 1;
+  font-family: var(--sans);
+}
+.lightbox button:hover { background: rgba(255, 255, 255, .2); }
+.lightbox button:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 3px; }
+
+.lb-nav { font-size: 30px; padding: 18px 14px; }
+.lb-nav[hidden] { display: none; }
+
+.lb-close {
+  position: absolute; top: 18px; right: 18px;
+  font-size: 17px; padding: 9px 13px;
+}
+
+@media (max-width: 640px) {
+  .lightbox { padding: 12px; gap: 4px; }
+  .lb-nav { font-size: 24px; padding: 14px 9px; }
+  .lb-figure img { max-height: calc(100vh - 150px); }
+}

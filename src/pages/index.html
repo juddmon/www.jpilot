@@ -1,20 +1,20 @@
 <!--
-title: J-Pilot &mdash; Palm OS desktop organizer for Linux and Unix
+title: J-Pilot &mdash; Palm OS desktop organizer for Linux, Unix, and macOS
 nav: Home
-description: J-Pilot is a desktop organizer for Palm OS handhelds, and an alternative to the Palm Desktop for people who run Linux and Unix. Free software under the GPL.
+description: J-Pilot is a desktop organizer for Palm OS handhelds, and an alternative to the Palm Desktop for people who run Linux, Unix, and macOS. Free software under the GPL.
 class: home
 -->
 <div class="wrap">
   <section class="hero">
     <div>
       <p class="eyebrow">Palm OS desktop &middot; Linux &middot; Unix &middot; macOS</p>
-      <h1>Your Palm handheld synced with your Linux, Unix or MacOS desktop.</h1>
-      <p class="lede">J-Pilot syncs your Palm OS device's datebook/calendar, addresses/contact, todo/tasks, memos and more &mdash; to where you actually work.</p>
+      <h1>Your Palm handheld synced with your Linux, Unix or macOS desktop.</h1>
+      <p class="lede">J-Pilot syncs your Palm OS device's datebook/calendar, addresses/contacts, todo/tasks, memos and more &mdash; to where you actually work.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="/download/">Download {{version}}</a>
         <a class="btn btn-ghost" href="{{github}}">View source</a>
       </div>
-      <p class="req">&middot; <b>Free software</b> (GPL)</p>
+      <p class="req"><b>Free software</b> (GPL)</p>
     </div>
 
     <figure class="device">
@@ -46,7 +46,7 @@ class: home
     <div class="sec-head">
       <p class="eyebrow">What it does</p>
       <h2>Everything on your Palm, mirrored on the desktop.</h2>
-      <p>Two-way sync with the four core Palm applications, plus plugins, bakups, imports, exports, and printing.</p>
+      <p>Two-way sync with the four core Palm applications, plus plugins, backups, imports, exports, and printing.</p>
     </div>
     <div class="grid">
       <div class="card">
@@ -67,14 +67,13 @@ class: home
           <li>Expense (bundled Palm app)</li>
           <li>KeyRing encryption app</li>
           <li>SyncTime &mdash; sets the device clock</li>
-          <li>jpilot-backup &mdash; multiple backups</li>
+          <li><a href="/plugins/">Third-party plugins</a></li>
         </ul>
       </div>
       <div class="card">
         <h3>Import / export</h3>
         <ul>
-          <li>iCalendar from Datebook</li>
-          <li>To Do</li>
+          <li>iCalendar from Datebook &amp; To Do</li>
           <li>vCard from the address book</li>
           <li>LDIF and CSV</li>
           <li>Many other formats</li>
@@ -105,27 +104,18 @@ class: home
       <p>There is an apt repository for Debian and Ubuntu. Everything else &mdash; packages, source, and older releases &mdash; is on the download page.</p>
     </div>
     <div class="dl">
-	  <!--
       <div>
-        <div class="callout">
-          <b>Version 2.1.0 {{version}} needs <b>pilot-link&nbsp;{{pilot_link}}</b> or newer, because of a change to the Contact blob API. Building needs <b>libpisock-dev&nbsp;&ge;&nbsp;{{pilot_link}}</b>; running it needs <b>libpisock9</b>.
-        </div>
         <p style="margin:0;color:var(--muted);font-size:14.5px">
           The repository covers Ubuntu 22.04, 24.04, and 26.04, and the matching Linux Mint releases.
-          Source tarballs and signatures are on <a href="{{releases}}">GitHub releases</a>.
+          The source is on <a href="{{github}}">GitHub</a>, tagged for every release.
         </p>
       </div>
-      -->
       <div class="code-block">
 <pre><code><span class="cm"># Add the apt repository</span>
 curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
 
 <span class="cm"># Install J-Pilot and the bundled plugins</span>
 sudo apt install jpilot jpilot-plugins</code></pre>
-        <p style="margin:0;color:var(--muted);font-size:14.5px">
-          The repository covers Ubuntu 22.04, 24.04, and 26.04, and the matching Linux Mint releases.
-          Source tarballs and signatures are on <a href="{{releases}}">GitHub releases</a>.
-        </p>
       </div>
     </div>
   </div>
@@ -139,20 +129,20 @@ sudo apt install jpilot jpilot-plugins</code></pre>
       <p>Designed to take up very little screen space while still showing everything at once.</p>
     </div>
     <div class="shots">
-      <a class="shot" href="/documentation/jpilot-datebook.png">
-        <span class="frame"><img src="/documentation/jpilot-datebook.png" alt="J-Pilot's Datebook window, showing a day's appointments beside a monthly calendar." loading="lazy"></span>
+      <a class="shot" href="/static/img/jpilot-datebook.png">
+        <span class="frame"><img src="/static/img/jpilot-datebook.png" alt="J-Pilot's Datebook window: a day's appointments listed beside a monthly calendar." loading="lazy"></span>
         <span class="cap">Datebook</span>
       </a>
-      <a class="shot" href="/documentation/jpilot-address.png">
-        <span class="frame"><img src="/documentation/jpilot-address.png" alt="J-Pilot's Address window, showing a contact list and the details of one contact." loading="lazy"></span>
+      <a class="shot" href="/static/img/jpilot-address.png">
+        <span class="frame"><img src="/static/img/jpilot-address.png" alt="J-Pilot's Address window: a list of contacts beside one contact's details." loading="lazy"></span>
         <span class="cap">Address</span>
       </a>
-      <a class="shot" href="/documentation/jpilot-todo.png">
-        <span class="frame"><img src="/documentation/jpilot-todo.png" alt="J-Pilot's To Do window, showing a checklist with priorities and due dates." loading="lazy"></span>
+      <a class="shot" href="/static/img/jpilot-todo.png">
+        <span class="frame"><img src="/static/img/jpilot-todo.png" alt="J-Pilot's To Do window: tasks with priorities, due dates and checkboxes." loading="lazy"></span>
         <span class="cap">To Do</span>
       </a>
-      <a class="shot" href="/documentation/jpilot-memo.png">
-        <span class="frame"><img src="/documentation/jpilot-memo.png" alt="J-Pilot's Memo window, showing a list of memos and the text of one of them." loading="lazy"></span>
+      <a class="shot" href="/static/img/jpilot-memo.png">
+        <span class="frame"><img src="/static/img/jpilot-memo.png" alt="J-Pilot's Memo window: a list of memos beside the text of the selected one." loading="lazy"></span>
         <span class="cap">Memo</span>
       </a>
     </div>

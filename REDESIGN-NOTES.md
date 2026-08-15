@@ -6,8 +6,9 @@ Working branch: **`redesign-2026`** (off `gh-pages`). The live site is untouched
 ## Where it stands
 
 The build and all eight pages are written, building clean, and reviewed on
-screen — Judd has seen them and is happy with how they look. Nothing is
-committed yet, and the repo root is untouched, so the live site is unaffected.
+screen — Judd has seen them and is happy with how they look. Committed and
+pushed as `4a15301`, "first round of rewrite". The repo root is untouched and
+`gh-pages` is what gets served, so the live site is unaffected.
 
 What is left is the punch list at the bottom, and then the cutover.
 
@@ -158,10 +159,7 @@ attribute from the built HTML into a throwaway copy and shoot that.
 
 Roughly in the order they want doing:
 
-- **Nothing is committed.** `src/` and this file are still untracked on
-  `redesign-2026`. First job next session: commit, so the work is not resting
-  on one working tree.
-- A second look at the pages I only saw at one width — Documentation and
+- A second look at the pages only seen at one width — Documentation and
   Plugins were checked at 1280px but not on a phone.
 - `404.html` still uses the old theme; it should get the new template. It is
   the only page left that does not.
