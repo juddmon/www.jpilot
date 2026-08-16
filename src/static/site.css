@@ -488,3 +488,13 @@ body.lb-open { overflow: hidden; }
   .lb-nav { font-size: 24px; padding: 14px 9px; }
   .lb-figure img { max-height: calc(100vh - 150px); }
 }
+
+/* --------------------------------------------------------------------------
+   The old site logo, kept on the Links page. Rendered at its native 100px so
+   it stays crisp -- it is a small GIF-era image and scaling it up shows.
+   -------------------------------------------------------------------------- */
+.mascot {
+  margin: 56px 0 0;
+  text-align: center;
+}
+.mascot img { width: 100px; height: auto; }
