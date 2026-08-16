@@ -2,3 +2,6 @@
 sync.sh
 __pycache__/
 *.pyc
+
+# Preview builds. The real build writes to the repo root, not here.
+_site/
