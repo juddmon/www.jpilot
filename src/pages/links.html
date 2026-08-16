@@ -15,36 +15,42 @@ description: Where to get pilot-link, other Palm OS desktop software, and the ma
   <div class="wrap">
     <div class="sec-head">
       <h2>pilot-link</h2>
-      <p>J-Pilot talks to your handheld through pilot-link, so you need it installed. Its old home at
-      <code>pilot-link.org</code> stopped resolving some years ago; these are the places it still lives.</p>
+      <p>J-Pilot talks to your handheld through pilot-link, so you need it installed.
+      J-Pilot {{version}} needs <b>{{pilot_link}} or newer</b>, which rules out most distribution
+      packages &mdash; pilot-link was dropped from Debian after buster, and the last version it
+      carried was 0.12.5.</p>
     </div>
     <ul class="entries">
       <li>
+        <span class="when">Upstream</span>
+        <div>
+          <h3><a href="https://github.com/desrod/pilot-link">github.com/desrod/pilot-link</a></h3>
+          <p>The official home of pilot-link, maintained by David Desrosiers. This is where
+          {{pilot_link}} comes from, and where to report a pilot-link problem.</p>
+        </div>
+      </li>
+      <li>
         <span class="when">Packaged</span>
         <div>
-          <h3><a href="https://packages.debian.org/stable/pilot-link">pilot-link in Debian</a></h3>
-          <p>The simplest route on Debian, Ubuntu, and their derivatives &mdash; <code>apt install pilot-link libpisock-dev</code>. Note that J-Pilot {{version}} needs {{pilot_link}} or newer.</p>
+          <h3><a href="{{packagecloud}}">pilot-link in the J-Pilot apt repository</a></h3>
+          <p>The easiest route on Debian and Ubuntu: the same repository that carries J-Pilot also
+          carries pilot-link {{pilot_link}} and <code>libpisock-dev</code>, so adding it once gets
+          you both. See <a href="/download/">Download</a> for the command.</p>
         </div>
       </li>
       <li>
-        <span class="when">Source</span>
-        <div>
-          <h3><a href="https://github.com/desrod/pilot-link">pilot-link on GitHub</a></h3>
-          <p>David Desrosiers' repository, and the closest thing to an upstream today.</p>
-        </div>
-      </li>
-      <li>
-        <span class="when">Source</span>
+        <span class="when">Archived</span>
         <div>
           <h3><a href="https://sourceforge.net/projects/pilot-link/">pilot-link on SourceForge</a></h3>
-          <p>The old release tarballs.</p>
+          <p>Release tarballs up to 0.12.x, from when the project lived there.</p>
         </div>
       </li>
       <li>
         <span class="when">Archived</span>
         <div>
           <h3><a href="https://web.archive.org/web/20101223190307/http://www.pilot-link.org/">pilot-link.org, as it was</a></h3>
-          <p>The original home page, preserved by the Internet Archive.</p>
+          <p>The original home page, preserved by the Internet Archive. The domain stopped resolving
+          years ago.</p>
         </div>
       </li>
     </ul>
@@ -58,11 +64,12 @@ description: Where to get pilot-link, other Palm OS desktop software, and the ma
     </div>
     <ul class="entries">
       <li>
-        <span class="when">Active</span>
+        <span class="when">Historical</span>
         <div>
-          <h3><a href="https://packages.debian.org/stable/jpilot">J-Pilot in Debian</a></h3>
-          <p>Debian's own package page, and a good resource for Debian users. See also the
-          <a href="https://tracker.debian.org/pkg/jpilot">package tracker</a>.</p>
+          <h3><a href="https://tracker.debian.org/pkg/jpilot">J-Pilot in Debian</a></h3>
+          <p>Debian carried J-Pilot up to buster, where it stopped at 1.8.2. It is no longer in the
+          archive &mdash; use the <a href="/download/">apt repository</a> instead. The package tracker
+          still has the history.</p>
         </div>
       </li>
       <li>

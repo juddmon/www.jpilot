@@ -38,7 +38,7 @@ SITE = {
     "github": "https://github.com/juddmon/jpilot",
     "releases": "https://github.com/juddmon/jpilot/releases",
     "packagecloud": "https://packagecloud.io/judd/jpilot",
-    "list_archive": "https://lists.jpilot.org/empathy/list/jpilot.lists.jpilot.org",
+    "list_archive": "https://lists.jpilot.org/list/jpilot.lists.jpilot.org",
     "years": "1999&ndash;2026",
 }
 
