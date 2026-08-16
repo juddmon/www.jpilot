@@ -77,11 +77,10 @@
   var root = document.documentElement;
 
   function current() {
-    var set = root.getAttribute("data-theme");
-    if (set) return set;
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    // Dark unless the page says otherwise, which is what the stylesheet does.
+    // Asking the system here instead would put the toggle out of step with
+    // what is on screen, and the first click would seem to do nothing.
+    return root.getAttribute("data-theme") || "dark";
   }
 
   btn.addEventListener("click", function () {

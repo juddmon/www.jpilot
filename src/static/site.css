@@ -7,19 +7,28 @@
 /*{{font-face}}*/
 
 /* --------------------------------------------------------------------------
-   Design tokens.  Light is the default; dark comes from the OS preference,
-   and the [data-theme] attributes let the header toggle override either way.
+   Design tokens.
+
+   Dark is the default, and deliberately not conditional on the viewer's
+   system. `prefers-color-scheme` cannot express "no preference" -- it reports
+   `light` both for somebody who chose light and for somebody who chose
+   nothing at all -- so keying light off that media query would hand light to
+   almost everyone and make the default meaningless.
+
+   So: dark for everybody, and the header toggle switches to light and
+   remembers the choice in localStorage. The [data-theme] attributes below are
+   what the toggle sets, and they win over these.
    -------------------------------------------------------------------------- */
 :root {
-  --bg: #ecefe9;
-  --surface: #ffffff;
-  --surface-2: #f4f6f1;
-  --ink: #16201b;
-  --muted: #566158;
-  --line: #d5dbd2;
-  --accent: #1f6b47;
-  --accent-ink: #ffffff;
-  --phosphor: #2f8f52;
+  --bg: #0e1411;
+  --surface: #151e19;
+  --surface-2: #101815;
+  --ink: #e7ece8;
+  --muted: #93a099;
+  --line: #26302a;
+  --accent: #4fbf85;
+  --accent-ink: #08150e;
+  --phosphor: #59d98a;
   /* Ink for the agenda drawn over the photographed LCD.  Fixed in both
      themes, because the screen it sits on is a photo and does not change. */
   --screen-ink: #dcf0d6;
@@ -32,16 +41,7 @@
      Licence; keep this in step with FONT_FACES in build.py. */
   --display: "Ubuntu derivative jpilot.org", "Ubuntu", var(--sans);
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", "Ubuntu Mono", Menlo, Consolas, monospace;
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e1411; --surface: #151e19; --surface-2: #101815; --ink: #e7ece8;
-    --muted: #93a099; --line: #26302a; --accent: #4fbf85; --accent-ink: #08150e;
-    --phosphor: #59d98a;
-    color-scheme: dark;
-  }
+  color-scheme: dark;
 }
 
 :root[data-theme="light"] {
@@ -54,7 +54,7 @@
 :root[data-theme="dark"] {
   --bg: #0e1411; --surface: #151e19; --surface-2: #101815; --ink: #e7ece8;
   --muted: #93a099; --line: #26302a; --accent: #4fbf85; --accent-ink: #08150e;
-  --lcd-bg: #16241a; --lcd-ink: #7ee6a0; --phosphor: #59d98a;
+  --phosphor: #59d98a;
   color-scheme: dark;
 }
 
