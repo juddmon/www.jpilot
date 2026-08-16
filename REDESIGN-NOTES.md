@@ -5,12 +5,12 @@ Working branch: **`redesign-2026`** (off `gh-pages`). The live site is untouched
 
 ## Where it stands
 
-The build and all eight pages are written, building clean, and reviewed on
-screen — Judd has seen them and is happy with how they look. Committed and
-pushed as `4a15301`, "first round of rewrite". The repo root is untouched and
-`gh-pages` is what gets served, so the live site is unaffected.
+All ten pages are written and building clean, and Judd has reviewed Home,
+Features, Screenshots and Download on screen. Everything is committed on
+`redesign-2026`. The repo root still holds the old site and `gh-pages` is what
+gets served, so the live site is unaffected until the cutover.
 
-What is left is the punch list at the bottom, and then the cutover.
+What is left is the punch list near the bottom, and then the cutover.
 
 **Preview:** `python3 src/build.py --out _site --serve`
 then open <http://localhost:8000/>.
@@ -32,18 +32,22 @@ src/
   templates/base.html        # <head>, nav, footer — single source of truth
   pages/*.html               # one fragment per page, metadata in a leading comment
   static/site.css            # hand-written; the font is inlined into it at build time
-  static/site.js             # copy buttons + theme toggle, ~90 lines
-  static/img/palmpilot5000.png
+  static/site.js             # copy buttons, theme toggle, screenshot viewer
+  static/img/palmpilot5000.png, jpilot-*.png   # hero photo + 13 screenshots
   static/fonts/ubuntu-700.woff2, UBUNTU-FONT-LICENCE.txt
+  tools/check_links.py       # run this against any build; see the bottom
   tools/prepare_palm.py      # one-off: knock out the photo background, measure the LCD
   tools/subset_font.py       # one-off: instance + subset Ubuntu to a 14 KB woff2
+  tools/demo_data.py         # invented records to screenshot, as J-Pilot CSV
 ```
 
 `python3 src/build.py` writes `index.html`, `download/index.html`, … at the
 repo root, keeping today's pretty URLs. `--out DIR` builds elsewhere.
 
-The two `tools/` scripts need Pillow and fonttools respectively. You only run
-them if you replace the photo or change the font; their output is committed.
+`check_links.py` is stdlib only and should be run after every build. The other
+three need Pillow, fonttools and Pillow respectively; you only run them to
+replace the photo, change the font, or regenerate the screenshot data. Their
+output is committed.
 
 ## Decisions, as built
 
@@ -92,25 +96,9 @@ Internet Archive rather than left to rot:
   a squatted domain, so that link goes to the Archive instead.
 - Mailing list archive URL corrected to the Empathy one you actually run.
 
-**Worth your eye:** the Download page lists 2.0.2 as the newest `.deb` in
-`/packages/`, because no 2.1.0 debs are in this repo — the git log mentions
-uploading the 26.04 package to Nextcloud. The page leads with the packagecloud
-apt repository, so this only matters for the direct-download table.
-
-## Cutover, once you approve
-
-1. `python3 src/build.py` — writes the new pages over the old ones, and adds
-   `.nojekyll`.
-2. Delete: `_config.yml`, `assets/` (old theme), `blog/`, `articles/`,
-   `redesign-1/`, `redesign-2/`, `release-*/`, `site-moved-to-gnu/`,
-   `site-up/`, `wiki-up/`, `theme-setup/`, `tags/`, `search/`, `search.json`,
-   `home/`, `Bought-a-nexus/`, `nexus-without-data/`, `feed.xml`,
-   `feed.xslt.xml`, `index.html~`, `download/index.html~`, `favicon.*.orig`,
-   and `documentation/jpilot-manual-de*`.
-3. Keep: `CNAME`, `documentation/` (English manual, `manual.html`,
-   `plugin.html`, the PNGs), `packages/`, `tarballs/`, `ChangeLog`,
-   `images/` (the touch icons), `favicon.*`, `404.html`.
-4. Merge to `gh-pages`.
+**Since resolved:** the Download page now points at GitHub release assets for
+source, and the `.deb` table is explicitly an archive — 2.1.0 is distributed
+only through the apt repository, which the page says outright.
 
 ## Found and fixed on screen
 
@@ -157,21 +145,49 @@ attribute from the built HTML into a throwaway copy and shoot that.
 
 ## Still open
 
-Roughly in the order they want doing:
+- **The Documentation page is badly out of date.** Deliberately deferred, and
+  the bigger job of the remaining ones. Nothing on it is broken -- every link
+  resolves -- but the content still describes the site as it was. Worth doing
+  before the cutover if there is appetite; it is the weakest page.
+- Proofread the copy on **Plugins, Lists, Links and 404**. Home, Features,
+  Screenshots and Download have had Judd's eye; those four have not. The
+  wording throughout is mine, rewritten from the old pages rather than copied,
+  so the facts carried over but the voice needs checking.
+- A look at **Documentation and Plugins on a phone**. Both were only ever
+  rendered at 1280px.
+- **2.0.3.** Tagged by a contributor, with no announcement on the list and no
+  build behind it, so it has no release assets. Probably should not be
+  presented as a release at all; Judd will decide later.
+- Then the cutover below.
 
-- A second look at the pages only seen at one width — Documentation and
-  Plugins were checked at 1280px but not on a phone.
-- `404.html` still uses the old theme; it should get the new template. It is
-  the only page left that does not.
-- Decide whether the 2.1.0 `.deb`s belong here or stay on Nextcloud/GitHub,
-  and update the Download page's archive table to match. Right now it lists
-  2.0.2 as the newest `.deb`, because that is genuinely the newest one in this
-  repo.
-- Proofread the copy. It was rewritten from the old pages rather than copied
-  verbatim, so the facts came across but the wording is mine — worth your eye,
-  particularly the Features page and the news items on the home page.
-- Then the cutover above.
+## Cutover, once approved
 
-Validated already, so no need to redo: balanced HTML on all eight pages, no
-unresolved template tokens, no broken internal links, and every outbound link
-fetched at least once. Total output 183 KB; a cold first visit is ~107 KB.
+1. `python3 src/build.py` -- writes the new pages over the old ones, and adds
+   `.nojekyll`.
+2. `python3 src/tools/check_links.py .` to confirm the result.
+3. Delete: `_config.yml`, `assets/` (old theme), `blog/`, `articles/`,
+   `redesign-1/`, `redesign-2/`, `release-*/`, `site-moved-to-gnu/`,
+   `site-up/`, `wiki-up/`, `theme-setup/`, `tags/`, `search/`, `search.json`,
+   `home/`, `Bought-a-nexus/`, `nexus-without-data/`, `feed.xml`,
+   `feed.xslt.xml`, `index.html~`, `favicon.*.orig`, and
+   `documentation/jpilot-manual-de*`.
+4. **`tarballs/` can go too** (4.8 MB). Nothing links to it any more: the
+   three tarballs are published as GitHub release assets instead, verified
+   byte-identical. `packages/` must stay -- the Download page still links
+   those `.deb` files directly.
+5. Keep: `CNAME`, `documentation/` (the manuals and their images),
+   `packages/`, `ChangeLog`, `images/` (touch icons), `favicon.*`.
+6. Merge to `gh-pages`.
+
+## Checks that are already done
+
+- `src/tools/check_links.py` passes on all 10 pages: no broken links, no
+  unresolved template tokens, no unbalanced tags. It also refuses a link to a
+  directory without an `index.html`, because GitHub Pages does not list
+  directories -- that mistake was live on the Download page and looked fine to
+  a naive checker.
+- Every outbound link fetched at least once, and every GitHub release asset
+  URL on the Download page returns 200.
+- All seven release tarballs verified against their git tags, signatures
+  checked, checksums confirmed. `v1_8_0` was found to be on the wrong commit
+  and has been corrected.
