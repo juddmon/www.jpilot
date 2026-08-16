@@ -1,208 +1,164 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Plugins &#8211; J-Pilot</title>
-
-
-
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Plugins">
-
-
-
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/tux-visor.png">
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Plugins">
-
-<meta property="og:url" content="/plugins/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plugins &mdash; J-Pilot</title>
+<meta name="description" content="The plugins that ship with J-Pilot - Expense, KeyRing, and SyncTime - plus third-party plugins written over the years.">
+<link rel="canonical" href="https://www.jpilot.org/plugins/">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="J-Pilot">
+<meta property="og:title" content="Plugins &mdash; J-Pilot">
+<meta property="og:description" content="The plugins that ship with J-Pilot - Expense, KeyRing, and SyncTime - plus third-party plugins written over the years.">
+<meta property="og:url" content="https://www.jpilot.org/plugins/">
 
-
-
-
-
-<link rel="canonical" href="/plugins/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="J-Pilot Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<!-- Webfonts -->
-<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-  <script src="/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-
-<!-- MathJax -->
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
-
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="/static/site.css">
+<!-- Apply the saved theme before first paint so the page never flashes. -->
+<script>try{var t=localStorage.getItem("jp-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
+<body class="page">
 
-<body id="page">
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated drop">
-	    <ul>
-      
-		    
-		    <li><a href="/" >Home</a></li>
-		  
-		    
-		    <li><a href="/features/" >Features</a></li>
-		  
-		    
-		    <li><a href="/screenshots/" >Screenshots</a></li>
-		  
-		    
-		    <li><a href="/documentation/" >Documentation</a></li>
-		  
-		    
-		    <li><a href="/requirements/" >Requirements</a></li>
-		  
-		    
-		    <li><a href="/download/" >Download</a></li>
-		  
-		    
-		    <li><a href="/plugins/" >Plugins</a></li>
-		  
-		    
-		    <li><a href="/lists/" >Mailing Lists</a></li>
-		  
-		    
-		    <li><a href="/links/" >Links</a></li>
-		  
-	    </ul>
-	</nav>
-</div><!-- /.navigation-wrapper -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><span class="dot"></span>J-Pilot <span class="ver">v2.1.0</span></a>
+    <nav class="links" aria-label="Main">
+        <a href="/features/">Features</a>
+        <a href="/screenshots/">Screenshots</a>
+        <a href="/download/">Download</a>
+        <a href="/documentation/">Documentation</a>
+        <a href="/plugins/" aria-current="page">Plugins</a>
+        <a href="/lists/">Lists</a>
+        <a href="/links/">Links</a>
+    </nav>
+    <div class="nav-end">
+      <a class="nav-gh" href="https://github.com/juddmon/jpilot">GitHub &#8599;</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+        <span aria-hidden="true">&#9686;</span>
+      </button>
+    </div>
+  </div>
+</header>
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Extending it</p>
+    <h1>Plugins</h1>
+    <p class="lede">J-Pilot loads plugins as shared libraries, so a plugin can add a whole application of its own. Three ship with J-Pilot; the rest were written by other people over the years.</p>
+  </div>
+</div>
 
-<header class="masthead">
-	<div class="wrap">
-      
-  		<a href="/" class="site-logo" rel="home" title="J-Pilot"><img src="/images/tux-visor.png" width="200" height="200" alt="J-Pilot logo" class="animated fadeInDown"></a>
-      
-      <h1 class="site-title animated fadeIn"><a href="/">J-Pilot</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Desktop Organizer Software for the Palm Pilot</h2>
-	</div>
-</header><!-- /.masthead -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Bundled with J-Pilot</h2>
+      <p>Installed by the <code>jpilot-plugins</code> package, or built from the source tree.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Expense</h3>
+        <p>Syncs the Palm Expense application &mdash; entries, categories, currencies, and payment types.</p>
+        <p><a href="https://github.com/juddmon/jpilot/tree/master/Expense">Source &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>KeyRing</h3>
+        <p>An interface to the GNU Keyring Palm encryption application, so your encrypted records are readable on the desktop.</p>
+        <p><a href="https://github.com/juddmon/jpilot/tree/master/KeyRing">Source &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>SyncTime</h3>
+        <p>Sets the clock on the Palm device to the desktop's time during a sync. Not the same thing as the SyncTime Palm application.</p>
+        <p><a href="https://github.com/juddmon/jpilot/tree/master/SyncTime">Source &rarr;</a></p>
+      </div>
+    </div>
+    <p style="margin-top:26px">Writing your own is documented in the <a href="/documentation/">plugin manual</a>.</p>
+  </div>
+</section>
 
-<div class="js-menu-screen menu-screen"></div>
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Third-party plugins</h2>
+      <p>Written by other people, and listed here as they were announced. Most are old and unmaintained &mdash; expect to do some work to build them against a current J-Pilot.</p>
+    </div>
+    <ul class="entries">
+      <li>
+        <span class="when">2009-02-15</span>
+        <div>
+          <h3><a href="https://jp-icalendar.sourceforge.net/">jpilot-icalendar</a></h3>
+          <p>A standalone program that imports RFC 2445 (iCalendar) events into J-Pilot. To-dos are
+          not supported, and full two-way synchronisation was intended but never finished, so it is
+          an importer rather than a conduit. Its author called it alpha; back up first.
+          <a href="https://sourceforge.net/projects/jp-icalendar/">Downloads</a> are on SourceForge,
+          last updated in 2013.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2008-05-27</span>
+        <div>
+          <h3><a href="https://github.com/danbodoh/picsnvideos-jpilot">Pics &amp; Videos</a></h3>
+          <p>Downloads pictures, photos, and videos from the newer Palm Treo and Palm Centro phones. Reads both internal flash and the SD card.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2002-02-06</span>
+        <div>
+          <h3><a href="https://packages.fedoraproject.org/pkgs/jpilot-backup/jpilot-backup/">jpilot-backup</a></h3>
+          <p>Jason Day's enhanced backup plugin. It keeps up to 99 archived backups, takes them
+          automatically &mdash; every sync, or daily, weekly, or monthly &mdash; and lets you choose
+          which databases to include and which to skip.</p>
+          <p>Jason's site has gone, but the plugin outlived it: it is still packaged by
+          <a href="https://packages.fedoraproject.org/pkgs/jpilot-backup/jpilot-backup/">Fedora</a>.
+          The same page also carried SyncMal, a MalSync client that pulled down web pages for reading
+          later; that one does not appear to have survived.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2000-10-30</span>
+        <div>
+          <h3>pilot-mailsync</h3>
+          <p>Syncs mail with your Palm. The page it lived on at the University of Bonn no longer resolves.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2000-03-10</span>
+        <div>
+          <h3><a href="http://ludovic.rousseau.free.fr/softwares/jpilot-Mail/index.html">jpilot-Mail</a></h3>
+          <p>Another way to sync mail with your Palm.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2000-02-15</span>
+        <div>
+          <h3><a href="http://www.klawitter.de/palm/">JustInTime</a></h3>
+          <p>A work-around for the SyncTime plugin crashing Palm OS 3.3. The plugin is not broken &mdash; Palm OS 3.3 is. You need the Palm application installed as well.</p>
+        </div>
+      </li>
+    </ul>
+    <p style="margin-top:26px;color:var(--muted);font-size:14.5px">
+      Several of these plugins have outlived the pages they were hosted on. If you have a working copy of
+      one, or a link that still resolves, please say so on the <a href="/lists/">mailing list</a> and it
+      can go back on this page.
+    </p>
+  </div>
+</section>
 
+</main>
 
-<div id="main" role="main">
-  <article class="entry">
-    
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">Plugins</h1>
-      </header>
-      <div class="entry-content">
-        <dl>
-  <dt>2009-02-15 <strong>JPilot-icalendar</strong> can be found <a href="http://jp-icalendar.sourceforge.net">here</a><br /></dt>
-  <dd>jpilot-icalendar is currently a standalone program that imports RFC2445 (aka iCalendar) events into J-Pilot.</dd>
-  <dt>2008-05-27 <strong>Pics&amp;Videos</strong> can be found <a href="https://github.com/danbodoh/picsnvideos-jpilot">here</a></dt>
-  <dd>Downloads pictures, photos and videos from newer Palm Treo and Palm Centro phones. Reads both internal flash and SD Card.</dd>
-  <dt>2000-10-30 <strong>pilot-mailsync</strong> can be found <a href="http://wissrech.iam.uni-bonn.de/people/garcke/pms/">here</a></dt>
-  <dd>Sync mail with your Palm</dd>
-  <dt>2000-03-10 <strong>jpilot-Mail</strong> can be found <a href="http://ludovic.rousseau.free.fr/softwares/jpilot-Mail/index.html">here</a></dt>
-  <dd>Sync mail with your Palm</dd>
-  <dt>2000-02-15 <strong>JustInTime</strong> can be found <a href="http://www.klawitter.de/palm/">here</a></dt>
-  <dd>JustInTime is a work around for the SyncTime plugin that crashes PalmOS 3.3.
-The SyncTime plugin isn’t broken, Palm OS 3.3 is. 
-You need to have the palm app installed as well.</dd>
-  <dt>2000-02-13 <strong>Expense</strong> and <strong>Synctime</strong></dt>
-  <dd>There is a SyncTime plugin included in the source code for
-J-Pilot, as well as an Expense plugin.  The SyncTime plugin sets the
-palm time to the desktop time.<br />I also have a Timesheet
-plugin thats 90% complete if you are interested email me.</dd>
-  <dt>2002-02-06 <strong>KeyRing</strong></dt>
-  <dd>The KeyRing plugin is included with J-Pilot.
-It is an interface to the <a href="http://gnukeyring.sourceforge.net/">GNU/KeyRing Palm encryption application</a>.</dd>
-  <dt>2000-02-13 <strong>Backup</strong> and <strong>SyncMal</strong></dt>
-  <dd><a href="http://www.jlogday.com/code/"> Jason Day’s web page</a>
-has a couple of plugins. Backup is an enhanced backup
-plugin, and SyncMal is a MalSync client that pulls down web pages
-for later viewing.</dd>
-</dl>
+<footer>
+  <div class="wrap foot-inner">
+    <span class="brand"><span class="dot"></span> J-Pilot 2.1.0</span>
+    <span>Free software under the GPL</span>
+    <a href="https://github.com/juddmon/jpilot">Source on GitHub</a>
+    <a href="/lists/">Mailing list</a>
+    <span class="foot-spacer">&copy; 1999&ndash;2026 Judd Montgomery</span>
+  </div>
+</footer>
 
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    
-
-<span>&copy; 2016 Judd Montgomery. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
-<div class="social-icons">
-	<a href="mailto&#58;Judd Montgomery &#60;judd@engineer.com&#62" title="Judd Montgomery" target="_blank"><i class="fa fa-share fa-2x"></i></a>
-	
-	
-	
-	<a href="https://linkedin.com/in/juddmontgomery" title="Judd Montgomery on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	
-	
-	
-	<a href="https://github.com/juddmon" title="Judd Montgomery on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-	
-	
-	
-  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
-</div><!-- /.social-icons -->
-
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script type="text/javascript">
-  var BASE_URL = 'http://www.jpilot.org';
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/assets/js/scripts.min.js"></script>
-
-
-
-
+<script src="/static/site.js" defer></script>
 </body>
 </html>

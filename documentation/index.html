@@ -1,186 +1,151 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Documentation &#8211; J-Pilot</title>
-
-
-
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Documentation">
-
-
-
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/tux-visor.png">
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Documentation">
-
-<meta property="og:url" content="/documentation/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation &mdash; J-Pilot</title>
+<meta name="description" content="The J-Pilot user manual, the plugin manual for developers, man pages, and build notes.">
+<link rel="canonical" href="https://www.jpilot.org/documentation/">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="J-Pilot">
+<meta property="og:title" content="Documentation &mdash; J-Pilot">
+<meta property="og:description" content="The J-Pilot user manual, the plugin manual for developers, man pages, and build notes.">
+<meta property="og:url" content="https://www.jpilot.org/documentation/">
 
-
-
-
-
-<link rel="canonical" href="/documentation/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="J-Pilot Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<!-- Webfonts -->
-<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-  <script src="/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-
-<!-- MathJax -->
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
-
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="/static/site.css">
+<!-- Apply the saved theme before first paint so the page never flashes. -->
+<script>try{var t=localStorage.getItem("jp-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
+<body class="page">
 
-<body id="page">
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated drop">
-	    <ul>
-      
-		    
-		    <li><a href="/" >Home</a></li>
-		  
-		    
-		    <li><a href="/features/" >Features</a></li>
-		  
-		    
-		    <li><a href="/screenshots/" >Screenshots</a></li>
-		  
-		    
-		    <li><a href="/documentation/" >Documentation</a></li>
-		  
-		    
-		    <li><a href="/requirements/" >Requirements</a></li>
-		  
-		    
-		    <li><a href="/download/" >Download</a></li>
-		  
-		    
-		    <li><a href="/plugins/" >Plugins</a></li>
-		  
-		    
-		    <li><a href="/lists/" >Mailing Lists</a></li>
-		  
-		    
-		    <li><a href="/links/" >Links</a></li>
-		  
-	    </ul>
-	</nav>
-</div><!-- /.navigation-wrapper -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><span class="dot"></span>J-Pilot <span class="ver">v2.1.0</span></a>
+    <nav class="links" aria-label="Main">
+        <a href="/features/">Features</a>
+        <a href="/screenshots/">Screenshots</a>
+        <a href="/download/">Download</a>
+        <a href="/documentation/" aria-current="page">Documentation</a>
+        <a href="/plugins/">Plugins</a>
+        <a href="/lists/">Lists</a>
+        <a href="/links/">Links</a>
+    </nav>
+    <div class="nav-end">
+      <a class="nav-gh" href="https://github.com/juddmon/jpilot">GitHub &#8599;</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+        <span aria-hidden="true">&#9686;</span>
+      </button>
+    </div>
+  </div>
+</header>
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Manuals</p>
+    <h1>Documentation</h1>
+    <p class="lede">The user manual covers installing, syncing, and each of the applications. Everything below is also kept in the source tree, which is where the newest copy always lives.</p>
+  </div>
+</div>
 
-<header class="masthead">
-	<div class="wrap">
-      
-  		<a href="/" class="site-logo" rel="home" title="J-Pilot"><img src="/images/tux-visor.png" width="200" height="200" alt="J-Pilot logo" class="animated fadeInDown"></a>
-      
-      <h1 class="site-title animated fadeIn"><a href="/">J-Pilot</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Desktop Organizer Software for the Palm Pilot</h2>
-	</div>
-</header><!-- /.masthead -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Manuals</h2>
+    </div>
+    <ul class="entries">
+      <li>
+        <span class="when">User</span>
+        <div>
+          <h3><a href="/documentation/manual.html">J-Pilot User Manual</a></h3>
+          <p>Installation, syncing, and a walk through each application. The copy in the source tree
+          is at <a href="https://github.com/juddmon/jpilot/blob/master/docs/manual.html">docs/manual.html</a>.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Developers</span>
+        <div>
+          <h3><a href="/documentation/plugin.html">J-Pilot Plugin Manual</a></h3>
+          <p>The plugin API &mdash; what a plugin has to export, when J-Pilot calls it, and how to build
+          one. In the source tree at <a href="https://github.com/juddmon/jpilot/blob/master/docs/plugin.html">docs/plugin.html</a>.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2002</span>
+        <div>
+          <h3><a href="/documentation/jpilot-manual-en.html">The older 15-page manual</a></h3>
+          <p>An earlier edition, split across pages, kept because people still link to it.
+          Also available as <a href="/documentation/jpilot-manual-en.ps">PostScript</a>.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-<div class="js-menu-screen menu-screen"></div>
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>In the source tree</h2>
+      <p>Shipped with J-Pilot and installed on your system, so these match the version you are running.</p>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Man pages</h3>
+        <ul>
+          <li><code>man jpilot</code> &mdash; the application itself</li>
+          <li><code>man jpilot-sync</code> &mdash; syncing from the command line</li>
+          <li><code>man jpilot-dump</code> &mdash; dumping your data out</li>
+          <li><code>man jpilot-merge</code> &mdash; merging records back in</li>
+          <li><code>man jpilot-dial</code> &mdash; the telephone dialer</li>
+        </ul>
+        <p style="margin-top:14px"><a href="https://github.com/juddmon/jpilot/tree/master/docs">Read them on GitHub &rarr;</a></p>
+      </div>
+      <div class="card">
+        <h3>Building and installing</h3>
+        <ul>
+          <li><a href="https://github.com/juddmon/jpilot/blob/master/README.md">README</a> &mdash; what J-Pilot is and how to start</li>
+          <li><a href="https://github.com/juddmon/jpilot/blob/master/INSTALL">INSTALL</a> &mdash; the standard build instructions</li>
+          <li><a href="https://github.com/juddmon/jpilot/blob/master/docs/BUILDING_ON_DEBIAN12.md">Building on Debian 12</a></li>
+          <li><a href="/download/#requirements">Build requirements</a> for Debian and Ubuntu</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What changed</h3>
+        <ul>
+          <li><a href="/ChangeLog">ChangeLog</a> &mdash; the full history</li>
+          <li><a href="https://github.com/juddmon/jpilot/blob/master/NEWS">NEWS</a> &mdash; the highlights per release</li>
+          <li><a href="https://github.com/juddmon/jpilot/releases">Release notes on GitHub</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Known problems</h3>
+        <ul>
+          <li><a href="https://github.com/juddmon/jpilot/blob/master/BUGS">BUGS</a> &mdash; known issues</li>
+          <li><a href="https://github.com/juddmon/jpilot/blob/master/TODO">TODO</a> &mdash; what is planned</li>
+          <li><a href="https://github.com/juddmon/jpilot/issues">Issue tracker</a></li>
+        </ul>
+        <p style="margin-top:14px">Questions are welcome on the <a href="/lists/">mailing list</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+</main>
 
-<div id="main" role="main">
-  <article class="entry">
-    
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">Documentation</h1>
-      </header>
-      <div class="entry-content">
-        <p>2002-10-09 <a href="manual.html">User Manual</a><br />
-2002-10-09 <a href="plugin.html">Plugin Manual (for developers)</a><br />
-2001-06-10 <a href="jpilot-manual-en.ps">User Manual in pdf format</a><br />
-2001-06-10 <a href="jpilot-manual-de-1.html">User Manual, German</a><br />
-2001-06-10 <a href="jpilot-manual-de.ps">User Manual, German in pdf format</a><br /></p>
+<footer>
+  <div class="wrap foot-inner">
+    <span class="brand"><span class="dot"></span> J-Pilot 2.1.0</span>
+    <span>Free software under the GPL</span>
+    <a href="https://github.com/juddmon/jpilot">Source on GitHub</a>
+    <a href="/lists/">Mailing list</a>
+    <span class="foot-spacer">&copy; 1999&ndash;2026 Judd Montgomery</span>
+  </div>
+</footer>
 
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    
-
-<span>&copy; 2016 Judd Montgomery. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
-<div class="social-icons">
-	<a href="mailto&#58;Judd Montgomery &#60;judd@engineer.com&#62" title="Judd Montgomery" target="_blank"><i class="fa fa-share fa-2x"></i></a>
-	
-	
-	
-	<a href="https://linkedin.com/in/juddmontgomery" title="Judd Montgomery on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	
-	
-	
-	<a href="https://github.com/juddmon" title="Judd Montgomery on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-	
-	
-	
-  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
-</div><!-- /.social-icons -->
-
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script type="text/javascript">
-  var BASE_URL = 'http://www.jpilot.org';
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/assets/js/scripts.min.js"></script>
-
-
-
-
+<script src="/static/site.js" defer></script>
 </body>
 </html>

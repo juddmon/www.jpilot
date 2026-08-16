@@ -78,6 +78,17 @@ ERROR_WORDING = [
 ]
 
 
+# Not part of the built site: the page fragments the build reads, throwaway
+# preview builds, and anything hidden. Checking src/pages would report every
+# {{token}} and every fragment's unclosed <div> as a fault.
+NOT_OUTPUT = {"src", "_site", "node_modules"}
+
+
+def skip_dir(relative):
+    return any(part in NOT_OUTPUT or part.startswith(".")
+               for part in relative.parts[:-1])
+
+
 class Balance(html.parser.HTMLParser):
     def __init__(self):
         super().__init__()
@@ -193,7 +204,8 @@ def check_external(links):
 
 def check(root, external=False):
     root = Path(root)
-    pages = [f for f in sorted(root.rglob("*.html")) if not SKIP.search(f.name)]
+    pages = [f for f in sorted(root.rglob("*.html"))
+             if not SKIP.search(f.name) and not skip_dir(f.relative_to(root))]
     problems = 0
     outbound = set()
 

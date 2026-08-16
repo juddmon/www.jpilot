@@ -1,274 +1,247 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Latest News &#8211; J-Pilot</title>
-
-
-
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Latest News">
-
-
-
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/tux-visor.png">
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Latest News">
-
-<meta property="og:url" content="https:///www.jpilot.org/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J-Pilot &mdash; Palm OS desktop organizer for Linux, Unix, and macOS</title>
+<meta name="description" content="J-Pilot is a desktop organizer for Palm OS handhelds, and an alternative to the Palm Desktop for people who run Linux, Unix, and macOS. Free software under the GPL.">
+<link rel="canonical" href="https://www.jpilot.org/">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="J-Pilot">
+<meta property="og:title" content="J-Pilot &mdash; Palm OS desktop organizer for Linux, Unix, and macOS">
+<meta property="og:description" content="J-Pilot is a desktop organizer for Palm OS handhelds, and an alternative to the Palm Desktop for people who run Linux, Unix, and macOS. Free software under the GPL.">
+<meta property="og:url" content="https://www.jpilot.org/">
 
-
-
-
-
-<link rel="canonical" href="/www.jpilot.org/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="J-Pilot Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<!-- Webfonts -->
-<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-  <script src="/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-
-<!-- MathJax -->
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
-
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="/static/site.css">
+<!-- Apply the saved theme before first paint so the page never flashes. -->
+<script>try{var t=localStorage.getItem("jp-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
+<body class="home">
 
-<body id="page">
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated drop">
-	    <ul>
-      
-		    
-		    <li><a href="/" >Home</a></li>
-		  
-		    
-		    <li><a href="/features/" >Features</a></li>
-		  
-		    
-		    <li><a href="/screenshots/" >Screenshots</a></li>
-		  
-		    
-		    <li><a href="/documentation/" >Documentation</a></li>
-		  
-		    
-		    <li><a href="/requirements/" >Requirements</a></li>
-		  
-		    
-		    <li><a href="/download/" >Download</a></li>
-		  
-		    
-		    <li><a href="/plugins/" >Plugins</a></li>
-		  
-		    
-		    <li><a href="/lists/" >Mailing Lists</a></li>
-		  
-		    
-		    <li><a href="/links/" >Links</a></li>
-		  
-	    </ul>
-	</nav>
-</div><!-- /.navigation-wrapper -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><span class="dot"></span>J-Pilot <span class="ver">v2.1.0</span></a>
+    <nav class="links" aria-label="Main">
+        <a href="/features/">Features</a>
+        <a href="/screenshots/">Screenshots</a>
+        <a href="/download/">Download</a>
+        <a href="/documentation/">Documentation</a>
+        <a href="/plugins/">Plugins</a>
+        <a href="/lists/">Lists</a>
+        <a href="/links/">Links</a>
+    </nav>
+    <div class="nav-end">
+      <a class="nav-gh" href="https://github.com/juddmon/jpilot">GitHub &#8599;</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+        <span aria-hidden="true">&#9686;</span>
+      </button>
+    </div>
+  </div>
+</header>
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="/whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<main id="main">
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Palm OS desktop &middot; Linux &middot; Unix &middot; macOS</p>
+      <h1>Your Palm handheld synced with your Linux, Unix or macOS desktop.</h1>
+      <p class="lede">J-Pilot syncs your Palm OS device's datebook/calendar, addresses/contacts, todo/tasks, memos and more &mdash; to where you actually work.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/download/">Download 2.1.0</a>
+        <a class="btn btn-ghost" href="https://github.com/juddmon/jpilot">View source</a>
+      </div>
+      <p class="req"><b>Free software</b> (GPL)</p>
+    </div>
 
-<header class="masthead">
-	<div class="wrap">
-      
-  		<a href="/" class="site-logo" rel="home" title="J-Pilot"><img src="/images/tux-visor.png" width="200" height="200" alt="J-Pilot logo" class="animated fadeInDown"></a>
-      
-      <h1 class="site-title animated fadeIn"><a href="/www.jpilot.org/">J-Pilot</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Desktop Organizer Software for the Palm Pilot</h2>
-	</div>
-</header><!-- /.masthead -->
+    <figure class="device">
+      <div class="device-shot">
+        <img src="/static/img/palmpilot5000.png" width="342" height="497"
+             alt="A PalmPilot 5000 handheld, its screen showing a day's appointments and a to-do list of the kind J-Pilot syncs.">
+        <div class="screen" aria-hidden="true">
+          <div class="screen-top"><span>Tue 4 Aug</span><span>J-Pilot</span></div>
+          <div class="row"><span class="t">09:00</span><span>Sync J-Pilot</span></div>
+          <div class="row"><span class="t">11:30</span><span>Dentist</span></div>
+          <div class="row"><span class="t">14:00</span><span>Review patches</span></div>
+          <div class="gap"></div>
+          <div class="todo"><span class="box done"></span><span class="done-txt">Meet foreman</span></div>
+          <div class="todo"><span class="box"></span><span>Sign contracts</span></div>
+          <div class="todo"><span class="box"></span><span>Solder cradle</span></div>
+        </div>
+      </div>
+      <figcaption>
+        PalmPilot 5000 photo by
+        <a href="https://commons.wikimedia.org/wiki/File:Palmpilot5000_eu.png">Channel R</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC&nbsp;BY-SA&nbsp;3.0</a>
+      </figcaption>
+    </figure>
+  </section>
+</div>
 
-<div class="js-menu-screen menu-screen"></div>
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What it does</p>
+      <h2>Everything on your Palm, mirrored on the desktop.</h2>
+      <p>Two-way sync with the four core Palm applications, plus plugins, backups, imports, exports, and printing.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Palm apps</h3>
+        <ul>
+          <li>Datebook (and Calendar)</li>
+          <li>Address (and Contacts)</li>
+          <li>ToDo (and Tasks)</li>
+          <li>Memo (and Memos)</li>
+          <li>Monthly &amp; weekly views</li>
+          <li>Repeating events &amp; exceptions</li>
+          <li>Uses your Palm's own preferences</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Plugins</h3>
+        <ul>
+          <li>Expense (bundled Palm app)</li>
+          <li>KeyRing encryption app</li>
+          <li>SyncTime &mdash; sets the device clock</li>
+          <li><a href="/plugins/">Third-party plugins</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Import / export</h3>
+        <ul>
+          <li>iCalendar from Datebook &amp; To Do</li>
+          <li>vCard from the address book</li>
+          <li>LDIF and CSV</li>
+          <li>Many other formats</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sync &amp; more</h3>
+        <ul>
+          <li>Two-way fast and slow syncs</li>
+          <li>Full backup and restore</li>
+          <li>USB sync</li>
+          <li>Palm OS &gt;4 passwords</li>
+          <li>PostScript printing</li>
+          <li>Touchtone phone dialer</li>
+          <li>Global search across apps</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:26px"><a href="/features/">See the full feature list &rarr;</a></p>
+  </div>
+</section>
 
+<section id="install">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Get it</p>
+      <h2>Install J-Pilot 2.1.0</h2>
+      <p>There is an apt repository for Debian and Ubuntu. Everything else &mdash; packages, source, and older releases &mdash; is on the download page.</p>
+    </div>
+    <div class="dl">
+      <div>
+        <p style="margin:0;color:var(--muted);font-size:14.5px">
+          The repository covers Ubuntu 22.04, 24.04, and 26.04, and the matching Linux Mint releases.
+          The source is on <a href="https://github.com/juddmon/jpilot">GitHub</a>, tagged for every release.
+        </p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># Add the apt repository</span>
+curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
 
-<div id="main" role="main">
-  <article class="entry">
-    
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">Latest News</h1>
-      </header>
-      <div class="entry-content">
-        J-Pilot is a desktop organizer application for PalmOS devices.  It is meant to be an alternative to the Palm Desktop for those who run <strong>the most popular Operating Systems in the World, Linux and Unix.&nbsp;</strong>
-
-Note, that most <a href="http://thesaurus.reference.com/search?q=common">common</a> does not equate to most <a href="http://thesaurus.reference.com/search?q=popular">popular</a>.
-
-<ul class="post-list">
-
-<h2>There is now a PPA repository for Debian, Ubuntu 20.04, 22.04, 24.04, 26.04 (Latest jpilot package (2.1.0) is available for 22.04, 24.04 and 26.04).</h2>
-<h3>The related Linux Mint Distros should work this way also.</h3>
-<pre>
-<b>To install and create an apt source:</b>
-</pre>
-
-<pre><code id="addrepo">curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
+<span class="cm"># Install J-Pilot and the bundled plugins</span>
 sudo apt install jpilot jpilot-plugins</code></pre>
-<button onclick="copyCode()">Copy</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-<script>
-function copyCode() {
-  const codeText = document.getElementById("addrepo").innerText;
-  navigator.clipboard.writeText(codeText)
-}
-</script>
+<section id="screenshots">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">A look inside</p>
+      <h2>Small, fast, and out of your way.</h2>
+      <p>Designed to take up very little screen space while still showing everything at once.</p>
+    </div>
+    <div class="shots">
+      <a class="shot" href="/static/img/jpilot-datebook.png">
+        <span class="frame"><img src="/static/img/jpilot-datebook.png" alt="J-Pilot's Datebook window: a day's appointments listed beside a monthly calendar." loading="lazy"></span>
+        <span class="cap">Datebook</span>
+      </a>
+      <a class="shot" href="/static/img/jpilot-address.png">
+        <span class="frame"><img src="/static/img/jpilot-address.png" alt="J-Pilot's Address window: a list of contacts beside one contact's details." loading="lazy"></span>
+        <span class="cap">Address</span>
+      </a>
+      <a class="shot" href="/static/img/jpilot-todo.png">
+        <span class="frame"><img src="/static/img/jpilot-todo.png" alt="J-Pilot's To Do window: tasks with priorities, due dates and checkboxes." loading="lazy"></span>
+        <span class="cap">To Do</span>
+      </a>
+      <a class="shot" href="/static/img/jpilot-memo.png">
+        <span class="frame"><img src="/static/img/jpilot-memo.png" alt="J-Pilot's Memo window: a list of memos beside the text of the selected one." loading="lazy"></span>
+        <span class="cap">Memo</span>
+      </a>
+    </div>
+    <p style="margin-top:26px"><a href="/screenshots/">All screenshots &rarr;</a></p>
+  </div>
+</section>
 
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Latest news</p>
+      <h2>Releases</h2>
+    </div>
+    <ul class="entries">
+      <li>
+        <span class="when">Aug 8, 2026</span>
+        <div>
+          <h3>J-Pilot 2.1.0 released</h3>
+          <p>Requires pilot-link 0.15.0 or newer. The apt repository now covers Ubuntu 22.04, 24.04, and 26.04, and the equivalent Linux Mint releases.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Oct 22, 2024</span>
+        <div>
+          <h3>J-Pilot 2.0.2 released</h3>
+          <p>Bug fixes, with packages built for Ubuntu 22.04, 24.04, and 26.04.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">May 31, 2022</span>
+        <div>
+          <h3>An apt repository for Debian and Ubuntu</h3>
+          <p>J-Pilot packages moved to packagecloud, so you can install and update with apt like anything else.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">Feb 24, 2021</span>
+        <div>
+          <h3>J-Pilot 2.0.0 &mdash; ported to GTK3</h3>
+          <p>The interface was rebuilt on GTK3, which is what every release since has been based on.</p>
+        </div>
+      </li>
+    </ul>
+    <p style="margin-top:26px"><a href="/ChangeLog">Full ChangeLog</a> &middot; <a href="https://github.com/juddmon/jpilot/releases">All releases on GitHub</a></p>
+  </div>
+</section>
 
-  <li><article><a href="/download">J-Pilot 2.1.0 Released, PPA supports Ubuntu 22.04, 24.04, and 26.04 and Linum Mint equivalents.<span class="entry-date"><time datetime="2024-10-22T00:00:00-00:00">Aug 08, 2026</time></span> <span class="excerpt">Ubuntu 22.04, 24.04, 260.4  PPA</span></a></article></li>
+</main>
 
-  <li><article><a href="/download">J-Pilot 2.0.2 Released, PPA supports Ubuntu 22.04, 24.04, and 26.04.  Request 20.04 if needed.<span class="entry-date"><time datetime="2024-10-22T00:00:00-00:00">Oct 22, 2024</time></span> <span class="excerpt">Ubuntu 20.04, 22.04 PPA</span></a></article></li>
+<footer>
+  <div class="wrap foot-inner">
+    <span class="brand"><span class="dot"></span> J-Pilot 2.1.0</span>
+    <span>Free software under the GPL</span>
+    <a href="https://github.com/juddmon/jpilot">Source on GitHub</a>
+    <a href="/lists/">Mailing list</a>
+    <span class="foot-spacer">&copy; 1999&ndash;2026 Judd Montgomery</span>
+  </div>
+</footer>
 
-  <li><article><a href="/download">Created a PPA for Ubuntu 20.04 and 22.04<span class="entry-date"><time datetime="2022-05-31T00:00:00-00:00">May 31, 2022</time></span> <span class="excerpt">Ubuntu 20.04 and Ubuntu 22.04 PPA</span></a></article></li>
-
-  <li><article><a href="/download/">Fixed bugs and crashes<span class="entry-date"><time datetime="2021-02-24T07:00:00-05:00">April 02, 2021</time></span> <span class="excerpt">Release version 2.0.1</span></a></article></li>
-
-  <li><article><a href="/download/">Ported jpilot to GTK3 and released version 2.0.0<span class="entry-date"><time datetime="2021-02-24T07:00:00-05:00">February 24, 2021</time></span> <span class="excerpt">Release version 2.0.0</span></a></article></li>
-
-  <li><article><a href="/redesign-2/">Redesign 2 <span class="entry-date"><time datetime="2016-11-21T00:00:00-05:00">November 21, 2016</time></span> <span class="excerpt">Responsive website redesign</span></a></article></li>
-
-  <li><article><a href="/blog/release-1.8.2/">Released J-Pilot 1.8.2 <span class="entry-date"><time datetime="2014-05-24T08:00:00-04:00">May 24, 2014</time></span> <span class="excerpt">Released J-Pilot version 1.8.2.</span></a></article></li>
-
-  <li><article><a href="/release-1.8.2/">Release 1.8.2 <span class="entry-date"><time datetime="2014-05-24T00:00:00-04:00">May 24, 2014</time></span> <span class="excerpt">Released J-Pilot version 1.8.2.</span></a></article></li>
-
-  <li><article><a href="/blog/release-1.8.1/">Released J-Pilot 1.8.1 <span class="entry-date"><time datetime="2011-04-05T08:00:00-04:00">April 05, 2011</time></span> <span class="excerpt">Released J-Pilot version 1.8.1.</span></a></article></li>
-
-  <li><article><a href="/release-1.8.1/">Release 1.8.1 <span class="entry-date"><time datetime="2011-04-05T00:00:00-04:00">April 05, 2011</time></span> <span class="excerpt">Released J-Pilot version 1.8.1.</span></a></article></li>
-
-  <li><article><a href="/Bought-a-nexus/">Bought A Nexus <span class="entry-date"><time datetime="2011-01-08T00:00:00-05:00">January 08, 2011</time></span> <span class="excerpt">My First Android Device</span></a></article></li>
-
-  <li><article><a href="/blog/Bought-a-nexus/">I bought a Nexus One <span class="entry-date"><time datetime="2011-01-07T19:00:00-05:00">January 07, 2011</time></span> <span class="excerpt">My First Android Device</span></a></article></li>
-
-  <li><article><a href="/blog/release-1.8.0/">Released J-Pilot 1.8.0 <span class="entry-date"><time datetime="2010-02-28T07:00:00-05:00">February 28, 2010</time></span> <span class="excerpt">Released J-Pilot version 1.8.0.</span></a></article></li>
-
-  <li><article><a href="/release-1.8.0/">Release 1.8.0 <span class="entry-date"><time datetime="2010-02-28T00:00:00-05:00">February 28, 2010</time></span> <span class="excerpt">Released J-Pilot version 1.8.0.</span></a></article></li>
-
-  <li><article><a href="/blog/release-1.6.2/">Released J-Pilot 1.6.2 <span class="entry-date"><time datetime="2009-02-15T07:00:00-05:00">February 15, 2009</time></span> <span class="excerpt">Released J-Pilot version 1.6.2.</span></a></article></li>
-
-  <li><article><a href="/release-1.6.2/">Release 1.6.2 <span class="entry-date"><time datetime="2009-02-15T00:00:00-05:00">February 15, 2009</time></span> <span class="excerpt">Released J-Pilot version 1.6.2.</span></a></article></li>
-
-  <li><article><a href="/blog/release-1.6.1/">Released J-Pilot 1.6.1 <span class="entry-date"><time datetime="2008-12-15T07:00:00-05:00">December 15, 2008</time></span> <span class="excerpt">Released J-Pilot version 1.6.1.</span></a></article></li>
-
-  <li><article><a href="/release-1.6.1/">Release 1.6.1 <span class="entry-date"><time datetime="2008-12-15T00:00:00-05:00">December 15, 2008</time></span> <span class="excerpt">Released J-Pilot version 1.6.1.</span></a></article></li>
-
-  <li><article><a href="/blog/release-1.6.0/">Released J-Pilot 1.6.0 <span class="entry-date"><time datetime="2008-05-27T08:00:00-04:00">May 27, 2008</time></span> <span class="excerpt">Released J-Pilot version 1.6.0.</span></a></article></li>
-
-  <li><article><a href="/release-1.6.0/">Release 1.6.0 <span class="entry-date"><time datetime="2008-05-27T00:00:00-04:00">May 27, 2008</time></span> <span class="excerpt">Released J-Pilot version 1.6.0.</span></a></article></li>
-
-  <li><article><a href="/blog/release-0.99.0/">Released J-Pilot 0.99.9 <span class="entry-date"><time datetime="2006-08-27T08:00:00-04:00">August 27, 2006</time></span> <span class="excerpt">Released J-Pilot version 0.99.9.</span></a></article></li>
-
-  <li><article><a href="/release-0.99.0/">Release 0.99.0 <span class="entry-date"><time datetime="2006-08-27T00:00:00-04:00">August 27, 2006</time></span> <span class="excerpt">Released J-Pilot version 0.99.9.</span></a></article></li>
-
-  <li><article><a href="/blog/redesign-1/">Website redesign <span class="entry-date"><time datetime="2005-10-30T07:00:00-05:00">October 30, 2005</time></span> <span class="excerpt">Website redesign</span></a></article></li>
-
-  <li><article><a href="/redesign-1/">Redesign 1 <span class="entry-date"><time datetime="2005-10-30T00:00:00-04:00">October 30, 2005</time></span> <span class="excerpt">Website redesign</span></a></article></li>
-
-  <li><article><a href="/blog/release-0.99.8pre11/">Released J-Pilot 0.99.8pre11 <span class="entry-date"><time datetime="2005-09-11T08:00:00-04:00">September 11, 2005</time></span> <span class="excerpt">Released J-Pilot version 0.99.8-pre11.</span></a></article></li>
-
-  <li><article><a href="/release-0.99.8pre11/">Release 0.99.8pre11 <span class="entry-date"><time datetime="2005-09-11T00:00:00-04:00">September 11, 2005</time></span> <span class="excerpt">Released J-Pilot version 0.99.8-pre11.</span></a></article></li>
-
-  <li><article><a href="/release-0.99.7/">Release 0.99.7 <span class="entry-date"><time datetime="2004-02-29T00:00:00-05:00">February 29, 2004</time></span> <span class="excerpt">Released J-Pilot version 0.99.7.</span></a></article></li>
-
-  <li><article><a href="/blog/release-0.99.7/">Released J-Pilot 0.99.7 <span class="entry-date"><time datetime="2004-02-28T19:00:00-05:00">February 28, 2004</time></span> <span class="excerpt">Released J-Pilot version 0.99.7.</span></a></article></li>
-
-  <li><article><a href="/blog/wiki-up/">Wiki page up <span class="entry-date"><time datetime="2004-01-15T07:00:00-05:00">January 15, 2004</time></span> <span class="excerpt">Wiki page up</span></a></article></li>
-
-  <li><article><a href="/wiki-up/">Wiki Up <span class="entry-date"><time datetime="2004-01-15T00:00:00-05:00">January 15, 2004</time></span> <span class="excerpt">Wiki page up</span></a></article></li>
-
-  <li><article><a href="/blog/site-moved-to-gnu/">The site is moved to gnu-designs.com <span class="entry-date"><time datetime="2002-11-06T07:00:00-05:00">November 06, 2002</time></span> <span class="excerpt">The site is moved to gnu-designs.com</span></a></article></li>
-
-  <li><article><a href="/site-moved-to-gnu/">Site Moved To Gnu <span class="entry-date"><time datetime="2002-11-06T00:00:00-05:00">November 06, 2002</time></span> <span class="excerpt">The site is moved to gnu-designs.com</span></a></article></li>
-
-  <li><article><a href="/site-up/">Site Up <span class="entry-date"><time datetime="1999-05-24T00:00:00-04:00">May 24, 1999</time></span> <span class="excerpt">This site went up.</span></a></article></li>
-
-  <li><article><a href="/blog/site-up/">This site goes live <span class="entry-date"><time datetime="1999-05-23T20:00:00-04:00">May 23, 1999</time></span> <span class="excerpt">This site went up.</span></a></article></li>
-
-</ul>
-
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
-
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    
-
-<span>&copy; 2016 Judd Montgomery. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
-<div class="social-icons">
-	<a href="mailto&#58;Judd Montgomery &#60;judd@engineer.com&#62" title="Judd Montgomery" target="_blank"><i class="fa fa-share fa-2x"></i></a>
-	
-	
-	
-	<a href="https://linkedin.com/in/juddmontgomery" title="Judd Montgomery on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	
-	
-	
-	<a href="https://github.com/juddmon" title="Judd Montgomery on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-	
-	
-	
-  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
-</div><!-- /.social-icons -->
-
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script type="text/javascript">
-  var BASE_URL = '/www.jpilot.org';
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/assets/js/scripts.min.js"></script>
-
-
-
-
+<script src="/static/site.js" defer></script>
 </body>
 </html>

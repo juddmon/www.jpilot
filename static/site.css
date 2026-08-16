@@ -1,0 +1,506 @@
+/* ==========================================================================
+   www.jpilot.org
+   Written by hand; built into /static/site.css by src/build.py, which also
+   inlines the display font where the marker below sits.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Ubuntu derivative jpilot.org";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("data:font/woff2;base64,d09GMgABAAAAADfkABAAAAAAjMAAADeBAADedwAAAAAAAAAAAAAAAAAAAAAAAAAAGoFQG/NwHIRWBmA/U1RBVFoAhQwRCAqBhBzqAgE2AiQDh3QLg3wABCAFhRwHIAwHG5Z8RQdixjgAYOxcr5EIGzk4gcn/xwQ5RmxgfwPJPoVMNBahqstoT/WELReWkY0Ty6Wtb+3sTP9kYj1v1s/72H90ZGECazfe1HyG98YjsqbImnUT0VSliBFb54Ab0zzE4iT+e/+er9c+971vDKCMTgFnYjj144EjOFQ2QcIc1vbhaVu9//8QjgNGAcbOoWBD28FeRW0Hp9vdHMuWNvYyPGyzf5gBiKRUCoikICHRSqkgRiJIqjinzk3X7dpF1pUXvV3W6moX/+/6//KqX7Ouen0KG07S1sjXaMTrZcmRMgDTvTz//T2/dfY+D+jP9wATSiCtwKIklCCyJvBA43uo0zIMU8ftgeYikD9JiR0jyzKcUQ0IQCAQgm/tN/ju6Z58d/x1CJFKaW0K4B8i1OmlqBeYXpYMFKApw96yOZkBxJ22lxr115iLulKykwcpLkxrh7UTgWW3n0eeW45XZ32E3HMJeGFOhXF3erPXRRhzAShN/97UtN2Hzz0CpNJe5DljJM4Rijw5tQSUEkyFyjFV+e//AD92Pz7CghFLmiROmZdIXmBw4BLQ3S6kTDlQckoKiU6J5J3CZVJ04DmG0EmtOrcuOrtSqVHrpvGoqJxCF7tadelozrdez+h13d4JixBGCCGMSfOu43vN9vMziGJpTC4PY1i4/lX6ntT3PXb3H1e/GlFVI6pGVERU1LzjGJsZuGymYBRHDM6B+/8DIygluBDwAkqBIIgkBoSJFWFnR6T7FcTvphELLUYttRTl4sI88xxTow7j5cW0asUoSaiIDHKUSEEstBQEh2Q2SopH8jtI3RpAT/E8Jj7U8G1vCpaC1WuS0IeHjMszNWrV8WpFwGIGH0o99snmAfBLRgYiAH5tRzIG4DigfRgIil3zNhAD8P9bC0BfF95TgOS2AUUdwR9DHAnhwK8MqfQvMxyUHMUnHOGQBrZ31liTTTbTTIutFGWzncGHnfW97C6PGqXVS5MQD/SZohAgTLgoSZKlSGVgZFLKwMjEysauVh2HRi3atOvQachexHoQa0CpALwI4nNAiepW0b0f0R9tBLe1yygbBtYDhgc698c2oF8aiZcCzQG+4fs+Dy4Q3zJMNLyKFQZAoPs8goN97jWOxatstsoZUFOlvqLhLUKVLiJ1spZmIshU7ZUOWot4DgCQg6SCPjSquc1HzYNtmqGBjHyIRWSwXkdRV2ZavGJVbq1pB0hfqA17Z6D25lN0EtRRO4xrBLg8/lHmKtDelAAge+w3bGR+Cs9sFGISqqsudx4Wc3v7kHSNviJ7z/FRUW87RAYehyaEPTpHhTYw2+9DaUc1NL2G4djLcgmQ8oD5nCHRsyyGtq0j7DNpaz0r+uaPyFVu8ebDiulWDqQJ6H81YXy1l6j5m4FzT4dUUlnK+7IWT36t6otenJQrwdQD17Q7sTILA5h7NlqevHnFdjxpIo4FtoYuRqQrSfD8eZsdVi7399h094pOxQeMdfrwTgAxCSSVfPAA1DJNnei//QG6TBzAkJ+wFA6kzNsLNijVlO1lkwNAyCkNKJr6aQsylkveMzo/6mofaM3jjHqgk1zSblumUU3pHzXqMqvyEUA2mqMekH1rG0rclR/S82cpAWL+52YI9GoU5ZCVoQENdK8Zvl5/ehzyElyHja9f3SAGOBw1ai2LYK/eTABrAHgB8Nc5EzieaTYlN6rXTfBIsgKbvwqpPoAZnIfpxi8rwHHqo6cBi+zTO6FFHYh3WrEgwfDwOMNYknV6qCdvFfdYv2c4wRgd95Dr73z4wOgsXIcwicIctZXFh9McM8aiqggMnp5tVb4UngSQRKpFvVIQXvVEtoLOrCZEc7VLVmCrwnWDPPHDa2dRD2GguJeXGA7hPXh0k18O2HYAL0bje4gBfn7UTteyAFPm7QxgDLfgDcDe6xQsLz2FW48f6GGt2zjBeParC6CDc1DhQiTui3MpteER6WOW7CXCWmFoLQYSC2bqVxp5dlEBC65o48iHjkonbIIVAg+2lFZ4wDPvlFUeD+sftRwNY8ECw0GWrMmesdWZVhH3IkSObog68MAH0p/rIArSYWtqCAoLbrBcuJ/Xl9I+RP1AmsEcPGAPknWmCnfQIcjbkhCmDMTAMD1o6gwbaMECaQa93wAygL07MfjRqMJmOWRTEK2iX0zD+r3086QNKu2QezQCs3J/WZmX+Flh9s2JljGtqFEMRPSpPCsXpYtqihpRym8wsHJ6BOcsEtOkUDrgdrubudg5Yx7PsjJgu/TF+FQCUc+tdFsLISU5Agxrwn2FAysMajpiyFlYRxlEvYMhWCHNMGexcghtHlBWipQ7rxbBoirYaSsjxcpgJ/bP/XhjprvawWPJmZGiqDENhWG3/W5ldmH387LBKBStphUcDGpVgNNlkSunMpQFaD48o4dt5ybwVIXbaazncLeLAdt0PGhmPNuAHgUwTNtP0pQqQzRhNzZzf758DxtFUg6FI5iQ4Biz81K9/e4Mlh9ubW5ekjVVAwAfURqPRtN5kJk1Eh/iQrXgdHgw4BuFGKhWlQei0P/SBD9nRMrDWRlnI62mrK3vcV3OcRRBdAuNlq18d8SQZhHjCcm1tfBZPqByWj0OVmlhDWqgsEkQT/BkE2SaIFbaquekgZOZaKzrw/as1kz9TgjSIFviVNYmFq5eyLLulgfmbmu7V8jeIxztYp0d2aCsVky0WRPy8KIHZHQT3WeA4mG+6CaxkRCMUBNUltN3kNPniprSyahRn6YKiGcUqJrLG9at9AO+TIfxU+Ga8x77HJIGw7kd6bNKXuyb1DKIIFfoDw4YHPWaX/EBsZIag6sW1HvX4KvQRd/Kf/0KvPvds+Pdo+4xFy+LU+9OsM4TOFVWY1JraogRiAvL1FAJti/AFFE41P15e9vcBRJlaLcsepPxOnKzGQae3jrzJ1HQGjF0vvpgWY5GLUX01iWsFPB2vzAvGt9OLOfyCvetetwc59SLCp3nasurb7ArsHlru9141lHsVxs3DJ5+sSzHxZtcEUydvET6G/bthgPYnxvCz4TcGtVPDfaTL2zZqlwAE0iNtq1RNDvmNQqjAzzXoXZCHwwNS8FkZtB6hWw+pAc4wyYkZi/Px0YzgT/ihU4e8szpsPUXF+5oyDOPwJqitiqqJ4XOfUFucf0Lsgnau3Jm2p0nVyrM40mzT2i2cI9UIT0uObuqZEUuXc+n9qg9f3nyGQWCyBD0sPdlUSxUjOuWZQVxo3NzZIsuUi/ejoM/CngOCswWZW9iS/RnVQpx6zStVui33GMwjWm2usukE44Lavbb7IzUffi8ALChRtuQ+awhGNJF+V1RBGbXgCQdzyPmxH0QdntQGKhFDovZl21cU9BS6KAGLTMQEYgt/+ZapMq5tPjxpucgaIThWQtTqgFgVtedvAFRWrnPuPd4GTDMcZc/te9lntIcCD+6DpQdlCxbf9vt6mLtN7+SiqnMdl3LBqwTZNAJh2zVS+B1Xt2hXZgW4qQ5C8mXKFrmoVtzKdtObw81JHq3kiDmd5n6V95HBRY0ftNgXe/HADoD3uiIuKoazyScCb5lfw3BqiwFRtA5PszG+r6VvwawG48VuTW1nOeSp9wJVgDHdiIhjf7xhk+Bb0ul3gFTCZMwoO4fQ+xlifSrkDh+hz5O3op6UvxJsvIyOX6fsri7azhLLwfcAytyH80usYlI5eq0zEAJKnsEHyBmkctcI7ZJvUzk7Fv/dR2NjwDJW7vRcywNkX/kJ0y7r9RwrTXlmGXdV9XpoTV4Z81BHwcu2ZxsHNuNx52Ax8mZR7YF/dOQDpm8Z6MyeH5j5Nb92oA1RZ4NWTu0DSHteI0KfgCL4mnMxUshDdjM+fw8rfrwGgKE63LHRoNlMSMRu2X2DGcBqSRGPZt6H5uvJTnnIrR2I7lTRRWcpgY9mwy/0Q+yKGk2O87egXJSrWoaFDaL3RXRGTpRC0PuC6+9QylXDb+6nJ69Iw+ltaH2K1/4ni2+rauKpkntK2rbaURhgxfWUN/7JlB4sw8fnRRKYh/zjKhVMdMamZaB59gaoiyGlSugjReNT4WXEAnwCaqGaXjAUG4KNXrWfVZWARx5UHqMTOtA89uDkP9JDWCZV7Y6Py+oSo8awcwM7DDep635zJi71FmVhGnuSRE+s90zYuV39pD6f/nXgdyZtHhqTck4TEgzqAW13+cFMhK1Xx5yqOItSjyCyEhxQCaz59eREjVHYek3QQlEMDAjwcjIcfxFkBJphYgTJ1yiXBFKGHF0F8X3h4PecdcRVY45ZpwTThjvlNMmOOuSSTp0mIGg2qVIAYeD40gABzCziM/TUhk0U19ZBix/kHJWgCln5RgpGuHlxAoCVSE3J4E/+LK1aOrA2NQkiZ2NQCOYpPkmipFGcZshZF6pZKFz4DDSe64TQEsOvNKNUilQ5E82LaVXQQcjTL5wrO2wEoFD6TF+5HSClCuBfGf2NILjATuQ9utFR6khkyVbjo3vdkizA334J5YKDlChCnAQK5uE6zQDo2a5HJJsiO/EwSdIh1fPTgGk0O+OEykRb7IY/hwDJ8Wlp8mQTkVNQ9p8k3STKaCySJyiFTgnVKGcswYJFieaCEUnTCmWF4htqgSwvyjhiuDI2g4diLqDzYkgF7TnA+0GECedJt9JfanHMVDIlSdf9tojr+jdcSDkyOx7eehsJBtKiiBwcw+SIh7ljlRoqP7O6amZq1fwwG3x0I6vadoDdm47k0EFujbBPR0VIAli9DisMfyIo0hNTKlNIB5ABJp4O0YayOzMzcKMz3+Ye2pmZ2HWZrl3czpzFHaK/YDTm38x13M3rjxNXbzpLGVypmShRe9XFSstDaAEDhego66WOtqwbmtjDXLu5CY62pVbIzW5O7jmArWROHpip3durN3O2le6ON79aNd3a892N+EyHNSP2/pr6zUe7mbv7966r+ALSfemefoMvtd/YaIvPXf/7cXxXOAiFktf0jJWuFxv1XrXBTZQ6wamgHFb63Zv3ypVMp45O39H79idvDN3/i7dvbu6wWHYyLfLmk7u+b26t/fherZ9ayA1dbggmUuENTsg+TJH/xT3MFrmupQCBFa6PKl6P6y8A/Ah4F9JgY2WIBuyIbWizgXXD8UZjH52/VxtGorHcpezCCgQx3sn0ZvoDb52iMwNy+eiTN0LdB7vEUC/8R5H4M71kBM5uRPcKekGUDSfzgFQi3JRLnIiJ/qUZ5ZwPyj6nOYpw+gXqriHXcuKADo7/TkAWoWuoWuoO+9OvRBYigCa5IahyTOeoEsHAjy0RtkEyqIIPBFKSrOmJgG1PNYzY5sDeGKKMASUEn/KeWZM12UMVWG3KmpdaiLFqqIRDy4VsfIhAzlaF11XRYkSuG5VnroApBKLUK68IqCx9FVQoYMYACJFqlNqLarl9UDFvHgZ1Mqve1GtolOR1tTBEFBpf4A0lh4FoBYFoIAojyKmLgJIVUYzgC6DqhZWlQ+SN9cSAjEjxesjehui83nvyVlokcWWJlKxXJvhdWvB5efwRDbfS5EhDy8QqZ+BPu5mgdFKYGCjBBl7weDaQmmI9FIQZwHklDL1IwAimXEKoILT6p7hohAbgTSBIiCCS78mKTwoAqE5WMzNlibMBejc77pOSSECMWdu8PaNmXbp8NnVSga2vZJ6Ty2lh6Sdi2P+jXK9XTyuhP2eNVist+dv+VSQxDVvjTvqWU+gP0bjIbAc40JJ3qku65fqANqHgtwYymwQpiI3MQnpJS/RBKBdG+rtANxr410RICSqQuqlDYCCHOeBOCRDkvZS/lTe36dFXO59OkpimFoZFU28qL7DIhApCGKmCT2nRQTUg8XpecfJ0zUtRZxd6G2utFVnYQR6Joyc7WtRjWqU0qCOt63MvUKMaP190cwLzVqmQCKQeAY686hg+ulmmckSABzhZXnnIkFD7AuX5MFajW1hKO1ZI4XlUCbLUVpnCUGoqJdR70WYHmbbr72TFqL8wPm0HUQNqZF6rLf65zoJ1JZ8CDiFF57z1fnTlrkbrogI+ANx7FF2DbhN3DGM7T/FwPjXPRCg5nQL2J6AIOQYWIuBvdGbXpNBCAS46YpgEpICctV7RwRShJIKFoOASgC+BQSBLKC7wUDRBAECKCjnRP9kzlVvwMFEHA2jTAP9R1LjzvUczc3cLsfkLPHBj3AXNWKMqBX1okm0illiCeF6wguvaLXB2jCfD2zPJMv8mMeV3+FNVIlRoli5Rcy8rFsAugL4/4iSW2L2csWDLrrr/P72IuCq+MPH72+6v/Dezfv/3Hfc+/duBxN89xiILHC6zyAPu7tvZMuMnYk+UK/hhPHTTSKVcGedIxfrkBMOOoZi7op3h1SEJBZWdulfzXnJF/V/tJiYQbzNo16DRl4tWrVp1+kdx12SgNfgG2ERMQlDZhk221wThhhmuJHGGm+CiSabYqZZZptjvvOuuuC+/SRuesUtWtdovBBpmSAPnBSlTYx7dtuj0UNqR7TbZblgO2y3k4xBshQmqYzMbLJlyJSlmJpGDTGHWlY2DnZUb2jm08Svg9sGP+jWIyQgqE9UUr8Bg8aNGjNH3CL/GWW0ak56VWaYaprp5hpnnresEiCQPwUlwXU3HEWQ9gkA0QXkb8gCYPVFAGx8GJgOhroHUGj7ulHhpAsypKamG0AEU4KLWHbOhEtKKVNYlYuFMsylf/odVU3rryK8Z0mxjijr4ThF3wxdgVxzmNzf6g6G7NMpLTnLhZ2ngw2dvSGsLixVwi6FhJXR34x1ZKZvLIXtzKOWRbs/7CSw7HggiV1rELXbZoUh/2XOrryrtqGoZbMYfLiMekzE3+opohFmlzzrZVyG5Z+uvbczuXDa99+F0gzX2szShrNGTBMNs4q1WtRL7dqzJB7tq8cobyTaQUW+ni0UaKTZlJs7x2Rl9Sy1nNcGXonbBrDg8d5Fo4ag46BG4f7ShcQOtPmKn8/jmEbUen+EKGLqhNWKpKvEXiSUSE3hl/VsEaKrwxhrLaKWZQbi1CSdJs06ItZQmI5hSDlWAZhamWKHLxI4ugTQG/QFhAzk/HGYDhtrFBpSVqBUMehHiZ3nx8eEWjf1+gSXjn4/2ptHwcYxLbrHbXzJB4vAvb/eBzOmsisv4uESCsHT0xEKc5bHWXDZ354BFimLijyA+rsMum1nK7L2OspJvvY1QjPS8IgL4b1j29gKSPVo1i9sfndCduu0ZJs6zBBPeC1mWwzkJp/MuVsNGhB3fUJBat6AwRF8iVOT7AAQGaY4c+ZQ2QDz7HE73XmxItRQly+AqjtUwLJQthiOsVSljuRR0ktUxZaUxrJqWIbVNU0BqWCgfHMTHMKJ1eXR4HozXqw/ZumnytZtWLWX474os5Nd5iD6dIzRxIl9ouwrMOKqzww4XgyuG/MocH9xNIE4O647NkyujuonXmt0nfQtef9w9BHDzuw285/YFtz3Ilunvo6es2uI4wdsDfFjyxm3uHkd1agD62cUTpf5iRVbNYlzBhpfDr7O1MY9bMbYiReOLlCNdUhvTsZSRTuzV9IfW6um1xNgAuAiTB8XnXTtFh77xwQ4jsV/OC7ovtW24b+dc8xF6+xTZDzeIC8FrNmmLgs8zdyWbHPwmc40oQFSeT+rbEZz3ugUunpLRd8i+buj1xuQzMv8PfbOOjK8rYoAgem+yNHyRjsMZASNkCfmKPDcDR2SFuFS3CPdd7ClMcZm1LZp3rtQe4KsgnhRK8KdUWd4rWEBYiAolM+8AUbotcstrMX5b1WFMzr/MfVfh4R7FsHP1Qb0k2iqZFXti7fRRsEhpQXMgVQbtLV2/rLnLucztomHuL9JLFLAfQWeXm86Ncj/fml/j2FVWkBXNgeOnBfaliXb1CVggGTVayczPlfgINwsXj9Y7sGSHY6b6Jb3CAMZXLsg7UA0Zx10E/DmfLreI72YEM2BvcUwwfhzwDSK+ReD4kNwj0/mgrFb1pfYAKT+Jfky7F/cay7spEme+7f40VSgxH88RtC1Izicj0fsTN8jb6jlDK3Gn/nnqAlZs1Cpqa0tHSZ7Fqrb2ch43hyyqoCkrIzmhHSmXPtEIob9JrLNgHSqgCyxPR0lEX4C29Q/HUta6Brycpl5Bvi/4uBqMnX7ViSkqOY1aFNwzOZpBjVbqyll+mYRLfa4tKbla41KnH8G1YKSF/sU+TJY9n26T7sdVa252db90NaJbfRVbccq1Mo1p7EvPNBkeh8j6WImJtDspSNuCw5fpxkm0aCKoQCRHxlpB9UeXYhCyFLKdFXt6Dxmacfo3hwbWXUIRwKTanPKXoeOiJKvYQGh1vU+UgwPOQKplCz0V906EO4GSsZKJUFMJqwQ3SI2roFMBE6tmCzjt/J0lXD/E2NJmUmFUGY1Z1m9icXz6S4b8Q1JKaxfVae5loYM37jo0KwYr09qbcvQwEZtzQbErHwiBsNps1Fw66JSF13TL4LXz7bwN8jGOWpiz8E9gqGz5c+CSN4IP6gGd80Lmm3ZqvPMrdwwF6pslVKvvsnZx6A1na7VHg3thcEbcpxhk9eTJvKoVgpyjhyOrH0yratHn1zTgSb1RFHDZ+ZzsN0wTSQTZ25h6/yWLfmHXciLfdlX/X7Jlz0Ebas2US74wmsWYcQGRv0YJA2ozl3C1bcXahdaLCOswuBAyuFy2j+14vmUJlBnDQLZsSMd8EuHu7DF3yyW/Piybv8pk3zJ8HRkV4npdboMHeLCGZ2S4tjB2uzPILRe1Cw9Tj2ttkOZrcVstFuyStHA2z4TcR6lnvTXLOTI/UfsVURIhT1zO8lmN//8J52WsYtVPuXY9eZKr+oadzCTNBObhFeo7p8FWp0gL435bz2i6Pvsj9R6D+vvYnnGlVBfFRPvn4SAMJ+rjJ6pGxdEYKETJuehJkqfDqyR+1hdjBl66A57ifTI/tgYRLa96UUApxTO1Qkz9IYJqlLN4qdOJOrDgJqrodt9XAv1ptRk3h0gtxJt2cMicptJvka0eQJnPj9LMkqVhm+pcOS6bjQ5x1Jkn0ozEL50XmLM+tqTlMa8vToUI3hEvusUY2oiRBqjBkxej3w+Fp/FpJy0+h1aJAiqn0yYKkJcMSAMgjVfifJ4vh5awljuiAHon4+wokEnf0fg4Ed+sKRVei64z/+bOPlXRgpvpOnxsIxCjWO6Tbtt7k5m/Ua7z7vHmkvWOqn7TxLeij3nFwkWMW8jdbcqa1owA2HYJlYMBL2sN1qjb1XSvNRTwR9tgKaEI0qPhnkkhi7qYk6ReqHaciUBxiiYodSRVRyHnZgyKzhl5Rk8R1y2ha9i0oc+Zy6lB25wnh5cd8J1AhrZpW9U1y7TeyZe4nm1JNwkrRv4aF9rBd2grj6CWy+2AqxyEZa5H0XW9+9gRwglvdrghkkz5KYuPaU9/0EXXTNHH+rtmC2CQ/CudpcfRMLrwdFThCy/FMe4Yc7gIe6X30jdOdw27i3i6TkXvs4cohAsRz8A7rVygc92nOdzwS3Ha9Ne8kVolOWF32GKe7184lqr/wk8CVnbsDTmEYAdGSh+3oNk11w7foEK0cgxCPJ94xOU0ecDj/i4NDACFwHWIGDexK10knoDlHBpadbRdTnlrKuyVbNqZi6/h8w/p7+JhE4JO5IrXhsVwVFoXUZdLZrWwsQIs559YkaCErJd6oJtiadIZe20CAQ+46oHniTx67MoPWLUHd3V6TvgzlmwS9o75grQnumK+SXil/3Nu9n70VV9dmG4V2k9b5epy/75JGZolKSsig5xiCt9hk2L0HzhhI7n20fdhR0/V3yxxKjz0nrymjjuTAnD9mxv/X0Y14ibPW+R8muQcm+XqcMGjr/F2Iz8Ej01yDDUmj4ywyc0UoFKdvJ8OkeP5pO6MU35SZ8+ab7REUAbats9bfUvYk+RwZI6vzap7avOaXT8aJJaMoFBijuwN1YsprbbaGigjfsGUq7JBe84Hjv4S7HRP0HOUszoJQD91XGjEfy49seWCs5yDlia37LN6d8zyyda3OYfKde1Ui5reFbTniln27DKK+eFzRbGslWl9CpSl/myQOtH2kxduiHFwry44iJzwhM+G0XLe0Di0OkcEvFuDcB0/goRy2zslbfVZOrz32dm1hU9isSmM9gkIptBZ4P5H6GycpifnLn2CRp/l07+oobSRe1CCZR1+K/YGDY3DU8hZhSmiypGpMSjAzmvWdnXTAyrDA7g2rSCtAEUIpvx6Znrr6HK7tIpXwrqSVGprXBii28EcJrZWmMrbtm31gFt3EKOzXy3anLFgXYyOklqfn1f/7XvZvSuhxpTHGv3tUDl8MTpc8COnfgx0Ek4URvoQK+cE1hLPDFAOLHgDp9LnTcYD6wjRBbSm0UIW4BZuRCAB9HfoiAx118qL+nhpkPyJnOQGRpOEgi8mMz16jA+hLUkUJ4Bwdpfbsv2IuSIo0H0B29JadkANwMI42hJXXOITZ1NxM7NsVTmbi519RwLEj/4EU0WZwBQt1yu2PMolrRze682gvkVD1jg87+qAMenPTnmNBNBM7+GkG7MMdeDv5Za9wvGQvp9AzHjgbHoNrHHNyUY6FStaWkVzW/TqnFthbUTZHW3SNpXp5X2hVV2WSPsqgijhcGz+nNrJSpW0FmbZFrbN7jrd0T7G7Zut4cqPXmL8uoD7UVKSgniAr0s/4N1A0U6ubOaPQ8G4HKdnxgs1RKFNNtD7U2KntEQaPbJHUyGnsMi6A+K5k1chGpYkXwxvms4VeGULFn98L+BvnJlL1eHHjp6XDbvJLF0XMm1r4qP4aB/f6Wm9JFg764H2VduxPMTgR4xx+2RjmDtNFeaIyejfSxjHYTwRQ6oGzZ3IwsJvWtNxRLGfXRxxnk/0c2o0FWR+k2ajWvKKvn6Fqq2ogmGIwSva4u4zAZEcabrz34Xq1wrKT8u//0yVcgztpDSq2uXlqCms9gDtPnKgwjUxIO/9jWAtQW6MX5Hs2RxfYNkUUfzGF+np7WIFzXU61o7vXHFR2UuDqteWc31ODki/pED2Nr3m8toT3m4n/0E4q7vUM4XH2S7rf1a9ZjbzViewmp5zrmJlHgx7YQ08H9SVnW2/29zqdOlqMZ/8bqrasMXLfQfM/lZaaS5L6AoXViUtiy7yAEGm9gZ3Zn1mQa5f1+ts/3wT3g9VnPQb800ZNZndMu7ySlaiAZ3eOnQEv2WniVHMlPq8AVuSK9P6OuFgHWfM/VkVg2Py9LqSUyWjiQTXJ4bQUdm1iM1uDINcvlljqsBX/46YkhrwjdRevDNmCpNBhHBNdZzdtUyK3USfW1nQ0EsEYZZoD5M6DUXrEL8Gx51Ujx30FcpslWxSGab8NEcMJHnTkhVoXyj3afPLczJTss2+JxFJmNPv9jG+eGxJjBsIZVfN2z8qsj7SW5Kdk5h7htF3jNHjEeZ5Jq875E9Y+4SENmX25rhY6b6+nyqbnksyNEydIWf4INjr5QRqVfElpN9J1MwMrO5IAY+/HOrb6udJx2/p+6Xxls3EIzqNVQdRadch9evp9XW7+O74r4t9i3NJBPgM9Odk9GTt4dvn4ieuAP49dF3omC102pdsXzFCsKexCrpy+NQkV4PPon5jkr9riwuh1tV9oBKeVBWT6E+QOCz5NsfTF3AYmZE+Iq3ry8fFm5IAfuWnB/rGjAKbGy2p1rJWCYElVTC8iir1bRzPcEtFLoJ+4a/T1SCBfVTKqHe04AvceGJNZPTghzhBt/PDW9w2ydJJs1WzQHDDVps/UvY2pdw70/DX2rM/ehfvAdrGl001OdwMiaQQw1rL6n3KjcSDTgrTqSVcrj83SjC+XFbK4cEc4RLxVvK6qv4P//WlfAZFHIGDp1BomZAtjwSux061r2Zp/1qkLM7uz/7lm7w5aOPeyt89A2Is9hNyg5lALBkZGOKKcu46zt9piEVX7+IbHeZOWzdJjVC7FaEd4W3xSvt0E+Y0jq2OTLz9G6OyFvx8wORb6HpS59CYFR+eIu7bnqwQbi4pXmcZ66qh/UeosfeciPFsmaBJOQysCLNSrPeiVpJjd1O4kHdPcRBYaF9gA4rtObnJ/9f9UaLN3e8Ub0lVM1kdndh9SkQCITmR/w4hcR9uAmgZKxwBnoaFZdv6aFT5o7tc4bbd56xx5NzZs+NDyZH5qA0d+6Nh4A4GasvA812BpxFqFgma9Ypc3vx7U7bE8lx9zhyXEfmBea9MFEMXBdeGFTsRvWjbnkGT97Zdwalh0oGSxhgcV7PVo97z0DSv2e7p1XVBNtyiB79sh4pMLXJeGG7qTzml+sI5+7+f5ljajYSuC4sK8YXLxNpHp4XX/4L4FWFvp10nhvaU4NhVY+bX1r6po4ZDWoKvFlg/2mNWlO17vhemslpc9rrPGs9ble7JZg+3aNymVw2UxOfdTIqySygYp6cS3mXCo9k6yd1Fb3iYdGIu0s4IlsEvcIxHVvYxsgkUz2LUmwZ01kHM+peJ9cxmmheov1o51WCne6lN5FbPL6dsw+mT6fYgOtC/DOtw9hs6NC0Xbu25MLALkVnTcDQaWxhfA22MG3S6to57HGXB7NYZVPpsMwySQqJQz2Z1bYLmhGzC04UtrUoyxbzmYW6i/ODmzeIVWh4UtzxKriS3rCGFWiQLGya3bn9pHUQ2TmwxDjffbsHOtGDiLU/36+bKHVFRKKQzSrqi4iB6+gf0Sz21J7osMscWM0NyH/ukVU5YJNczm4LlF/iui2WYUJfQgr9i7jmbmemq8ez8FkpfLKcs/bbs+GqLrWv1MosOOrKWlRvn4oGY98lXaq1/T5jUXiisVBIu+WVkf64Qr8sYwMWfdMzKVfDtbLrEFt3S1sl9bvS2lPrUxMSRS00zmLELDABAnobpOf7YpRd9MgtP6bGMIdWlqHBFz1t4IqsSpXCF+PbtN24p4zwm2ZERdUCOha2TaFDNov4Dq1K7pvFBQ8L7yX5yXsa0JzfPmKQjjlOL93vt9uUKru9af/S007Z2Kge4PQu8ynDOeUJTN2WEg1/NX9VxYTbzZ+oWJViLbLOwOY7TX/WcprqAi+9TltIWUZYVbYm37Qhv558iXYcZiimJMgD+NhbSZimfKpiK0IN1VOOky4VNKwqMGXjAlx0GbQFdRPIGv5K7oZSK8IqEryVyr9QoOB946B7jKv+zHpg3bdrvt3xiU2ob5jU9o/vpVXUS7yPM8p1XCu9ZhP4JxPUIXmwqu/CbqKlbjPHdFvSKex2brkgCymC6iC8AMS9O6rsNUesIXPrb8bBZ53bdC57d13EGL0THQT/kaaDILaoFApjT1kVLv0cFMt+yGTrc4NFoeGmIqG7rZLeoq56IQGt6UGfvTsxv7sEx/oHx6gDKbk1XQSxtfRocBzzAZNlyB0uDEbvCbWNuri0kVJh6FFIh7y5mByvqVZlZFsLfcV9lk6YRN6I+g7eiOEGUJty9r99NvfuguLaPy/a/v70lrL7cwrl54UALdDsWdq8JV9NwvP6TpGtAa1w1OVRjc7WeuKcGby5kvbRB4dFLO8x+UwSVAktQ0bpWJ1dNWfI7GIZCj7BBI0YolHvtQgwJg1NXPZqCBYetReCVkfpgRZ9TSx8IH8rqsvzmlkJffllfNqCCVozOv7lrRA8szXqUY9HMhassZDjo/+fhP9/WJ9ny6LE0ckz5Mc8HP75D27qK/HmDwBZcEa04n6dRRKLyh2kd1ktczgDNLTFW1Y8UWu2wN45OUhHWZrxcsZql6y4h+p5zUMQJ6ipJ3LszLSc9ENrsFzPXDpjFQyohNZhQ9WYvcU4GleqTEG5dMiXi8lplNaqjBxLoQ/a19QJv63/uKD7TSrli43Awg1EB6MsTWEGMlj6QWnVVQHhRvTGbvDPY35zUaQ0+re9kM9btp5c2hSj6Hsk4qjDrhwcUrtkcajlztyJWX499sc/Ug/JGPZmrJZD+e3t8cDy6yQcQmMi61sV1LCJPr9EBFUfZxR8s2n+NmDJm58HFJfzSwzFoecXFGO+nYn5c/7fOpbPzSr7nn+uNz19z5fb0412s63hQ7Wx2iGsLd48S+U1Olk/gOxsK8RNJ1jFzvnwWtYHFGD505yAVUsM2J7ykl1Yt1dBaHT1wiL1OLkw8/qmYX0Z8VU7SsG0a3K66OFkAzCtt11B6904rzNK99+ZBhzBOqBTjbndmpEBvdmSSqNjUo4ldLY4zYg1CwRYo5FGa8QY+7FjTF4wTP25Qn22rFXm1owO6My0GuiZv39St7mLayEl3yh2mrb4zmI9YwRnFSJ6nWe+O2v1nv52pg1Gn11mESIbAVOwghieiNutGu3Xmaub+T92hL4mmHvlMpVZLWKMcIkhUJ7/l59XGZcpvVarskEmVTXIeSov+/6mC/WLjcB8+dwSj/ex0zyza1SjHqdwJKCzkk+GX2nBEZ7/4IZe0HSb4aCTZ0iPePgD6vgk/F/xd3BH0ucyC/XSPtw/FVdcfmXsJNkS0IhG3S716Gydh2bL0ucNn/sCh+M9Ip1Jotkf4M0C2ocfHIblqSKIrCm+d+h+SRhuJsIXbdgJ7gt6LyKztO+JDcrh7MMW6Q9gT+to0Qo+X+elKSvcxcHSQOObTOpmVOHvbuwL+vK/yisF2g4SWJsr0sIyS0IZaiiJ3o6Hz7v+SeeSV5GMxh1iN478LV0i0ChwE1hDRahHbre2sNlmLu6o+vNQFgbbpb35/mWGhG330UFurr1BTOrU3Z2E77wSvfI6FfQSMSwJNDCiKQYUvqGzmh4xURZARVDNp7TSfXem5/8pG4CCe0OFQxUL+WsRthXv0xZxJiq+ITTjO7EdU4tLbPy1goWCofXgmoI1yFnC2QS3LR8uaUa2o1tnOJQJ/Ni+jr24McokZwbVimovaR5eArdxNnKWsJKKIIQUJEYfPBCjxCAEKKnyFn1H9um/1kQPxQ4tPf1Hq66tyiddeZFWU26I+jk6muYJCF8hRv6HCNIMsLKBmRNkvX6X5jymc8VWTCuhk9yWZaSOkyafLMZ0ya/UHKO4rkotVhKgvNGg9On8Na5T30c3+qhKk9lnavskO2rxy0X/hwjcn0UuozRvQZ7GQ3xMpT4mEv4U7+Q/wWmGzSvRcp6zlHCgsLs58E+f4jEBcV4tVZ9D8RvqdF8n3fnltuKna72Te/OJT3EYPfgqXVrP5XurlbxYPU8q9fDWhLKaJuvhShqxfWoiSR3GYsYcJKJ6FKAUtoi7as9QUr6HFrMOTlw9eYoucyDB/gmWMBlhca6azeSrKWE0af/ILwRcFjaHtoXWfXDYeKr5ApDLcVlqUZfDvaTA8DteMJtJfXndUnXTkhqGA1U+KxL0CyqabI4hj6iTwI+Br5U0W96X/0dFQg6UouKP2yLrpglWzgvJ8BNSatnzb2vK9egz3La73Qx1XXcFr15SXmFboIjjtOVKWecsCTDt5bXaNHHncFP/p3MO28P2vby8Mzl9hTw9Qw8eK6n2vNvfqiI+J0JW+dotDDt7pCzeltWc4UttRIZif0E4CRm3IXPFUK9K1jVLBsgKR8wgXejvkU/FgjvFXZCMPj0kSXZauCELytNTVd4lp2OcUl0jUxGh3pNgq/qUGB8yE8iEMA8UbLSiJ1kTgtnSwIuyxPsdv9rGjdMVF9KbAFKhaSKPILUEpdI19iXDIJSIfd0ibV2nlFPPIe3cvfucwCWSi/19QntI1kjBDo/pZtJ2suF9fysq5kJysVDxcjJxSgJHWcigEZIeqQVDBKutSNO0otTTK+Z1KBloh0TfwFK4EwbJ4s5uweZgYFpYH8H6n2WRLCHcU1xOuWfAypeBfXyE/OvDaNtR0w8820pAN2XmZZK2vvsn/vKzAqoTVpb5PVeXtJHLzWqNmFP1aAFlzX4X2MQg6wt98LqPP4xiPIShDlLJFjL08tNCahKJ+pxJNLQaELTKG2txyIZE/lOiyGwGb5u811SE1T+irzY+5ll43jPTLYsguZ+BQ5HzI+HzYDSPhKXTsX+pvQvGp3vQkeI4MysrI20ZLCWjmrEEXHiffQ9PoeLus1n3cVQK/h4o3V4Cm1kA/3UG4u1CG6aMBFDPh+HD4JfR32KT9HCYZw/E6top5rGWFh5L7bZ4U9VU9RLiJueI5X1lI2i/rHmOKhIOJ2EZOaJE4liY/d01BWxXHT4GrU66h7mpvBfvQ2GmZbRaH8NRHCwhCa+R58lwxuFTH72kn0e+XllU0guyr/aWFL0tR3vpo3m9OKNs7K9SSCXBYkcTg1Irm8YwQ2W95QeYe6SUOnUdDuC/PAOCC54tCILsy/c9/0sN3XHqUgfejzA+AzyLl85ZOqbaNgO8Nb4ty5/aLvlhKjD1ZuTNbYFtP0hS2zP98aldU5Y7taHCx/cftf38rgemrLEsDXg6vK4Z4VveWs3udVpWrxtbejZ3FNdrxOB1ZofZpK+rK3slBO0rXQVdDhJdjjqjcd+bGOyb+4x659qt6REG/ajPbLTm1p+7hcXcOmc0TNbs/xCDeeRvs6CXLMcTli9Gow4uJ+CXHwJuOanPOBm7kUInLkTB59kCD/iEvH4Tgc+mnz8ZO3lh+MKJ2InzlK2xd2Jg3st4Y8FLpQWreBEf0iQltdI06f3XaJwQbkKaTRW1YGXFb/7oOx3AfOTi/FI3Vly6Ae+vp/UVawg7OSVcsvtfCONQQ64KBma5CIgwCgi2YjcRCJuwuLttfsItSi3CUXuBFtxBIvEgLu4O6IUHljus63aNY720dpfTCrq0zC0rNq3I7nYAI0cnE4m4gVOulZg6vwZ7GYl8GbYcE+j3q5mDn7wZg+rvQMCnEmpG5w8nHuTkN70cTCX9Ij+QnZkanAJdre2Ln/tFqGMHkG3z1hmrEtPnZyH5aKwKieJh0YSvUYS0mIdSoeWX908bqv779A3buJGq7nww+Y0lxfLZ1ksds4tgCA7omPrUNAOWNZcNNFo23Cl3pSAWEQdVaDMPGjjjxHMBd5tPYB+mP4RB02GAnb6Xy52m0880w5ztLl5cUrKouGhT8yVsFu+8tNNJsQILHO5lE1sPfPoW6bWXOPYvQUGffLcpmFfcszq/fXMYXfzo/pFeeVAPcbElxQKIImtbea/kImWeIBWuKm/BM9sv/4m+CWYN/ye4COxkepCyIjMjB4lI5hTnyAhu0Da5csJE2xNk0MBdAKi/S2K/UuE5KQ3lev3BKQAEmxaCPxFcDkUIzADjNdQi1qLHpAPsYrCHtPu7/N3yUyEpQiJZYhfC3yW7kSr4Mbb4e/xdshsZvP+Tw/9+K8zroCEZgpbLELRMhljg75afCq+gdtlrb4O/S3aL9iyqEV2YlQPg7/F3+bv9n8hPRaIWUeSEfYMeC3+X7EZ9gjtVBT9W7fT4Thdkt21QkTShId56z/63xfBVkU4eiQzySHsq/V3+bvmpmEIUK0+xa+Hvkt1iTlb4w3Lezj7HQD2ae2QHYTe+TZt9RmWgks6xlzozhgwbFQwKY9PPsWnb4njmzcVe/hJ9J2/dYsusQp92Uik26a3QZrRF2qomig7uUHAQa29dgHkr+PDPR8ZpmHZz2UkwdxmmBdjmHOy/sBvY9u469POzd93t3nt1HnboA+D/pRwnB7BbNzpfAlT9OdYc1kOm2hgqloInA9oGZRvKymczOq14qJe6rcnL8zk9pdrb2n6jEOXD8WU8xgpZD0Bk34jP8UBOWKAG/2anrc6F8g+0mr0bcjdMeXk+p6dUc2j/jEKUD8eX8Rgp1G3Yqb6b51bVBfxp5RlknW8NYzcmMISCHJxhbMkG0bI+JECWlDlNkB19fLchh9xMAX70np2n3AZQ2d7ZUzkcQE0z5CQ5SU5iVOkt6ebxhXQBxmCykOuyZBCDrTbfAYzDZxrTcrlRe/ctT7btMBrGUbkBZ6GokV6QnCPjx+zC267zWi0i05OtCrwfqZD/NHSBWeJdcj79AD8Pz3yJmruzNEclQC2nW35a+n2+j+4KKDjwOWr9EaMKP4roVPzz+Vjf6YjdfyLA+zfN/z+vX1uh4j+LMQ/wwX99o4DPH1sfX9lJ/lfdBuYoIDCeOMXAbLGv7JTtV4htYv+liWXA2HnF81IFI/OqXBI6EU1+klBn2PPLqU5YLjfdpN3qyLi1RFT0aqOgwnxN7sjilTVekl7n6euMxPxNO8jSMZJEVDogSiipgRbMQGWzvdi+uDRjgYS6hccqxwV+Nc3bNY+oaR9i6N9S1DtcAIF2PibdT6UcYJXgPp5u1JUFvmYgSsOuxihVPfY2OavskL5J1oigEWxh7ZdbKq684HWDg+u6jh9rqWojZQ0hbfetD1AKT+8eAZXHWvKEEVhUgGc31O2yg6PsaG9mCUI2iJYSkqcJ0m03RdHZmYzZ785TmQ9UjtasMPMQNeG5xzGyThgj8bKdIx+Ir0V66KeUlpkOGyslDCUUFUNZIbiWyVNxa7qHNDmZIXV66pT08ohZKToviCshfYPXIBG0oJZThFGO0aYPG4Bwld6Saf1Ro3D5sRHzBQCeCr8EMuOBCptMOG7uPx4ZqRwayC8QoZids5m9GfkR1ZuT7zVjrbGR9jo1EbxU7+WRitklke0VSygBzMKieZQdqZZlloME6LcI22EozIafYBy8Bt/f8tE0cwBdNvd3A1MYgWglNcuuWhwk0HOmpxzo72c2UpxkwaoEej0C/vOhTKXS3hbCow0tsxBDJj/AMyClRIblpZTS/VLGoqaUUxRCqYQmndtJ5WXOTggBn52lFEIOl8ogz3ktwJOva4GQXZsbhE+dYnEJIwaE9ApKIrAwMe8iBcEWlgYrMenbISYu5u3SIdLxVUnduL+pM3KPmEE9uhH0EOiGARxUgnrM93R6WlK1EZSJi6WAcCgEZgamRLiuY8gsHZKahht+lrDtI+KSuMp3QC+Xnit3SESHAXwGGdJkylZCw05DXp+nPLVyZrcnKBIXAW/o5qDQIW2ENSz1WS/ZL4XlWqPPu09Ua+zhB5AFeO0qPPrwmGZJTc7WdIk7WFKptrvUPdXp+Gp8I76nMQAAAA==") format("woff2");
+}
+
+/* --------------------------------------------------------------------------
+   Design tokens.
+
+   Dark is the default, and deliberately not conditional on the viewer's
+   system. `prefers-color-scheme` cannot express "no preference" -- it reports
+   `light` both for somebody who chose light and for somebody who chose
+   nothing at all -- so keying light off that media query would hand light to
+   almost everyone and make the default meaningless.
+
+   So: dark for everybody, and the header toggle switches to light and
+   remembers the choice in localStorage. The [data-theme] attributes below are
+   what the toggle sets, and they win over these.
+   -------------------------------------------------------------------------- */
+:root {
+  --bg: #0e1411;
+  --surface: #151e19;
+  --surface-2: #101815;
+  --ink: #e7ece8;
+  --muted: #93a099;
+  --line: #26302a;
+  --accent: #4fbf85;
+  --accent-ink: #08150e;
+  --phosphor: #59d98a;
+  /* Ink for the agenda drawn over the photographed LCD.  Fixed in both
+     themes, because the screen it sits on is a photo and does not change. */
+  --screen-ink: #dcf0d6;
+
+  --radius: 10px;
+  --maxw: 1100px;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* The subset built by src/tools/subset_font.py, then a locally installed
+     Ubuntu, then whatever the system uses. Renamed per the Ubuntu Font
+     Licence; keep this in step with FONT_FACES in build.py. */
+  --display: "Ubuntu derivative jpilot.org", "Ubuntu", var(--sans);
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", "Ubuntu Mono", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #ecefe9; --surface: #ffffff; --surface-2: #f4f6f1; --ink: #16201b;
+  --muted: #566158; --line: #d5dbd2; --accent: #1f6b47; --accent-ink: #ffffff;
+  --phosphor: #2f8f52;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0e1411; --surface: #151e19; --surface-2: #101815; --ink: #e7ece8;
+  --muted: #93a099; --line: #26302a; --accent: #4fbf85; --accent-ink: #08150e;
+  --phosphor: #59d98a;
+  color-scheme: dark;
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  line-height: 1.15;
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+}
+
+code, kbd, samp { font-family: var(--mono); font-size: 0.92em; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+.skip {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--accent); color: var(--accent-ink);
+  padding: 10px 16px; border-radius: 0 0 8px 0;
+}
+.skip:focus { left: 0; }
+
+.eyebrow {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 14px;
+}
+
+/* --------------------------------------------------------------------------
+   Header / nav
+   -------------------------------------------------------------------------- */
+header.nav {
+  position: sticky; top: 0; z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner { display: flex; align-items: center; gap: 20px; min-height: 60px; }
+
+.brand {
+  font-family: var(--mono); font-weight: 700; font-size: 18px;
+  letter-spacing: -0.03em; color: var(--ink);
+  display: flex; align-items: center; gap: 9px; flex: none;
+}
+.brand:hover { text-decoration: none; }
+.brand .dot {
+  width: 12px; height: 12px; border-radius: 3px; background: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+  flex: none;
+}
+.brand .ver {
+  font-size: 11px; font-weight: 600; color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 999px; padding: 1px 8px; letter-spacing: 0;
+}
+
+nav.links { margin-left: auto; display: flex; gap: 20px; flex-wrap: wrap; }
+nav.links a { color: var(--muted); font-size: 14.5px; }
+nav.links a:hover { color: var(--ink); text-decoration: none; }
+nav.links a[aria-current="page"] { color: var(--ink); font-weight: 600; }
+
+.nav-end { display: flex; align-items: center; gap: 10px; flex: none; }
+.nav-gh {
+  font-family: var(--mono); font-size: 13px; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px;
+  white-space: nowrap;
+}
+.nav-gh:hover { border-color: var(--accent); text-decoration: none; }
+
+.theme-btn {
+  font-size: 15px; line-height: 1; color: var(--muted); background: transparent;
+  border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; cursor: pointer;
+}
+.theme-btn:hover { color: var(--ink); border-color: var(--accent); }
+
+/* On narrow screens the nav becomes a scrolling strip on its own row rather
+   than disappearing -- these are the only way to reach most of the site. */
+@media (max-width: 900px) {
+  .nav-inner { flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; gap: 12px 16px; }
+  nav.links {
+    order: 3; width: 100%; margin-left: 0; gap: 18px; flex-wrap: nowrap;
+    overflow-x: auto; padding-bottom: 2px;
+    scrollbar-width: none; -ms-overflow-style: none;
+  }
+  nav.links::-webkit-scrollbar { display: none; }
+  nav.links a { white-space: nowrap; }
+  .nav-end { margin-left: auto; }
+}
+@media (max-width: 460px) {
+  .nav-gh { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Sections
+   -------------------------------------------------------------------------- */
+section { padding: 64px 0; border-top: 1px solid var(--line); }
+section:first-child { border-top: none; }
+
+.sec-head { max-width: 62ch; margin-bottom: 40px; }
+.sec-head h2 { font-size: clamp(24px, 3vw, 34px); margin: 0 0 12px; font-weight: 700; }
+.sec-head p { color: var(--muted); margin: 0; font-size: 17px; }
+
+.page-head { padding: 56px 0 8px; }
+.page-head h1 { font-size: clamp(32px, 4.4vw, 46px); margin: 0 0 16px; font-weight: 700; }
+.page-head p.lede { font-size: clamp(17px, 1.6vw, 19px); color: var(--muted); margin: 0; max-width: 62ch; }
+
+/* --------------------------------------------------------------------------
+   Hero + the Palm III
+   -------------------------------------------------------------------------- */
+.hero {
+  display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px;
+  align-items: center; padding: 72px 0 64px; border-top: none;
+}
+.hero h1 { font-size: clamp(34px, 5vw, 56px); margin: 0 0 20px; font-weight: 700; }
+.hero p.lede {
+  font-size: clamp(17px, 1.6vw, 20px); color: var(--muted);
+  margin: 0 0 28px; max-width: 36ch;
+}
+@media (max-width: 820px) { .hero { grid-template-columns: 1fr; gap: 40px; padding: 44px 0; } }
+
+.cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; font-weight: 600;
+  font-size: 15px; border-radius: 9px; padding: 12px 20px;
+  border: 1px solid transparent; cursor: pointer; font-family: var(--sans);
+}
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { text-decoration: none; filter: brightness(1.06); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn-ghost:hover { text-decoration: none; border-color: var(--accent); }
+
+.req { font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin-top: 18px; }
+.req b { color: var(--ink); font-weight: 600; }
+
+/* --------------------------------------------------------------------------
+   The device.  A photo of a PalmPilot 5000 with the day's agenda drawn over
+   its screen, so the hero shows J-Pilot's data on the hardware it came from.
+
+   The .screen rectangle is positioned in percentages measured off the photo
+   by src/tools/prepare_palm.py -- re-run that if the image is ever replaced.
+   Sizes inside it are in cqw (percent of the photo's own width) so the whole
+   overlay scales with the image instead of drifting out of the bezel.
+   -------------------------------------------------------------------------- */
+.device { margin: 0; justify-self: center; width: 100%; max-width: 320px; }
+
+.device-shot {
+  position: relative;
+  container-type: inline-size;
+  filter: drop-shadow(0 24px 34px rgba(0, 0, 0, .38));
+}
+.device-shot > img { display: block; width: 100%; height: auto; }
+
+.screen {
+  position: absolute;
+  left: 14.62%; top: 11.47%; width: 72.51%; height: 50.50%;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  font-family: var(--mono);
+  color: var(--screen-ink);
+  text-shadow: 0 0 6px color-mix(in srgb, var(--screen-ink) 35%, transparent);
+  padding: 4.2%;
+  font-size: 11px;
+  line-height: 1.45;
+}
+/* Container units where supported; the px values above are the fallback. */
+@supports (font-size: 1cqw) {
+  .screen { padding: 4.2cqw; font-size: 3.5cqw; }
+}
+
+.screen .screen-top {
+  display: flex; justify-content: space-between;
+  font-size: .82em; letter-spacing: .04em; opacity: .8;
+  border-bottom: 1px solid color-mix(in srgb, var(--screen-ink) 45%, transparent);
+  padding-bottom: .45em; margin-bottom: .6em;
+}
+.screen .row { display: flex; gap: .7em; padding: .12em 0; align-items: baseline; }
+.screen .row .t { flex: none; width: 3.6em; opacity: .78; }
+.screen .gap { height: .7em; }
+.screen .todo { display: flex; align-items: center; gap: .55em; padding: .12em 0; }
+.screen .box {
+  width: .82em; height: .82em; flex: none;
+  border: .12em solid var(--screen-ink); border-radius: .12em;
+  display: grid; place-items: center; font-size: .95em; line-height: 1;
+}
+/* The tick is drawn by CSS rather than sitting in the markup, so it can be
+   sized independently of the box. At an em it overflows a box this small and
+   renders as a slash across the corner. */
+.screen .box.done { background: var(--screen-ink); color: #2d4a33; }
+.screen .box.done::after { content: "\2713"; font-size: .62em; line-height: 1; }
+.screen .done-txt { text-decoration: line-through; opacity: .7; }
+
+/* A faint scanline wash, to sit the drawn text into the photographed glass. */
+.screen::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(180deg, transparent 0 2px, rgba(0, 0, 0, .07) 2px 3px);
+}
+
+.device figcaption {
+  margin-top: 16px; font-size: 11.5px; line-height: 1.5;
+  font-family: var(--mono); color: var(--muted); text-align: center;
+}
+.device figcaption a { color: var(--muted); text-decoration: underline; }
+.device figcaption a:hover { color: var(--ink); }
+
+/* --------------------------------------------------------------------------
+   Cards
+   -------------------------------------------------------------------------- */
+/* align-items: start so a card sizes to its content. Stretching them to a
+   common height is tidy when the lists are a similar length, but on the
+   features page one card has twice the bullets of its neighbour and the
+   neighbour becomes a large empty box. */
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: start; }
+.grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .grid, .grid.cols-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .grid, .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 22px;
+}
+.card h3 {
+  font-family: var(--mono); margin: 0 0 12px; color: var(--accent);
+  text-transform: uppercase; font-size: 12.5px; letter-spacing: .1em;
+}
+.card ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.card li { font-size: 14.5px; color: var(--ink); padding-left: 18px; position: relative; }
+.card li::before {
+  content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px;
+  border-radius: 1px; background: color-mix(in srgb, var(--accent) 70%, transparent);
+}
+.card p { margin: 0 0 10px; font-size: 14.5px; color: var(--muted); }
+.card p:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------------------
+   Prose (the text-heavy pages)
+   -------------------------------------------------------------------------- */
+.prose { max-width: 68ch; }
+.prose h2 { font-size: 26px; margin: 44px 0 14px; font-weight: 700; }
+.prose h3 { font-size: 19px; margin: 30px 0 10px; font-weight: 700; }
+.prose > :first-child { margin-top: 0; }
+.prose p { margin: 0 0 16px; }
+.prose ul, .prose ol { margin: 0 0 18px; padding-left: 22px; }
+.prose li { margin-bottom: 7px; }
+.prose code { background: var(--surface-2); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+
+.callout {
+  background: var(--surface-2); border: 1px solid var(--line);
+  border-left: 3px solid var(--accent); border-radius: 8px;
+  padding: 16px 18px; font-size: 14.5px; margin: 0 0 20px;
+}
+.callout :last-child { margin-bottom: 0; }
+.callout b { font-family: var(--mono); }
+
+/* --------------------------------------------------------------------------
+   Code blocks + copy button
+   -------------------------------------------------------------------------- */
+.code-block { position: relative; margin: 0 0 20px; }
+.code-block pre {
+  margin: 0; padding: 18px; overflow-x: auto;
+  background: #10160f; color: #d7e6cf; border-radius: 10px; border: 1px solid #223019;
+  font-family: var(--mono); font-size: 13px; line-height: 1.7;
+}
+.code-block .cm { color: #6f9160; }
+.copy-btn {
+  position: absolute; top: 10px; right: 10px;
+  display: inline-flex; align-items: center; gap: 5px;
+  font-family: var(--mono); font-size: 11px; color: #cfe0c6;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16);
+  border-radius: 6px; padding: 5px 9px; cursor: pointer;
+  opacity: 0; transition: opacity .15s, background .15s;
+}
+.code-block:hover .copy-btn, .copy-btn:focus-visible { opacity: 1; }
+.copy-btn:hover { background: rgba(255,255,255,.16); }
+.copy-btn.copied { color: var(--phosphor); }
+.copy-btn svg { width: 13px; height: 13px; }
+@media (hover: none) { .copy-btn { opacity: 1; } }
+
+/* --------------------------------------------------------------------------
+   Download layout
+   -------------------------------------------------------------------------- */
+.dl { display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start; }
+@media (max-width: 820px) { .dl { grid-template-columns: 1fr; gap: 28px; } }
+
+/* --------------------------------------------------------------------------
+   Screenshots
+   -------------------------------------------------------------------------- */
+.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.shots.cols-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) { .shots, .shots.cols-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .shots, .shots.cols-3 { grid-template-columns: 1fr; } }
+
+.shot {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden; display: block; color: var(--ink);
+}
+.shot:hover { text-decoration: none; border-color: var(--accent); }
+.shot .frame {
+  aspect-ratio: 4 / 3; background: var(--surface-2);
+  display: flex; align-items: center; justify-content: center;
+  border-bottom: 1px solid var(--line); overflow: hidden;
+  padding: 12px;
+}
+/* contain, not cover: these are screenshots of windows, and the dialogs vary
+   from portrait (install) to square (print). Cropping them to a common shape
+   cuts the buttons off the edge and blows the small ones up. Letterboxing
+   against the frame is the honest option. */
+.shot .frame img { width: 100%; height: 100%; object-fit: contain; }
+.shot .cap { padding: 11px 14px; font-size: 13.5px; font-weight: 600; }
+.shot .cap span { display: block; font-weight: 400; color: var(--muted); font-size: 12.5px; }
+
+/* --------------------------------------------------------------------------
+   Entry lists (plugins, links, documentation, news)
+   -------------------------------------------------------------------------- */
+.entries { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.entries li { border-top: 1px solid var(--line); padding: 18px 0; display: grid; grid-template-columns: 108px 1fr; gap: 4px 20px; }
+.entries li:first-child { border-top: none; padding-top: 0; }
+.entries .when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); padding-top: 3px; }
+.entries h3 { margin: 0 0 5px; font-size: 17px; font-weight: 700; }
+.entries p { margin: 0; color: var(--muted); font-size: 14.5px; max-width: 66ch; }
+.entries p + p { margin-top: 8px; }
+@media (max-width: 640px) {
+  .entries li { grid-template-columns: 1fr; gap: 6px; }
+  .entries .when { padding-top: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   Tables (download archive)
+   -------------------------------------------------------------------------- */
+.table-scroll { overflow-x: auto; }
+table.files { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 460px; }
+table.files th, table.files td { text-align: left; padding: 9px 14px 9px 0; border-bottom: 1px solid var(--line); }
+table.files th {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--muted); font-weight: 600;
+}
+table.files td.f { font-family: var(--mono); font-size: 13px; }
+table.files td.when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+table.files .sig { color: var(--muted); font-size: 12px; }
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+footer { border-top: 1px solid var(--line); padding: 40px 0 80px; color: var(--muted); font-size: 14px; margin-top: 24px; }
+.foot-inner { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; }
+footer .brand { font-size: 15px; color: var(--ink); }
+footer .brand .dot { width: 10px; height: 10px; box-shadow: none; }
+footer a { color: var(--muted); }
+footer a:hover { color: var(--ink); }
+.foot-spacer { margin-left: auto; }
+@media (max-width: 720px) { .foot-spacer { margin-left: 0; } }
+
+/* --------------------------------------------------------------------------
+   Screenshot viewer
+   Built and opened by site.js. Without scripting the thumbnails stay plain
+   links to the image files, and none of this is ever used.
+   -------------------------------------------------------------------------- */
+.lightbox {
+  position: fixed; inset: 0; z-index: 60;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center; gap: 8px;
+  padding: 20px;
+  background: rgba(8, 12, 10, .88);
+  backdrop-filter: blur(3px);
+}
+.lightbox[hidden] { display: none; }
+
+/* Hold the page still while the viewer is over it. */
+body.lb-open { overflow: hidden; }
+
+.lb-figure {
+  margin: 0; min-width: 0;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+.lb-figure img {
+  max-width: 100%; max-height: calc(100vh - 130px);
+  object-fit: contain;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, .7);
+}
+.lb-figure figcaption {
+  font-family: var(--mono); font-size: 13px; color: #dfe7e1;
+  text-align: center; text-wrap: balance;
+}
+
+.lightbox button {
+  border: 1px solid rgba(255, 255, 255, .22);
+  background: rgba(255, 255, 255, .10);
+  color: #eef3ef;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 1;
+  font-family: var(--sans);
+}
+.lightbox button:hover { background: rgba(255, 255, 255, .2); }
+.lightbox button:focus-visible { outline: 2px solid var(--phosphor); outline-offset: 3px; }
+
+.lb-nav { font-size: 30px; padding: 18px 14px; }
+.lb-nav[hidden] { display: none; }
+
+.lb-close {
+  position: absolute; top: 18px; right: 18px;
+  font-size: 17px; padding: 9px 13px;
+}
+
+@media (max-width: 640px) {
+  .lightbox { padding: 12px; gap: 4px; }
+  .lb-nav { font-size: 24px; padding: 14px 9px; }
+  .lb-figure img { max-height: calc(100vh - 150px); }
+}
+
+/* --------------------------------------------------------------------------
+   The old site logo, kept on the Links page. Rendered at its native 100px so
+   it stays crisp -- it is a small GIF-era image and scaling it up shows.
+   -------------------------------------------------------------------------- */
+.mascot {
+  margin: 56px 0 0;
+  text-align: center;
+}
+.mascot img { width: 100px; height: auto; }

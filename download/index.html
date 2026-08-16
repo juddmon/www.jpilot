@@ -1,237 +1,287 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Downloads &#8211; J-Pilot</title>
-
-
-
-
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Downloads">
-
-
-
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/tux-visor.png">
-
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Downloads">
-
-<meta property="og:url" content="/download/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download &mdash; J-Pilot</title>
+<meta name="description" content="Download J-Pilot 2.1.0 for Debian and Ubuntu from the apt repository, get the source from GitHub, or build it yourself. Includes build requirements and older packages.">
+<link rel="canonical" href="https://www.jpilot.org/download/">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="J-Pilot">
+<meta property="og:title" content="Download &mdash; J-Pilot">
+<meta property="og:description" content="Download J-Pilot 2.1.0 for Debian and Ubuntu from the apt repository, get the source from GitHub, or build it yourself. Includes build requirements and older packages.">
+<meta property="og:url" content="https://www.jpilot.org/download/">
 
-
-
-
-
-<link rel="canonical" href="/download/">
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="J-Pilot Feed">
-
-<!-- https://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
-<!-- Webfonts -->
-<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-  <script src="/assets/js/vendor/html5shiv.min.js"></script>
-  <script src="/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-
-<!-- MathJax -->
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
-
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="/static/site.css">
+<!-- Apply the saved theme before first paint so the page never flashes. -->
+<script>try{var t=localStorage.getItem("jp-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
+<body class="page">
 
-<body id="page">
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated drop">
-	    <ul>
-      
-		    
-		    <li><a href="/" >Home</a></li>
-		  
-		    
-		    <li><a href="/features/" >Features</a></li>
-		  
-		    
-		    <li><a href="/screenshots/" >Screenshots</a></li>
-		  
-		    
-		    <li><a href="/documentation/" >Documentation</a></li>
-		  
-		    
-		    <li><a href="/requirements/" >Requirements</a></li>
-		  
-		    
-		    <li><a href="/download/" >Download</a></li>
-		  
-		    
-		    <li><a href="/plugins/" >Plugins</a></li>
-		  
-		    
-		    <li><a href="/lists/" >Mailing Lists</a></li>
-		  
-		    
-		    <li><a href="/links/" >Links</a></li>
-		  
-	    </ul>
-	</nav>
-</div><!-- /.navigation-wrapper -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/"><span class="dot"></span>J-Pilot <span class="ver">v2.1.0</span></a>
+    <nav class="links" aria-label="Main">
+        <a href="/features/">Features</a>
+        <a href="/screenshots/">Screenshots</a>
+        <a href="/download/" aria-current="page">Download</a>
+        <a href="/documentation/">Documentation</a>
+        <a href="/plugins/">Plugins</a>
+        <a href="/lists/">Lists</a>
+        <a href="/links/">Links</a>
+    </nav>
+    <div class="nav-end">
+      <a class="nav-gh" href="https://github.com/juddmon/jpilot">GitHub &#8599;</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+        <span aria-hidden="true">&#9686;</span>
+      </button>
+    </div>
+  </div>
+</header>
 
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<main id="main">
+<div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Get it</p>
+    <h1>Latest J-Pilot is 2.1.0</h1>
+    <p class="lede">Released August 8, 2026. Install from the apt repository on Debian and Ubuntu, or build it from source anywhere else.</p>
+  </div>
+</div>
 
-<header class="masthead">
-	<div class="wrap">
-      
-  		<a href="/" class="site-logo" rel="home" title="J-Pilot"><img src="/images/tux-visor.png" width="200" height="200" alt="J-Pilot logo" class="animated fadeInDown"></a>
-      
-      <h1 class="site-title animated fadeIn"><a href="/">J-Pilot</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">Desktop Organizer Software for the Palm Pilot</h2>
-	</div>
-</header><!-- /.masthead -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Debian and Ubuntu</h2>
+      <p>There is an apt repository on packagecloud covering Ubuntu 22.04, 24.04, and 26.04, and the matching Linux Mint releases. The first command adds the repository and its signing key; after that J-Pilot updates with everything else on the system.</p>
+    </div>
+    <div class="dl">
+      <div class="code-block">
+<pre><code><span class="cm"># Add the apt repository</span>
+curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
 
-<div class="js-menu-screen menu-screen"></div>
-
-
-<div id="main" role="main">
-  <article class="entry">
-    
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">Downloads</h1>
-      </header>
-      <div class="entry-content">
-        <p class="center"><img src="../images/jpilot-anim.gif" alt="download" title="jpilot-anim" /></p>
-
-<hr />
-<p>The latest J-Pilot source code is on <a href="https://github.com/juddmon/jpilot">github</a>, or click in the GitHub icon at the bottom of the page.  The new GTK3 release is on the feature-gtk3 branch</p>
-<p>There is a PPA for Debian, Ubuntu 20.04, 22.04, 24.04 and 26.04 (Latest jpilot version is not back ported to 20.04.</p>
-<p>To install run
-<pre><code id="addrepo">curl -s https://packagecloud.io/install/repositories/judd/jpilot/script.deb.sh | sudo bash
+<span class="cm"># Install J-Pilot and the bundled plugins</span>
 sudo apt install jpilot jpilot-plugins</code></pre>
-<button onclick="copyCode()">Copy</button>
+      </div>
+      <div>
+        <div class="callout">
+          <b>Heads up:</b> 2.1.0 needs <b>pilot-link&nbsp;0.15.0</b> or newer, because of a change to the Contact blob API. Building needs <b>libpisock-dev&nbsp;&ge;&nbsp;0.15.0</b>; running it needs <b>libpisock9</b>.
+        </div>
+      </div>
+      <p style="margin:0;color:var(--muted);font-size:14.5px">
+        Browse the repository at <a href="https://packagecloud.io/judd/jpilot">packagecloud.io/judd/jpilot</a>.
+      </p>
+    </div>
+  </div>
+</section>
 
-<script>
-function copyCode() {
-  const codeText = document.getElementById("addrepo").innerText;
-  navigator.clipboard.writeText(codeText)
-}
-</script>
-</p>
+<section id="requirements">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Build requirements</h2>
+      <p>On Debian and Ubuntu, these packages are enough to build J-Pilot from source. Other distributions ship the same libraries under their own names.</p>
+    </div>
+    <div class="dl">
+      <div class="prose">
+        <p>The GUI is GTK. Encryption support &mdash; used by the KeyRing plugin &mdash; comes from libgcrypt.</p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># Debian / Ubuntu build dependencies</span>
+sudo apt install build-essential autoconf automake libtool \
+                 autopoint intltool \
+                 libpisock-dev libpisock9 \
+                 libgcrypt20-dev libgcrypt20 \
+                 libgtk-3-dev \
+                 bison \
+                 docbook-xsl \
+                 xsltproc</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
 
-<hr />
-<p><a href="/ChangeLog">ChangeLog</a></p>
-<hr />
-<p>2021-04-02 <a href="/packages/focal/DOWNLOAD.sh">DOWNLOAD.sh</a>
-<p>2021-04-02 <a href="/packages/focal/INSTALL.sh">INSTALL.sh</a>
-<p>2021-04-02 <a href="/packages/focal/REMOVE.sh">REMOVE.sh</a>
-<p>2024-10-22 <a href="/packages/jammy/jpilot_2.0.2-1_amd64.deb">jpilot_2.0.2-1_amd64.deb (Ubuntu 20.04, 22.04, 24.04, 26.04)</a>
-<p>2024-10-22 <a href="/packages/jammy/jpilot-plugins_2.0.2-1_amd64.deb">jpilot-plugins_2.0.2-1_amd64.deb (Ubuntu 20.04, 22.04, 24.04, 26.04)</a>
-<p>2021-04-02 <a href="/packages/focal/jpilot_2.0.1-1_amd64.deb">jpilot_2.0.1-1_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-04-02 <a href="/packages/focal/jpilot-plugins_2.0.1-1_amd64.deb">jpilot-plugins_2.0.1-1_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/jpilot_1.8.2-2_amd64.deb">jpilot_1.8.2-2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/jpilot_2.0.0-1_amd64.deb">jpilot_2.0.0-1_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/jpilot-plugins_1.8.2-2_amd64.deb">jpilot-plugins_1.8.2-2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/jpilot-plugins_2.0.0-1_amd64.deb">jpilot-plugins_2.0.0-1_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/libpisock9_0.12.5-dfsg-2build2_amd64.deb">libpisock9_0.12.5-dfsg-2build2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/libpisock9_0.13.0_amd64.deb">libpisock9_0.13.0_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/libpisock-dev_0.12.5-dfsg-2build2_amd64.deb">libpisock-dev_0.12.5-dfsg-2build2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/libpisync1_0.12.5-dfsg-2build2_amd64.deb">libpisync1_0.12.5-dfsg-2build2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/libpisync1_0.13.0_amd64.deb">libpisync1_0.13.0_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/pilot-link_0.12.5-dfsg-2build2_amd64.deb">pilot-link_0.12.5-dfsg-2build2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/pilot-link_0.13.0_amd64.deb">pilot-link_0.13.0_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/python-pisock_0.12.5-dfsg-2build2_amd64.deb">python-pisock_0.12.5-dfsg-2build2_amd64.deb (Ubuntu 20.04, 22.04)</a>
-<p>2021-02-25 <a href="/packages/focal/python-pisock-dbg_0.12.5-dfsg-2build2_amd64.deb">python-pisock-dbg_0.12.5-dfsg-2build2_amd64.deb (Ubuntu 20.04, 22.04)</a>
+<section id="source">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Source</h2>
+      <p>Every release has a signed source tarball. It carries the generated
+      <code>configure</code> script, so it builds without autotools installed.</p>
+    </div>
+    <div class="dl">
+      <div class="prose">
+        <p>
+          <a href="https://github.com/juddmon/jpilot/releases/tag/v2_1_0">jpilot-2.1.0.tar.gz</a> &mdash; the current release,
+          with its <a href="https://github.com/juddmon/jpilot/releases/download/v2_1_0/jpilot-2.1.0.tar.gz.asc">signature</a>
+          and <a href="https://github.com/juddmon/jpilot/releases/download/v2_1_0/jpilot-2.1.0.tar.gz.sha256sum">checksum</a>.<br>
+          <a href="https://github.com/juddmon/jpilot/releases">All releases</a> &mdash; every version back to 1.8.0, each signed.<br>
+          <a href="https://github.com/juddmon/jpilot">github.com/juddmon/jpilot</a> &mdash; the current source tree.
+        </p>
+        <p>Building from a git checkout, or from one of the
+        <a href="https://github.com/juddmon/jpilot/tags">tag archives</a>, needs <code>./autogen.sh</code> run first to
+        generate <code>configure</code>. That needs autoconf, automake, autopoint, libtool and intltool
+        &mdash; see the <a href="#requirements">build requirements</a> above. The release
+        tarballs do not need these, as they have a configure script.</p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># From the release tarball</span>
+curl -LO https://github.com/juddmon/jpilot/releases/download/v2_1_0/jpilot-2.1.0.tar.gz
+tar xzf jpilot-2.1.0.tar.gz
+cd jpilot-2.1.0
+./configure
+make
+sudo make install
 
-<p>2014-05-25 <a href="/tarballs/jpilot-1.8.2.tar.gz">jpilot-1.8.2.tar.gz</a> <a href="/tarballs/jpilot-1.8.2.tar.gz.asc">(gpg-sig)</a> <a href="/tarballs/jpilot-1.8.2.tar.gz.md5sum">(md5sum)</a> Key 1024D/1E5DF2D6</p>
+<span class="cm"># Or from git, which needs autotools</span>
+git clone https://github.com/juddmon/jpilot.git
+cd jpilot
+./autogen.sh &amp;&amp; ./configure &amp;&amp; make</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>2011-04-05 <a href="/tarballs/jpilot-1.8.1.tar.gz">jpilot-1.8.1.tar.gz</a> <a href="/tarballs/jpilot-1.8.1.tar.gz.asc">(gpg-sig)</a> <a href="/tarballs/jpilot-1.8.1.tar.gz.md5sum">(md5sum)</a> Key 1024D/1E5DF2D6</p>
+<section id="verify">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Verifying a download</h2>
+      <p>Every release tarball is signed, and carries a SHA-256 checksum. The checksum catches a
+      corrupted download; the signature is what tells you the file came from me.</p>
+    </div>
+    <div class="dl">
+      <div class="prose">
+        <p>Releases from 2.0.0 onwards are signed with this key:</p>
+        <p><code>F1C4 AA33 5241 D32B E696&nbsp; FD97 BF33 4D04 ACB8 C1C8</code><br>
+        <span style="color:var(--muted)">Judd Montgomery, RSA 8192, created 2013-09-14</span></p>
+        <p>The 1.8.x releases predate that key and are signed with the older
+        <code>1024D/1E5DF2D6</code>, which is on the public keyservers as well.</p>
+      </div>
+      <div class="code-block">
+<pre><code><span class="cm"># Fetch the signing key</span>
+gpg --recv-keys F1C4AA335241D32BE696FD97BF334D04ACB8C1C8
 
-<p>2010-02-28 <a href="/tarballs/jpilot-1.8.0.tar.gz">jpilot-1.8.0.tar.gz</a> <a href="/tarballs/jpilot-1.8.0.tar.gz.asc">(gpg-sig)</a> <a href="/tarballs/jpilot-1.8.0.tar.gz.md5sum">(md5sum)</a> Key 1024D/1E5DF2D6</p>
+<span class="cm"># Check the signature and the checksum</span>
+gpg --verify jpilot-2.1.0.tar.gz.asc jpilot-2.1.0.tar.gz
+sha256sum -c jpilot-2.1.0.tar.gz.sha256sum</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
 
-<hr />
-<p><a href="http://packages.qa.debian.org/j/jpilot.html">Debian’s J-Pilot page</a>  This is a great resource for Debian users.</p>
+<section id="releases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>All releases</h2>
+      <p>Hosted on GitHub, newest first. Each carries a detached signature and a SHA-256 checksum
+      &mdash; see <a href="#verify">verifying a download</a> above &mdash; and includes the generated
+      <code>configure</code> script, so it builds without autotools.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="files">
+        <thead>
+          <tr><th>File</th><th>Verify</th><th>Released</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v2_1_0/jpilot-2.1.0.tar.gz">jpilot-2.1.0.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v2_1_0/jpilot-2.1.0.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v2_1_0/jpilot-2.1.0.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2026-08-08</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v2_0_2/jpilot-2.0.2.tar.gz">jpilot-2.0.2.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v2_0_2/jpilot-2.0.2.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v2_0_2/jpilot-2.0.2.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2024-10-22</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v2_0_1/jpilot-2.0.1.tar.gz">jpilot-2.0.1.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v2_0_1/jpilot-2.0.1.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v2_0_1/jpilot-2.0.1.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2021-04-02</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v2_0_0/jpilot-2.0.0.tar.gz">jpilot-2.0.0.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v2_0_0/jpilot-2.0.0.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v2_0_0/jpilot-2.0.0.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2021-02-24</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v1_8_2/jpilot-1.8.2.tar.gz">jpilot-1.8.2.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v1_8_2/jpilot-1.8.2.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v1_8_2/jpilot-1.8.2.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2014-05-25</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v1_8_1/jpilot-1.8.1.tar.gz">jpilot-1.8.1.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v1_8_1/jpilot-1.8.1.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v1_8_1/jpilot-1.8.1.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2011-04-05</td>
+          </tr>
+          <tr>
+            <td class="f"><a href="https://github.com/juddmon/jpilot/releases/download/v1_8_0/jpilot-1.8.0.tar.gz">jpilot-1.8.0.tar.gz</a></td>
+            <td class="sig"><a href="https://github.com/juddmon/jpilot/releases/download/v1_8_0/jpilot-1.8.0.tar.gz.asc">sig</a> &middot; <a href="https://github.com/juddmon/jpilot/releases/download/v1_8_0/jpilot-1.8.0.tar.gz.sha256sum">sha256</a></td>
+            <td class="when">2010-02-28</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;color:var(--muted);font-size:14px">
+      1.8.x is signed with the older <code>1024D/1E5DF2D6</code> key and also carries the original
+      <code>.md5sum</code> files. Versions before 1.8.0 were never released as a tarball, but every
+      one back to 0.90 is <a href="https://github.com/juddmon/jpilot/tags">tagged</a>.
+    </p>
 
-<hr />
-<p>Debian packages for precise and trusty are <a href="/packages/">here.</a></p>
+  </div>
+</section>
 
-<hr />
-<p>Feel free to contribute packages by email</p>
+<section id="archive">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Older packages</h2>
+      <p>Prebuilt <code>.deb</code> files, kept for anyone still running an older system. There is
+      <b>no 2.1.0 package here</b> &mdash; 2.1.0 is distributed through the apt
+      repository above, which is the supported way to install it. The newest on this page is 2.0.2,
+      from 2024.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="files">
+        <thead>
+          <tr><th>File</th><th>For</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="f"><a href="/packages/jammy/jpilot_2.0.2-1_amd64.deb">jpilot_2.0.2-1_amd64.deb</a></td><td>Ubuntu 22.04+</td><td class="when">2024-10-22</td></tr>
+          <tr><td class="f"><a href="/packages/jammy/jpilot-plugins_2.0.2-1_amd64.deb">jpilot-plugins_2.0.2-1_amd64.deb</a></td><td>Ubuntu 22.04+</td><td class="when">2024-10-22</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot_2.0.1-1_amd64.deb">jpilot_2.0.1-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-04-02</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot-plugins_2.0.1-1_amd64.deb">jpilot-plugins_2.0.1-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-04-02</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot_2.0.0-1_amd64.deb">jpilot_2.0.0-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot-plugins_2.0.0-1_amd64.deb">jpilot-plugins_2.0.0-1_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot_1.8.2-2_amd64.deb">jpilot_1.8.2-2_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+          <tr><td class="f"><a href="/packages/focal/jpilot-plugins_1.8.2-2_amd64.deb">jpilot-plugins_1.8.2-2_amd64.deb</a></td><td>Ubuntu 20.04</td><td class="when">2021-02-25</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:14px;color:var(--muted);font-size:14px;max-width:68ch">
+      The dependencies for Ubuntu 20.04 are here as well:
+      <a href="/packages/focal/pilot-link_0.13.0_amd64.deb">pilot-link</a>,
+      <a href="/packages/focal/libpisock9_0.13.0_amd64.deb">libpisock9</a> and
+      <a href="/packages/focal/libpisync1_0.13.0_amd64.deb">libpisync1</a>, all 0.13.0, together with
+      <a href="/packages/focal/DOWNLOAD.sh">DOWNLOAD.sh</a>,
+      <a href="/packages/focal/INSTALL.sh">INSTALL.sh</a> and
+      <a href="/packages/focal/REMOVE.sh">REMOVE.sh</a>.
+    </p>
 
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
-</div><!-- /#main -->
+  </div>
+</section>
 
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    
+</main>
 
-<span>&copy; 2016 Judd Montgomery. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="https://mademistakes.com/work/so-simple-jekyll-theme/" rel="nofollow">So Simple Theme</a>.</span>
-<div class="social-icons">
-	<a href="mailto&#58;Judd Montgomery &#60;judd@engineer.com&#62" title="Judd Montgomery" target="_blank"><i class="fa fa-share fa-2x"></i></a>
-	
-	
-	
-	<a href="https://linkedin.com/in/juddmontgomery" title="Judd Montgomery on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	
-	
-	
-	<a href="https://github.com/juddmon" title="Judd Montgomery on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
-	
-	
-	
-  <a href="/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
-</div><!-- /.social-icons -->
+<footer>
+  <div class="wrap foot-inner">
+    <span class="brand"><span class="dot"></span> J-Pilot 2.1.0</span>
+    <span>Free software under the GPL</span>
+    <a href="https://github.com/juddmon/jpilot">Source on GitHub</a>
+    <a href="/lists/">Mailing list</a>
+    <span class="foot-spacer">&copy; 1999&ndash;2026 Judd Montgomery</span>
+  </div>
+</footer>
 
-  </footer>
-</div><!-- /.footer-wrapper -->
-
-<script type="text/javascript">
-  var BASE_URL = 'http://www.jpilot.org';
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/assets/js/scripts.min.js"></script>
-
-
-
-
+<script src="/static/site.js" defer></script>
 </body>
 </html>
